@@ -1,0 +1,16 @@
+[
+{
+  "modid": "xlfoodmod",
+  "name": "XL Food Mod",
+  "description": "A mod that adds more foods to the game.",
+  "version": "0.1.0",
+  "mcversion": "1.9.4",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["mariot7"],
+  "credits": "Crzyguitardude - original author",
+  "logoFile": "assets/xlfoodmod/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
