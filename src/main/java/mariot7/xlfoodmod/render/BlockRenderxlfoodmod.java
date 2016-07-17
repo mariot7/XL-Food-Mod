@@ -11,11 +11,14 @@ import net.minecraft.item.Item;
 public class BlockRenderxlfoodmod {
 	
 	public static void registerBlockRender() {
+		regBlock(BlockListxlfoodmod.rock_salt);
 		regBlock(BlockListxlfoodmod.grass);
 		regBlock(BlockListxlfoodmod.vanilla_flower);
 		regBlock(BlockListxlfoodmod.rice_plant);
 		regBlock(BlockListxlfoodmod.pepper_plant);
 		regBlock(BlockListxlfoodmod.corn_plant);
+		regBlock(BlockListxlfoodmod.cucumber_plant);
+		regBlock(BlockListxlfoodmod.tomato_plant);
 	}
 
 	public static void regBlock(Block block) {

@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "xlfoodmod:items/pickle_seeds"
+    "layer0": "xlfoodmod:items/tomato"
   },
   "display": {
     "thirdperson": {

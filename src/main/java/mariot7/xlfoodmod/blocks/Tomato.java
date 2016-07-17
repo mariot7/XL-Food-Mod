@@ -4,17 +4,17 @@ import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.item.Item;
 
-public class Pickle extends BlockCrops{
+public class Tomato extends BlockCrops{
 	
-	public Pickle(String name) {
+	public Tomato(String name) {
 		this.setUnlocalizedName(name);
 	}
 	
 	public Item getSeed() {
-		return ItemListxlfoodmod.pickle_seeds;
+		return ItemListxlfoodmod.tomato_seeds;
 	}
 	
 	public Item getCrop() {
-		return ItemListxlfoodmod.pickle;
+		return ItemListxlfoodmod.tomato;
 	}
 }

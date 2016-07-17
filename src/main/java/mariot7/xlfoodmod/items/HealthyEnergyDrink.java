@@ -1,6 +1,7 @@
 package mariot7.xlfoodmod.items;
 
 import mariot7.xlfoodmod.Main;
+import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.EnumAction;
@@ -30,5 +31,11 @@ public class HealthyEnergyDrink extends ItemFood{
 	public EnumAction getItemUseAction(ItemStack stack) {
 	return EnumAction.DRINK;
 	}
+	
+	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityPlayer playerIn)
+    {
+        super.onItemUseFinish(stack, worldIn, playerIn);
+        return new ItemStack(ItemListxlfoodmod.empty_can);
+    }
 
 }

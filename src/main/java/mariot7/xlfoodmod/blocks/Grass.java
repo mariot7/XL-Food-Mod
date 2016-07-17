@@ -50,7 +50,9 @@ public class Grass extends BlockBush{
 	    if (RANDOM.nextFloat() < 0.5F)
 	    drops.add(new ItemStack(ItemListxlfoodmod.corn_seeds));
 	    if (RANDOM.nextFloat() < 0.5F)
-	    drops.add(new ItemStack(ItemListxlfoodmod.pickle_seeds));
+	    drops.add(new ItemStack(ItemListxlfoodmod.cucumber_seeds));
+	    if (RANDOM.nextFloat() < 0.5F)
+		drops.add(new ItemStack(ItemListxlfoodmod.tomato_seeds));
 	    return drops;
 	}
 }

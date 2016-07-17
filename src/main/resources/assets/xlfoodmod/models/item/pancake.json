@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "xlfoodmod:items/pickle"
+    "layer0": "xlfoodmod:items/pancake"
   },
   "display": {
     "thirdperson": {

@@ -29,8 +29,10 @@ public class ItemListxlfoodmod {
 	public static Item corn_seeds;
 	public static Item raw_corn;
 	public static Item corn;
-	public static Item pickle_seeds;
-	public static Item pickle;
+	public static Item cucumber_seeds;
+	public static Item cucumber;
+	public static Item tomato_seeds;
+	public static Item tomato;
 	//other foods
 	public static Item salt;
 	public static Item dough;
@@ -38,8 +40,12 @@ public class ItemListxlfoodmod {
 	public static Item butter;
 	public static Item cheese;
 	public static Item cheese_puff;
+	public static Item chips;
+	public static Item spicy_chips;
     public static Item cheesy_bread;
     public static Item corn_bread;
+    public static Item fried_egg;
+    public static Item pancake;
     //meat
     public static Item flesh;
     public static Item sausage;
@@ -54,6 +60,7 @@ public class ItemListxlfoodmod {
     public static Item hamburger;
     public static Item cheeseburger;
     public static Item hot_dog;
+    public static Item taco;
     //candy
     public static Item marshmallow;
     public static Item roasted_marshmallow;
@@ -63,6 +70,7 @@ public class ItemListxlfoodmod {
     public static Item icecream_cone;
     public static Item chocolate_icecream;
     public static Item vanilla_icecream;
+    public static Item crescent_roll;
     //pies
     public static Item pie_shell;
     public static Item apple_pie;
@@ -100,8 +108,10 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(corn_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.corn_plant, Blocks.FARMLAND, "corn_seeds"), "corn_seeds");
 		GameRegistry.registerItem(raw_corn = new ItemFoodxlfoodmod("raw_corn", 3, 0.3F, false), "raw_corn");
 		GameRegistry.registerItem(corn = new ItemFoodxlfoodmod("corn", 4, 0.3F, false), "corn");
-		GameRegistry.registerItem(pickle_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.pickle_plant, Blocks.FARMLAND, "pickle_seeds"), "pickle_seeds");
-		GameRegistry.registerItem(pickle = new ItemFoodxlfoodmod("pickle", 3, 0.3F, false), "pickle");
+		GameRegistry.registerItem(cucumber_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.cucumber_plant, Blocks.FARMLAND, "cucumber_seeds"), "cucumber_seeds");
+		GameRegistry.registerItem(cucumber = new ItemFoodxlfoodmod("cucumber", 3, 0.3F, false), "cucumber");
+		GameRegistry.registerItem(tomato_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.tomato_plant, Blocks.FARMLAND, "tomato_seeds"), "tomato_seeds");
+		GameRegistry.registerItem(tomato = new ItemFoodxlfoodmod("tomato", 3, 0.3F, false), "tomato");
 		//other foods
 		GameRegistry.registerItem(salt = new ItemFoodxlfoodmod("salt", 0, 0.1F, false), "salt");
 		GameRegistry.registerItem(dough = new ItemFoodxlfoodmod("dough", 3, 0.3F, false), "dough");
@@ -109,8 +119,12 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(butter = new ItemFoodxlfoodmod("butter", 3, 0.3F, false), "butter");
 		GameRegistry.registerItem(cheese = new ItemFoodxlfoodmod("cheese", 3, 0.3F, false), "cheese");
 		GameRegistry.registerItem(cheese_puff = new ItemFoodxlfoodmod("cheese_puff", 3, 0.3F, false), "cheese_puff");
+		GameRegistry.registerItem(chips = new ItemFoodxlfoodmod("chips", 4, 0.4F, false), "chips");
+		GameRegistry.registerItem(spicy_chips = new ItemFoodxlfoodmod("spicy_chips", 4, 0.4F, false), "spicy_chips");
 		GameRegistry.registerItem(cheesy_bread = new ItemFoodxlfoodmod("cheesy_bread", 5, 0.6F, false), "cheesy_bread");
 		GameRegistry.registerItem(corn_bread = new ItemFoodxlfoodmod("corn_bread", 5, 0.6F, false), "corn_bread");
+		GameRegistry.registerItem(fried_egg = new ItemFoodxlfoodmod("fried_egg", 5, 0.6F, false), "fried_egg");
+		GameRegistry.registerItem(pancake = new ItemFoodxlfoodmod("pancake", 5, 0.6F, false), "pancake");
 		//meat
 		GameRegistry.registerItem(flesh = new ItemFoodxlfoodmod("flesh", 4, 0.8F, false), "flesh");
 		GameRegistry.registerItem(sausage = new ItemFoodxlfoodmod("sausage", 5, 0.6F, false), "sausage");
@@ -125,6 +139,7 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(hamburger = new ItemFoodxlfoodmod("hamburger", 8, 0.8F, false), "hamburger");
 		GameRegistry.registerItem(cheeseburger = new ItemFoodxlfoodmod("cheeseburger", 8, 0.8F, false), "cheeseburger");
 		GameRegistry.registerItem(hot_dog = new ItemFoodxlfoodmod("hot_dog", 8, 0.8F, false), "hot_dog");
+		GameRegistry.registerItem(taco = new ItemFoodxlfoodmod("taco", 8, 0.8F, false), "taco");
 		//candy
 		GameRegistry.registerItem(marshmallow = new ItemFoodxlfoodmod("marshmallow", 3, 0.3F, false), "marshmallow");
 		GameRegistry.registerItem(roasted_marshmallow = new ItemFoodxlfoodmod("roasted_marshmallow", 3, 0.3F, false), "roasted_marshmallow");
@@ -134,6 +149,7 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(icecream_cone = new ItemFoodxlfoodmod("icecream_cone", 3, 0.3F, false), "icecream_cone");
 		GameRegistry.registerItem(chocolate_icecream = new ItemFoodxlfoodmod("chocolate_icecream", 4, 0.3F, false), "chocolate_icecream");
 		GameRegistry.registerItem(vanilla_icecream = new ItemFoodxlfoodmod("vanilla_icecream", 4, 0.3F, false), "vanilla_icecream");
+		GameRegistry.registerItem(crescent_roll = new ItemFoodxlfoodmod("crescent_roll", 4, 0.3F, false), "crescent_roll");
 		//pies
 		GameRegistry.registerItem(pie_shell = new Itemxlfoodmod("pie_shell"), "pie_shell");
 		GameRegistry.registerItem(apple_pie = new ItemFoodxlfoodmod("apple_pie", 8, 0.6F, false), "apple_pie");

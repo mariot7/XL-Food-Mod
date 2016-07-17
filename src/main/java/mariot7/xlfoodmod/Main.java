@@ -7,6 +7,7 @@ import mariot7.xlfoodmod.init.Smeltingxlfoodmod;
 import mariot7.xlfoodmod.proxy.CommonProxy;
 import mariot7.xlfoodmod.render.BlockRenderxlfoodmod;
 import mariot7.xlfoodmod.render.ItemRenderxlfoodmod;
+import mariot7.xlfoodmod.world.SaltWorldGeneratorxlfoodmod;
 import mariot7.xlfoodmod.world.WorldGeneratorxlfoodmod;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemSeeds;
@@ -37,6 +38,7 @@ public class Main {
     public void init(FMLInitializationEvent event)
     {
 		this.proxy.init(event);
+		GameRegistry.registerWorldGenerator(new SaltWorldGeneratorxlfoodmod(), 0);
 		GameRegistry.registerWorldGenerator(new WorldGeneratorxlfoodmod(), 10);
     }
     
