@@ -1,23 +1,23 @@
 {
-  "homepage": "http://minecraft.curseforge.com/projects/xl-food-mod/files",
-  "promos": {
-    "1.8.9-latest": "0.2.0",
-    "1.8.9-recommended": "1.8.9-0.2.0",
-    "1.9.4-latest": "0.2.0",
-    "1.9.4-recommended": "1.9.4-0.2.0",
-    "1.10.2-latest": "0.2.0",
-    "1.10.2-recommended": "1.10.2-0.2.0"
-  },
-    "1.8.9": {
-    "0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more.",
-    "1.8.9-0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more."
-  }
-    "1.9.4": {
-    "0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more.",
-    "1.9.4-0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more."
-  }
-    "1.10.2": {
-    "0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more.",
-    "1.10.2-0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more."
-  }
+	"homepage": "http://minecraft.curseforge.com/projects/xl-food-mod/files",
+	"promos": {
+		"1.8.9-latest": "0.2.0",
+		"1.8.9-recommended": "1.8.9-0.2.0",
+		"1.9.4-latest": "0.2.0",
+		"1.9.4-recommended": "1.9.4-0.2.0",
+		"1.10.2-latest": "0.2.0",
+		"1.10.2-recommended": "1.10.2-0.2.0"
+	},
+	"1.8.9": {
+		"0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more.",
+		"1.8.9-0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more."
+	},
+	"1.9.4": {
+		"0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more.",
+		"1.9.4-0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more."
+	},
+	"1.10.2": {
+		"0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more.",
+		"1.10.2-0.2.0": "Added Tomato plant, Fried Egg, Pancakes & much more."
+	}
 }
