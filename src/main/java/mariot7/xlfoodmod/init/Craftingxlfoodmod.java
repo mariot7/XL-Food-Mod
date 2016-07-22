@@ -32,7 +32,7 @@ public class Craftingxlfoodmod {
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.strong_energy_drink), new Object [] {"RE ","WM ","B  ", 'R', ItemListxlfoodmod.rice, 'E', ItemListxlfoodmod.empty_can, 'W', Items.WATER_BUCKET, 'M', Items.MAGMA_CREAM, 'B', Items.BLAZE_POWDER});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.deadly_energy_drink), new Object [] {"RE ","WF ","S  ", 'R', ItemListxlfoodmod.rice, 'E', ItemListxlfoodmod.empty_can, 'W', Items.WATER_BUCKET, 'F', Items.FERMENTED_SPIDER_EYE, 'S', Items.SPIDER_EYE});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.super_energy_drink), new Object [] {"SH ","PT ","D  ", 'S', ItemListxlfoodmod.stealthy_energy_drink, 'H', ItemListxlfoodmod.healthy_energy_drink, 'P', ItemListxlfoodmod.speedy_energy_drink, 'T', ItemListxlfoodmod.strong_energy_drink, 'D', Items.DIAMOND});
-		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.glass_mug, 2), new Object [] {"G G","G G","GGG", 'G', Blocks.GLASS});
+		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.glass_mug, 2), new Object [] {"GG ","GGG","GG ", 'G', Blocks.GLASS});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.beer), new Object [] {" R "," F "," G ", 'R', ItemListxlfoodmod.rice, 'F', Items.FERMENTED_SPIDER_EYE, 'G', ItemListxlfoodmod.glass_mug});
 		
 		//shapeless
