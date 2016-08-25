@@ -1,5 +1,6 @@
 package mariot7.xlfoodmod.proxy;
 
+import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.init.BlockListxlfoodmod;
 import mariot7.xlfoodmod.init.Craftingxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
@@ -21,7 +22,9 @@ public class CommonProxy {
 	}
 	
 	public void init(FMLInitializationEvent event) {
+		if(!Configurationxlfoodmod.GrassGen){
 		GameRegistry.registerWorldGenerator(new WorldGeneratorxlfoodmod(), 10);
+		}
 	}
 
 	public void postInit(FMLPostInitializationEvent postEvent) {

@@ -36,6 +36,7 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.corn_bread);
 		regItem(ItemListxlfoodmod.fried_egg);
 		regItem(ItemListxlfoodmod.pancake);
+		regItem(ItemListxlfoodmod.waffle);
 		//meat
 		regItem(ItemListxlfoodmod.flesh);
 		regItem(ItemListxlfoodmod.sausage);
@@ -51,16 +52,19 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.cheeseburger);
 		regItem(ItemListxlfoodmod.hot_dog);
 		regItem(ItemListxlfoodmod.taco);
-		//candy
+		//candy etc.
 		regItem(ItemListxlfoodmod.marshmallow);
 		regItem(ItemListxlfoodmod.roasted_marshmallow);
 		regItem(ItemListxlfoodmod.oreo_cookie);
+		regItem(ItemListxlfoodmod.brownie);
 		regItem(ItemListxlfoodmod.chocolate_icecream_ball);
 		regItem(ItemListxlfoodmod.vanilla_icecream_ball);
 		regItem(ItemListxlfoodmod.icecream_cone);
 		regItem(ItemListxlfoodmod.chocolate_icecream);
 		regItem(ItemListxlfoodmod.vanilla_icecream);
 		regItem(ItemListxlfoodmod.crescent_roll);
+		regItem(ItemListxlfoodmod.donut);
+		regItem(ItemListxlfoodmod.sugar_donut);
 		//pies
 		regItem(ItemListxlfoodmod.pie_shell);
 		regItem(ItemListxlfoodmod.apple_pie);

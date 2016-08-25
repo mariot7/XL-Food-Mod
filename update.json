@@ -1,23 +1,23 @@
 {
   "homepage": "http://minecraft.curseforge.com/projects/xl-food-mod/files",
   "promos": {
-    "1.8.9-latest": "0.2.1",
-    "1.8.9-recommended": "1.8.9-0.2.1",
-    "1.9.4-latest": "0.2.1",
-    "1.9.4-recommended": "1.9.4-0.2.1",
-    "1.10.2-latest": "0.2.1",
-    "1.10.2-recommended": "1.10.2-0.2.1"
+    "1.8.9-latest": "0.3.0",
+    "1.8.9-recommended": "1.8.9-0.3.0",
+    "1.9.4-latest": "0.3.0",
+    "1.9.4-recommended": "1.9.4-0.3.0",
+    "1.10.2-latest": "0.3.0",
+    "1.10.2-recommended": "1.10.2-0.3.0"
   },
     "1.8.9": {
-    "0.2.1": "Fixed 'update checker' not working correctly & changed the recipe for the Glass Mug.",
-    "1.8.9-0.2.1": "Fixed 'update checker' not working correctly & changed the recipe for the Glass Mug."
+    "0.3.0": "Added a config file to turn off world generation of Rock Salt, Grass and Vanilla Flowers, Waffle, Brownie, Donut and Sugar Donut.",
+    "1.8.9-0.3.0": "Added a config file to turn off world generation of Rock Salt, Grass and Vanilla Flowers, Waffle, Brownie, Donut and Sugar Donut."
   },
     "1.9.4": {
-    "0.2.1": "Fixed 'update checker' not working correctly & changed the recipe for the Glass Mug.",
-    "1.9.4-0.2.1": "Fixed 'update checker' not working correctly & changed the recipe for the Glass Mug."
+    "0.3.0": "Added a config file to turn off world generation of Rock Salt, Grass and Vanilla Flowers, Waffle, Brownie, Donut and Sugar Donut.",
+    "1.9.4-0.3.0": "Added a config file to turn off world generation of Rock Salt, Grass and Vanilla Flowers, Waffle, Brownie, Donut and Sugar Donut."
   },
     "1.10.2": {
-    "0.2.1": "Fixed 'update checker' not working correctly & changed the recipe for the Glass Mug.",
-    "1.10.2-0.2.1": "Fixed 'update checker' not working correctly & changed the recipe for the Glass Mug."
+    "0.3.0": "Added a config file to turn off world generation of Rock Salt, Grass and Vanilla Flowers, Waffle, Brownie, Donut and Sugar Donut.",
+    "1.10.2-0.3.0": "Added a config file to turn off world generation of Rock Salt, Grass and Vanilla Flowers, Waffle, Brownie, Donut and Sugar Donut."
   }
 }
