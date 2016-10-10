@@ -16,7 +16,6 @@ import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.potion.Potion;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.oredict.OreDictionary;
 
 public class ItemListxlfoodmod {
 	
@@ -76,7 +75,6 @@ public class ItemListxlfoodmod {
     public static Item crescent_roll;
     public static Item donut;
     public static Item sugar_donut;
-    public static Item chocolate_donut;
     //pies
     public static Item pie_shell;
     public static Item apple_pie;
@@ -120,8 +118,6 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(tomato = new ItemFoodxlfoodmod("tomato", 3, 0.3F, false), "tomato");
 		//other foods
 		GameRegistry.registerItem(salt = new ItemFoodxlfoodmod("salt", 0, 0.1F, false), "salt");
-		OreDictionary.registerOre("itemSalt", salt);
-		OreDictionary.registerOre("dustSalt", salt);
 		GameRegistry.registerItem(dough = new ItemFoodxlfoodmod("dough", 3, 0.3F, false), "dough");
 		GameRegistry.registerItem(cooked_dough = new ItemFoodxlfoodmod("cooked_dough", 5, 0.6F, false), "cooked_dough");
 		GameRegistry.registerItem(butter = new ItemFoodxlfoodmod("butter", 3, 0.3F, false), "butter");
@@ -162,7 +158,6 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(crescent_roll = new ItemFoodxlfoodmod("crescent_roll", 4, 0.3F, false), "crescent_roll");
 		GameRegistry.registerItem(donut = new ItemFoodxlfoodmod("donut", 4, 0.3F, false), "donut");
 		GameRegistry.registerItem(sugar_donut = new ItemFoodxlfoodmod("sugar_donut", 4, 0.3F, false), "sugar_donut");
-		GameRegistry.registerItem(chocolate_donut = new ItemFoodxlfoodmod("chocolate_donut", 4, 0.3F, false), "chocolate_donut");
 		//pies
 		GameRegistry.registerItem(pie_shell = new Itemxlfoodmod("pie_shell"), "pie_shell");
 		GameRegistry.registerItem(apple_pie = new ItemFoodxlfoodmod("apple_pie", 8, 0.6F, false), "apple_pie");
@@ -172,7 +167,7 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(chocolate_pie = new ItemFoodxlfoodmod("chocolate_pie", 8, 0.6F, false), "chocolate_pie");
 		GameRegistry.registerItem(bacon_pie = new ItemFoodxlfoodmod("bacon_pie", 8, 0.6F, false), "bacon_pie");
 		GameRegistry.registerItem(fish_pie = new ItemFoodxlfoodmod("fish_pie", 8, 0.6F, false), "fish_pie");
-		//syrup, cream etc.
+		
 		GameRegistry.registerItem(hot_sauce = new Itemxlfoodmod("hot_sauce"), "hot_sauce");
 		GameRegistry.registerItem(chocolate_syrup = new Itemxlfoodmod("chocolate_syrup"), "chocolate_syrup");
 		GameRegistry.registerItem(vanilla_extract = new Itemxlfoodmod("vanilla_extract"), "vanilla_extract");

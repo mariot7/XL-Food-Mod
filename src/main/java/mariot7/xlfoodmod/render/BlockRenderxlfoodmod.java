@@ -19,9 +19,6 @@ public class BlockRenderxlfoodmod {
 		regBlock(BlockListxlfoodmod.corn_plant);
 		regBlock(BlockListxlfoodmod.cucumber_plant);
 		regBlock(BlockListxlfoodmod.tomato_plant);
-		regBlock(BlockListxlfoodmod.chocolate_cake);
-		regBlock(BlockListxlfoodmod.oreo_cake);
-		regBlock(BlockListxlfoodmod.nether_cake);
 	}
 
 	public static void regBlock(Block block) {

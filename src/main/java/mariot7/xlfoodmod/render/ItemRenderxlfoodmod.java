@@ -65,7 +65,6 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.crescent_roll);
 		regItem(ItemListxlfoodmod.donut);
 		regItem(ItemListxlfoodmod.sugar_donut);
-		regItem(ItemListxlfoodmod.chocolate_donut);
 		//pies
 		regItem(ItemListxlfoodmod.pie_shell);
 		regItem(ItemListxlfoodmod.apple_pie);
@@ -75,7 +74,7 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.chocolate_pie);
 		regItem(ItemListxlfoodmod.bacon_pie);
 		regItem(ItemListxlfoodmod.fish_pie);
-		//syrup, cream etc.
+		
 		regItem(ItemListxlfoodmod.hot_sauce);
 		regItem(ItemListxlfoodmod.chocolate_syrup);
 		regItem(ItemListxlfoodmod.vanilla_extract);
