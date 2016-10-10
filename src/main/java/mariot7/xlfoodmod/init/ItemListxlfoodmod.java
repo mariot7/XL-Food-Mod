@@ -16,6 +16,7 @@ import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.potion.Potion;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class ItemListxlfoodmod {
 	
@@ -118,6 +119,8 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(tomato = new ItemFoodxlfoodmod("tomato", 3, 0.3F, false), "tomato");
 		//other foods
 		GameRegistry.registerItem(salt = new ItemFoodxlfoodmod("salt", 0, 0.1F, false), "salt");
+		OreDictionary.registerOre("itemSalt", salt);
+		OreDictionary.registerOre("dustSalt", salt);
 		GameRegistry.registerItem(dough = new ItemFoodxlfoodmod("dough", 3, 0.3F, false), "dough");
 		GameRegistry.registerItem(cooked_dough = new ItemFoodxlfoodmod("cooked_dough", 5, 0.6F, false), "cooked_dough");
 		GameRegistry.registerItem(butter = new ItemFoodxlfoodmod("butter", 3, 0.3F, false), "butter");
