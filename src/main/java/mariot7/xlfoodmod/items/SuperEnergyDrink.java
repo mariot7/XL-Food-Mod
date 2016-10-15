@@ -37,32 +37,13 @@ public class SuperEnergyDrink extends ItemFood{
 		player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 3600, 1));
 		player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 3600, 1));
 		player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 3600, 2));
+		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
 	}
 	
 	@Override
 	public EnumAction getItemUseAction(ItemStack stack) {
 	return EnumAction.DRINK;
 	}
-	
-    @Nullable
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
-    {
-        if (entityLiving instanceof EntityPlayer && !((EntityPlayer)entityLiving).capabilities.isCreativeMode)
-        {
-            --stack.stackSize;
-        }
 
-        if (!worldIn.isRemote)
-        {
-            entityLiving.curePotionEffects(stack);
-        }
-
-        if (entityLiving instanceof EntityPlayer)
-        {
-            ((EntityPlayer)entityLiving).addStat(StatList.getObjectUseStats(this));
-        }
-
-        return stack.stackSize <= 0 ? new ItemStack(ItemListxlfoodmod.empty_can) : stack;
-    }
 
 }

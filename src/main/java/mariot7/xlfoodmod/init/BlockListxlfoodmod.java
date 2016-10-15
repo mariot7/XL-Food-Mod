@@ -4,9 +4,11 @@ import mariot7.xlfoodmod.Reference;
 import mariot7.xlfoodmod.blocks.Grass;
 import mariot7.xlfoodmod.blocks.NetherCake;
 import mariot7.xlfoodmod.blocks.OreoCake;
+import mariot7.xlfoodmod.blocks.CheeseCake;
 import mariot7.xlfoodmod.blocks.ChocolateCake;
 import mariot7.xlfoodmod.blocks.Corn;
 import mariot7.xlfoodmod.blocks.Pepper;
+import mariot7.xlfoodmod.blocks.Pizza;
 import mariot7.xlfoodmod.blocks.Cucumber;
 import mariot7.xlfoodmod.blocks.Rice;
 import mariot7.xlfoodmod.blocks.RockSalt;
@@ -30,7 +32,9 @@ public class BlockListxlfoodmod {
 	public static Block tomato_plant;
 	public static Block chocolate_cake;
 	public static Block oreo_cake;
+	public static Block cheese_cake;
 	public static Block nether_cake;
+	public static Block pizza;
 
 	public static void initBlocks()
 	{
@@ -44,7 +48,9 @@ public class BlockListxlfoodmod {
 		GameRegistry.registerBlock(tomato_plant = new Tomato("tomato_plant"), "tomato_plant");
 		GameRegistry.registerBlock(chocolate_cake = new ChocolateCake("chocolate_cake", 14, 0.2F), "chocolate_cake");
 		GameRegistry.registerBlock(oreo_cake = new OreoCake("oreo_cake", 14, 0.2F), "oreo_cake");
+		GameRegistry.registerBlock(cheese_cake = new CheeseCake("cheese_cake", 14, 0.2F), "cheese_cake");
 		GameRegistry.registerBlock(nether_cake = new NetherCake("nether_cake", 14, 0.2F), "nether_cake");
+		GameRegistry.registerBlock(pizza = new Pizza("pizza", 14, 0.2F), "pizza");
 	}
 
 }

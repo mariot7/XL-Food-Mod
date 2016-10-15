@@ -30,6 +30,7 @@ public class DeadlyEnergyDrink extends ItemFood{
 	
 	protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
 		player.addPotionEffect(new PotionEffect(MobEffects.POISON, 1200, 0));
+		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
 	}
 	
 	@Override
@@ -37,25 +38,5 @@ public class DeadlyEnergyDrink extends ItemFood{
 	return EnumAction.DRINK;
 	}
 	
-    @Nullable
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
-    {
-        if (entityLiving instanceof EntityPlayer && !((EntityPlayer)entityLiving).capabilities.isCreativeMode)
-        {
-            --stack.stackSize;
-        }
-
-        if (!worldIn.isRemote)
-        {
-            entityLiving.curePotionEffects(stack);
-        }
-
-        if (entityLiving instanceof EntityPlayer)
-        {
-            ((EntityPlayer)entityLiving).addStat(StatList.getObjectUseStats(this));
-        }
-
-        return stack.stackSize <= 0 ? new ItemStack(ItemListxlfoodmod.empty_can) : stack;
-    }
 
 }

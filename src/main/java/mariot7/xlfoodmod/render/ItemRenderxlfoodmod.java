@@ -45,6 +45,7 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.raw_chicken_wing);
 		regItem(ItemListxlfoodmod.cooked_chicken_wing);
 		regItem(ItemListxlfoodmod.spicy_chicken_wing);
+		regItem(ItemListxlfoodmod.bucket_of_fried_chicken);
 		//fast food
 		regItem(ItemListxlfoodmod.top_bun);
 		regItem(ItemListxlfoodmod.bottom_bun);
@@ -52,6 +53,7 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.cheeseburger);
 		regItem(ItemListxlfoodmod.hot_dog);
 		regItem(ItemListxlfoodmod.taco);
+		regItem(ItemListxlfoodmod.slice_of_pizza);
 		//candy etc.
 		regItem(ItemListxlfoodmod.marshmallow);
 		regItem(ItemListxlfoodmod.roasted_marshmallow);
@@ -90,6 +92,8 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.super_energy_drink);
 		regItem(ItemListxlfoodmod.glass_mug);
 		regItem(ItemListxlfoodmod.beer);
+		regItem(ItemListxlfoodmod.coffee_cup);
+		regItem(ItemListxlfoodmod.coffee);
 	}
 
 	public static void regItem(Item item) {

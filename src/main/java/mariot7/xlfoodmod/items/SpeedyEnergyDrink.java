@@ -31,32 +31,13 @@ public class SpeedyEnergyDrink extends ItemFood{
 	protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
 		player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 500, 0));
 		player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 500, 2));
+		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
 	}
 	
 	@Override
 	public EnumAction getItemUseAction(ItemStack stack) {
 	return EnumAction.DRINK;
 	}
-	
-    @Nullable
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
-    {
-        if (entityLiving instanceof EntityPlayer && !((EntityPlayer)entityLiving).capabilities.isCreativeMode)
-        {
-            --stack.stackSize;
-        }
 
-        if (!worldIn.isRemote)
-        {
-            entityLiving.curePotionEffects(stack);
-        }
-
-        if (entityLiving instanceof EntityPlayer)
-        {
-            ((EntityPlayer)entityLiving).addStat(StatList.getObjectUseStats(this));
-        }
-
-        return stack.stackSize <= 0 ? new ItemStack(ItemListxlfoodmod.empty_can) : stack;
-    }
 
 }

@@ -32,32 +32,13 @@ public class StealthyEnergyDrink extends ItemFood{
 		player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 2400, 0));
 		player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 2400, 0));
 		player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 2400, 0));
+		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
 	}
 	
 	@Override
 	public EnumAction getItemUseAction(ItemStack stack) {
 	return EnumAction.DRINK;
 	}
-	
-    @Nullable
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
-    {
-        if (entityLiving instanceof EntityPlayer && !((EntityPlayer)entityLiving).capabilities.isCreativeMode)
-        {
-            --stack.stackSize;
-        }
 
-        if (!worldIn.isRemote)
-        {
-            entityLiving.curePotionEffects(stack);
-        }
-
-        if (entityLiving instanceof EntityPlayer)
-        {
-            ((EntityPlayer)entityLiving).addStat(StatList.getObjectUseStats(this));
-        }
-
-        return stack.stackSize <= 0 ? new ItemStack(ItemListxlfoodmod.empty_can) : stack;
-    }
 
 }

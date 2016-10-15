@@ -3,6 +3,8 @@ package mariot7.xlfoodmod.init;
 import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.Reference;
 import mariot7.xlfoodmod.items.Beer;
+import mariot7.xlfoodmod.items.BucketOfFriedChicken;
+import mariot7.xlfoodmod.items.Coffee;
 import mariot7.xlfoodmod.items.DeadlyEnergyDrink;
 import mariot7.xlfoodmod.items.HealthyEnergyDrink;
 import mariot7.xlfoodmod.items.SpeedyEnergyDrink;
@@ -56,6 +58,7 @@ public class ItemListxlfoodmod {
     public static Item raw_chicken_wing;
     public static Item cooked_chicken_wing;
     public static Item spicy_chicken_wing;
+    public static Item bucket_of_fried_chicken;
     //fast food
     public static Item top_bun;
     public static Item bottom_bun;
@@ -63,6 +66,7 @@ public class ItemListxlfoodmod {
     public static Item cheeseburger;
     public static Item hot_dog;
     public static Item taco;
+    public static Item slice_of_pizza;
     //candy etc.
     public static Item marshmallow;
     public static Item roasted_marshmallow;
@@ -101,6 +105,8 @@ public class ItemListxlfoodmod {
 	public static Item super_energy_drink;
 	public static Item glass_mug;
 	public static Item beer;
+	public static Item coffee_cup;
+	public static Item coffee;
 	
 	
 	public static void initItems(){
@@ -142,6 +148,7 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(raw_chicken_wing = new ItemFoodxlfoodmod("raw_chicken_wing", 3, 0.3F, false), "raw_chicken_wing");
 		GameRegistry.registerItem(cooked_chicken_wing = new ItemFoodxlfoodmod("cooked_chicken_wing", 5, 0.6F, false), "cooked_chicken_wing");
 		GameRegistry.registerItem(spicy_chicken_wing = new ItemFoodxlfoodmod("spicy_chicken_wing", 5, 0.6F, false), "spicy_chicken_wing");
+		GameRegistry.registerItem(bucket_of_fried_chicken = new BucketOfFriedChicken("bucket_of_fried_chicken", 6, 0.6F, false), "bucket_of_fried_chicken");
 		//fast food
 		GameRegistry.registerItem(top_bun = new ItemFoodxlfoodmod("top_bun", 3, 0.3F, false), "top_bun");
 		GameRegistry.registerItem(bottom_bun = new ItemFoodxlfoodmod("bottom_bun", 3, 0.3F, false), "bottom_bun");
@@ -149,6 +156,7 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(cheeseburger = new ItemFoodxlfoodmod("cheeseburger", 8, 0.8F, false), "cheeseburger");
 		GameRegistry.registerItem(hot_dog = new ItemFoodxlfoodmod("hot_dog", 8, 0.8F, false), "hot_dog");
 		GameRegistry.registerItem(taco = new ItemFoodxlfoodmod("taco", 8, 0.8F, false), "taco");
+		GameRegistry.registerItem(slice_of_pizza = new ItemFoodxlfoodmod("slice_of_pizza", 8, 0.8F, false), "slice_of_pizza");
 		//candy etc.
 		GameRegistry.registerItem(marshmallow = new ItemFoodxlfoodmod("marshmallow", 3, 0.3F, false), "marshmallow");
 		GameRegistry.registerItem(roasted_marshmallow = new ItemFoodxlfoodmod("roasted_marshmallow", 3, 0.3F, false), "roasted_marshmallow");
@@ -187,6 +195,8 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(super_energy_drink = new SuperEnergyDrink("super_energy_drink", 0, 0.0F, false), "super_energy_drink");
 		GameRegistry.registerItem(glass_mug = new Itemxlfoodmod("glass_mug"), "glass_mug");
 		GameRegistry.registerItem(beer = new Beer("beer", 0, 0.0F, false), "beer");
+		GameRegistry.registerItem(coffee_cup = new Itemxlfoodmod("coffee_cup"), "coffee_cup");
+		GameRegistry.registerItem(coffee = new Coffee("coffee", 0, 0.0F, false), "coffee");
 	}
 
 }

@@ -34,6 +34,7 @@ public class Beer extends ItemFood{
 
 	protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
 		player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 600, 1));
+		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.glass_mug));
 	}
 	
 	@Override
@@ -41,25 +42,5 @@ public class Beer extends ItemFood{
 	return EnumAction.DRINK;
 	}
     
-    @Nullable
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
-    {
-        if (entityLiving instanceof EntityPlayer && !((EntityPlayer)entityLiving).capabilities.isCreativeMode)
-        {
-            --stack.stackSize;
-        }
-
-        if (!worldIn.isRemote)
-        {
-            entityLiving.curePotionEffects(stack);
-        }
-
-        if (entityLiving instanceof EntityPlayer)
-        {
-            ((EntityPlayer)entityLiving).addStat(StatList.getObjectUseStats(this));
-        }
-
-        return stack.stackSize <= 0 ? new ItemStack(ItemListxlfoodmod.glass_mug) : stack;
-    }
 
 }
