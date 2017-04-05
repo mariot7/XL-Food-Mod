@@ -24,6 +24,7 @@ public class BlockRenderxlfoodmod {
 		regBlock(BlockListxlfoodmod.oreo_cake);
 		regBlock(BlockListxlfoodmod.cheese_cake);
 		regBlock(BlockListxlfoodmod.nether_cake);
+		regBlock(BlockListxlfoodmod.strawberry_cake);
 		regBlock(BlockListxlfoodmod.pizza);
 	}
 

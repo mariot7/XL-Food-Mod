@@ -13,6 +13,7 @@ import mariot7.xlfoodmod.blocks.Cucumber;
 import mariot7.xlfoodmod.blocks.Rice;
 import mariot7.xlfoodmod.blocks.RockSalt;
 import mariot7.xlfoodmod.blocks.Strawberry;
+import mariot7.xlfoodmod.blocks.StrawberryCake;
 import mariot7.xlfoodmod.blocks.Tomato;
 import mariot7.xlfoodmod.blocks.VanillaFlower;
 import net.minecraft.block.Block;
@@ -36,6 +37,7 @@ public class BlockListxlfoodmod {
 	public static Block oreo_cake;
 	public static Block cheese_cake;
 	public static Block nether_cake;
+	public static Block strawberry_cake;
 	public static Block pizza;
 
 	public static void initBlocks()
@@ -53,6 +55,7 @@ public class BlockListxlfoodmod {
 		GameRegistry.registerBlock(oreo_cake = new OreoCake("oreo_cake", 14, 0.2F), "oreo_cake");
 		GameRegistry.registerBlock(cheese_cake = new CheeseCake("cheese_cake", 14, 0.2F), "cheese_cake");
 		GameRegistry.registerBlock(nether_cake = new NetherCake("nether_cake", 14, 0.2F), "nether_cake");
+		GameRegistry.registerBlock(strawberry_cake = new StrawberryCake("strawberry_cake", 14, 0.2F), "strawberry_cake");
 		GameRegistry.registerBlock(pizza = new Pizza("pizza", 14, 0.2F), "pizza");
 	}
 

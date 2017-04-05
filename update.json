@@ -1,23 +1,23 @@
 {
   "homepage": "http://minecraft.curseforge.com/projects/xl-food-mod/files",
   "promos": {
-    "1.8.9-latest": "0.6.0",
-    "1.8.9-recommended": "1.8.9-0.6.0",
-    "1.9.4-latest": "0.6.0",
-    "1.9.4-recommended": "1.9.4-0.6.0",
-    "1.10.2-latest": "0.6.0",
-    "1.10.2-recommended": "1.10.2-0.6.0"
+    "1.8.9-latest": "0.7.0",
+    "1.8.9-recommended": "1.8.9-0.7.0",
+    "1.9.4-latest": "0.7.0",
+    "1.9.4-recommended": "1.9.4-0.7.0",
+    "1.10.2-latest": "0.7.0",
+    "1.10.2-recommended": "1.10.2-0.7.0"
   },
     "1.8.9": {
-    "0.6.0": "Added Strawberry Plant, Strawberry, Strawberry Icecream and more.",
-    "1.8.9-0.6.0": "Added Strawberry Plant, Strawberry, Strawberry Icecream and more."
+    "0.7.0": "Added Strawberry Cake, Strawberry Pie, Burrito, Cappuccino and more.",
+    "1.8.9-0.7.0": "Added Strawberry Cake, Strawberry Pie, Burrito, Cappuccino and more."
   },
     "1.9.4": {
-    "0.6.0": "Added Strawberry Plant, Strawberry, Strawberry Icecream and more.",
-    "1.9.4-0.6.0": "Added Strawberry Plant, Strawberry, Strawberry Icecream and more."
+    "0.7.0": "Added Strawberry Cake, Strawberry Pie, Burrito, Cappuccino and more.",
+    "1.9.4-0.7.0": "Added Strawberry Cake, Strawberry Pie, Burrito, Cappuccino and more."
   },
     "1.10.2": {
-    "0.6.0": "Added Strawberry Plant, Strawberry, Strawberry Icecream and more.",
-    "1.10.2-0.6.0": "Added Strawberry Plant, Strawberry, Strawberry Icecream and more."
+    "0.7.0": "Added Strawberry Cake, Strawberry Pie, Burrito, Cappuccino and more.",
+    "1.10.2-0.7.0": "Added Strawberry Cake, Strawberry Pie, Burrito, Cappuccino and more."
   }
 }

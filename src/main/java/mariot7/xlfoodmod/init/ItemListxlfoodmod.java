@@ -4,6 +4,7 @@ import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.Reference;
 import mariot7.xlfoodmod.items.Beer;
 import mariot7.xlfoodmod.items.BucketOfFriedChicken;
+import mariot7.xlfoodmod.items.Cappuccino;
 import mariot7.xlfoodmod.items.Coffee;
 import mariot7.xlfoodmod.items.DeadlyEnergyDrink;
 import mariot7.xlfoodmod.items.HealthyEnergyDrink;
@@ -67,7 +68,9 @@ public class ItemListxlfoodmod {
     public static Item hamburger;
     public static Item cheeseburger;
     public static Item hot_dog;
+    public static Item tortilla;
     public static Item taco;
+    public static Item burrito;
     public static Item slice_of_pizza;
     //candy etc.
     public static Item marshmallow;
@@ -94,6 +97,7 @@ public class ItemListxlfoodmod {
     public static Item chocolate_pie;
     public static Item bacon_pie;
     public static Item fish_pie;
+    public static Item strawberry_pie;
     //syrup, cream etc.
 	public static Item hot_sauce;
 	public static Item chocolate_syrup;
@@ -111,6 +115,7 @@ public class ItemListxlfoodmod {
 	public static Item beer;
 	public static Item coffee_cup;
 	public static Item coffee;
+	public static Item cappuccino;
 	
 	
 	public static void initItems(){
@@ -151,26 +156,28 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(sausage = new ItemFoodxlfoodmod("sausage", 5, 0.6F, false), "sausage");
 		GameRegistry.registerItem(bacon = new ItemFoodxlfoodmod("bacon", 4, 0.6F, false), "bacon");
 		GameRegistry.registerItem(ground_beef = new ItemFoodxlfoodmod("ground_beef", 4, 0.3F, false), "ground_beef");
-		GameRegistry.registerItem(raw_chicken_wing = new ItemFoodxlfoodmod("raw_chicken_wing", 3, 0.6F, false), "raw_chicken_wing");
+	    GameRegistry.registerItem(raw_chicken_wing = new ItemFoodxlfoodmod("raw_chicken_wing", 3, 0.6F, false), "raw_chicken_wing");
 		GameRegistry.registerItem(cooked_chicken_wing = new ItemFoodxlfoodmod("cooked_chicken_wing", 5, 1.2F, false), "cooked_chicken_wing");
 		GameRegistry.registerItem(spicy_chicken_wing = new ItemFoodxlfoodmod("spicy_chicken_wing", 5, 1.3F, false), "spicy_chicken_wing");
 		GameRegistry.registerItem(bucket_of_fried_chicken = new BucketOfFriedChicken("bucket_of_fried_chicken", 6, 1.2F, false), "bucket_of_fried_chicken");
 		//fast food
-		GameRegistry.registerItem(top_bun = new ItemFoodxlfoodmod("top_bun", 3, 0.3F, false), "top_bun");
-		GameRegistry.registerItem(bottom_bun = new ItemFoodxlfoodmod("bottom_bun", 3, 0.3F, false), "bottom_bun");
+		GameRegistry.registerItem(top_bun = new ItemFoodxlfoodmod("top_bun", 2, 0.2F, false), "top_bun");
+		GameRegistry.registerItem(bottom_bun = new ItemFoodxlfoodmod("bottom_bun", 2, 0.2F, false), "bottom_bun");
 		GameRegistry.registerItem(hamburger = new ItemFoodxlfoodmod("hamburger", 8, 0.8F, false), "hamburger");
 		GameRegistry.registerItem(cheeseburger = new ItemFoodxlfoodmod("cheeseburger", 8, 0.8F, false), "cheeseburger");
 		GameRegistry.registerItem(hot_dog = new ItemFoodxlfoodmod("hot_dog", 8, 0.8F, false), "hot_dog");
+		GameRegistry.registerItem(tortilla = new ItemFoodxlfoodmod("tortilla", 3, 0.3F, false), "tortilla");
 		GameRegistry.registerItem(taco = new ItemFoodxlfoodmod("taco", 8, 0.8F, false), "taco");
+		GameRegistry.registerItem(burrito = new ItemFoodxlfoodmod("burrito", 8, 0.8F, false), "burrito");
 		GameRegistry.registerItem(slice_of_pizza = new ItemFoodxlfoodmod("slice_of_pizza", 8, 0.8F, false), "slice_of_pizza");
 		//candy etc.
 		GameRegistry.registerItem(marshmallow = new ItemFoodxlfoodmod("marshmallow", 3, 0.3F, false), "marshmallow");
-	    GameRegistry.registerItem(roasted_marshmallow = new ItemFoodxlfoodmod("roasted_marshmallow", 3, 0.3F, false), "roasted_marshmallow");
+		GameRegistry.registerItem(roasted_marshmallow = new ItemFoodxlfoodmod("roasted_marshmallow", 3, 0.3F, false), "roasted_marshmallow");
 		GameRegistry.registerItem(oreo_cookie = new ItemFoodxlfoodmod("oreo_cookie", 4, 0.3F, false), "oreo_cookie");
 		GameRegistry.registerItem(brownie = new ItemFoodxlfoodmod("brownie", 4, 0.3F, false), "brownie");
 		GameRegistry.registerItem(chocolate_icecream_ball = new Itemxlfoodmod("chocolate_icecream_ball"), "chocolate_icecream_ball");
 		GameRegistry.registerItem(vanilla_icecream_ball = new Itemxlfoodmod("vanilla_icecream_ball"), "vanilla_icecream_ball");
-		GameRegistry.registerItem(strawberry_icecream_ball = new Itemxlfoodmod("strawberry_icecream_ball"), "strawberry_icecream_ball");
+	    GameRegistry.registerItem(strawberry_icecream_ball = new Itemxlfoodmod("strawberry_icecream_ball"), "strawberry_icecream_ball");
 		GameRegistry.registerItem(icecream_cone = new ItemFoodxlfoodmod("icecream_cone", 3, 0.3F, false), "icecream_cone");
 		GameRegistry.registerItem(chocolate_icecream = new ItemFoodxlfoodmod("chocolate_icecream", 4, 0.3F, false), "chocolate_icecream");
 		GameRegistry.registerItem(vanilla_icecream = new ItemFoodxlfoodmod("vanilla_icecream", 4, 0.3F, false), "vanilla_icecream");
@@ -188,6 +195,7 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(chocolate_pie = new ItemFoodxlfoodmod("chocolate_pie", 8, 0.6F, false), "chocolate_pie");
 		GameRegistry.registerItem(bacon_pie = new ItemFoodxlfoodmod("bacon_pie", 8, 0.6F, false), "bacon_pie");
 		GameRegistry.registerItem(fish_pie = new ItemFoodxlfoodmod("fish_pie", 8, 0.6F, false), "fish_pie");
+		GameRegistry.registerItem(strawberry_pie = new ItemFoodxlfoodmod("strawberry_pie", 8, 0.6F, false), "strawberry_pie");
 		//sauces
 		GameRegistry.registerItem(hot_sauce = new Itemxlfoodmod("hot_sauce"), "hot_sauce");
 		GameRegistry.registerItem(chocolate_syrup = new Itemxlfoodmod("chocolate_syrup"), "chocolate_syrup");
@@ -202,9 +210,10 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(deadly_energy_drink = new DeadlyEnergyDrink("deadly_energy_drink", 0, 0.0F, false), "deadly_energy_drink");
 		GameRegistry.registerItem(super_energy_drink = new SuperEnergyDrink("super_energy_drink", 0, 0.0F, false), "super_energy_drink");
 		GameRegistry.registerItem(glass_mug = new Itemxlfoodmod("glass_mug"), "glass_mug");
-		GameRegistry.registerItem(beer = new Beer("beer", 0, 0.0F, false), "beer");
+		GameRegistry.registerItem(beer = new Beer("beer", 2, 0.2F, false), "beer");
 		GameRegistry.registerItem(coffee_cup = new Itemxlfoodmod("coffee_cup"), "coffee_cup");
-		GameRegistry.registerItem(coffee = new Coffee("coffee", 0, 0.0F, false), "coffee");
+		GameRegistry.registerItem(coffee = new Coffee("coffee", 0, 0.1F, false), "coffee");
+		GameRegistry.registerItem(cappuccino = new Cappuccino("cappuccino", 1, 0.1F, false), "cappuccino");
 	}
 
 }
