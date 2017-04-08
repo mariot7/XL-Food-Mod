@@ -33,6 +33,7 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.cheese);
 		regItem(ItemListxlfoodmod.cheese_puff);
 		regItem(ItemListxlfoodmod.chips);
+		regItem(ItemListxlfoodmod.salty_chips);
 		regItem(ItemListxlfoodmod.spicy_chips);
 		regItem(ItemListxlfoodmod.cheesy_bread);
 		regItem(ItemListxlfoodmod.corn_bread);

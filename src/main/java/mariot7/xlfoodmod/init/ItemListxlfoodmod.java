@@ -47,6 +47,7 @@ public class ItemListxlfoodmod {
 	public static Item cheese;
 	public static Item cheese_puff;
 	public static Item chips;
+	public static Item salty_chips;
 	public static Item spicy_chips;
     public static Item cheesy_bread;
     public static Item corn_bread;
@@ -145,6 +146,7 @@ public class ItemListxlfoodmod {
 		GameRegistry.registerItem(cheese = new ItemFoodxlfoodmod("cheese", 3, 0.3F, false), "cheese");
 		GameRegistry.registerItem(cheese_puff = new ItemFoodxlfoodmod("cheese_puff", 4, 0.4F, false), "cheese_puff");
 		GameRegistry.registerItem(chips = new ItemFoodxlfoodmod("chips", 4, 0.4F, false), "chips");
+		GameRegistry.registerItem(salty_chips = new ItemFoodxlfoodmod("salty_chips", 4, 0.5F, false), "salty_chips");
 		GameRegistry.registerItem(spicy_chips = new ItemFoodxlfoodmod("spicy_chips", 4, 0.6F, false), "spicy_chips");
 		GameRegistry.registerItem(cheesy_bread = new ItemFoodxlfoodmod("cheesy_bread", 5, 1.2F, false), "cheesy_bread");
 		GameRegistry.registerItem(corn_bread = new ItemFoodxlfoodmod("corn_bread", 5, 1.2F, false), "corn_bread");

@@ -1,5 +1,7 @@
 package mariot7.xlfoodmod.items;
 
+import java.util.List;
+
 import javax.annotation.Nullable;
 
 import mariot7.xlfoodmod.Main;
@@ -33,6 +35,12 @@ public class StealthyEnergyDrink extends ItemFood{
 		player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 2400, 0));
 		player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 2400, 0));
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
+	}
+	
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva){
+		list.add("Night Vision");
+		list.add("Speed");
+		list.add("Invisibility (2:00)");
 	}
 	
 	@Override

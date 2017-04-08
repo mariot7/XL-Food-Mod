@@ -1,5 +1,7 @@
 package mariot7.xlfoodmod.items;
 
+import java.util.List;
+
 import javax.annotation.Nullable;
 
 import mariot7.xlfoodmod.Main;
@@ -31,6 +33,10 @@ public class DeadlyEnergyDrink extends ItemFood{
 	protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
 		player.addPotionEffect(new PotionEffect(MobEffects.POISON, 1200, 0));
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
+	}
+	
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva){
+		list.add("Poison (1:00)");
 	}
 	
 	@Override

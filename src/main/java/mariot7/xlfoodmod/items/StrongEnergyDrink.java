@@ -1,5 +1,7 @@
 package mariot7.xlfoodmod.items;
 
+import java.util.List;
+
 import javax.annotation.Nullable;
 
 import mariot7.xlfoodmod.Main;
@@ -32,6 +34,11 @@ public class StrongEnergyDrink extends ItemFood{
 		player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 2400, 1));
 		player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 2400, 1));
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
+	}
+	
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva){
+		list.add("Strength II");
+		list.add("Fire Resistance II (2:00)");
 	}
 	
 	@Override

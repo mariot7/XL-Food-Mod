@@ -1,5 +1,7 @@
 package mariot7.xlfoodmod.items;
 
+import java.util.List;
+
 import javax.annotation.Nullable;
 
 import mariot7.xlfoodmod.Main;
@@ -32,6 +34,11 @@ public class SpeedyEnergyDrink extends ItemFood{
 		player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 500, 0));
 		player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 500, 2));
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
+	}
+	
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva){
+		list.add("Speed");
+		list.add("Haste III (0:25)");
 	}
 	
 	@Override
