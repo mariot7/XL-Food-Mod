@@ -8,6 +8,7 @@ public class Corn extends BlockCrops{
 	
 	public Corn(String name) {
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 	}
 	
 	public Item getSeed() {

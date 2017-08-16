@@ -8,6 +8,7 @@ public class Strawberry extends BlockCrops{
 	
 	public Strawberry(String name) {
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 	}
 	
 	public Item getSeed() {

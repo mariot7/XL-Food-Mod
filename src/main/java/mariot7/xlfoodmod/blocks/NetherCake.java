@@ -1,6 +1,7 @@
 package mariot7.xlfoodmod.blocks;
 
 import mariot7.xlfoodmod.Main;
+import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.BlockListxlfoodmod;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -27,8 +28,9 @@ public class NetherCake extends BlockCake{
 		this.setTickRandomly(true);
 		this.setHardness(0.5F);
 		this.setSoundType(SoundType.CLOTH);
-		this.setCreativeTab(Main.tabXLFoodMod);
+		this.setCreativeTab(XLFoodModTab.tabXLFoodMod);
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 	}
 	
 	public void eatCake(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player)

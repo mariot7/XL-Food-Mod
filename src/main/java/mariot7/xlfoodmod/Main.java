@@ -26,13 +26,13 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.guiFactory, updateJSON = Reference.updateJSON)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, updateJSON = Reference.updateJSON)
 public class Main {
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 	public static Configuration config;
-	public static final XLFoodModTab tabXLFoodMod = new XLFoodModTab("tabXLFoodMod");
+	public static final XLFoodModTab tabXLFoodMod = new XLFoodModTab();
 
 	@Mod.Instance(Reference.MOD_ID)
 	public static Main instance;
@@ -70,5 +70,6 @@ public class Main {
     {
 		this.proxy.postInit(postEvent);
     }
+	
+	
 }
-

@@ -5,6 +5,7 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 import mariot7.xlfoodmod.Main;
+import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,13 +18,14 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.stats.StatList;
 import net.minecraft.world.World;
 
-public class DeadlyEnergyDrink extends ItemFood{
+public class DeadlyEnergyDrink extends ItemFood {
 	
 	public DeadlyEnergyDrink(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 		this.setMaxStackSize(1);
-		this.setCreativeTab(Main.tabXLFoodMod);
+		this.setCreativeTab(XLFoodModTab.tabXLFoodMod);
 	}
 	
 	public DeadlyEnergyDrink(int amount, float saturation, boolean isWolfFood) {
@@ -35,7 +37,7 @@ public class DeadlyEnergyDrink extends ItemFood{
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
 	}
 	
-	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva){
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva) {
 		list.add("Poison (1:00)");
 	}
 	

@@ -34,13 +34,13 @@ public class WorldGeneratorxlfoodmod implements IWorldGenerator{
 
 	private void generateNether(World world, Random rand, int blockX, int blockZ) 
 	{
-			
+		
 	}
 
 	private void generateOverworld(World world, Random rand, int blockX, int blockZ) 
 	{
 		WorldGenerator genCookieBushes = new WorldGenxlfoodmod();
-		Biome biome = world.getBiomeGenForCoords(new BlockPos(blockX, 64, blockZ));		
+		Biome biome = world.getBiomeForCoordsBody(new BlockPos(blockX, 64, blockZ));		
 		{
 			int MIN = 0;
 			int MAX = 8;

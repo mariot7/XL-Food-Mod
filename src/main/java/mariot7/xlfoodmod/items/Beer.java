@@ -5,6 +5,7 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 import mariot7.xlfoodmod.Main;
+import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -21,13 +22,14 @@ import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-public class Beer extends ItemFood{
+public class Beer extends ItemFood {
 	
 	public Beer(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 		this.setMaxStackSize(1);
-		this.setCreativeTab(Main.tabXLFoodMod);
+		this.setCreativeTab(XLFoodModTab.tabXLFoodMod);
 	}
 	
 	public Beer(int amount, float saturation, boolean isWolfFood) {
@@ -39,7 +41,7 @@ public class Beer extends ItemFood{
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.glass_mug));
 	}
 	
-	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva){
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva) {
 		list.add("Nauesa II (0:30)");
 	}
 	

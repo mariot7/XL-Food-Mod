@@ -3,6 +3,7 @@ package mariot7.xlfoodmod.items;
 import java.util.List;
 
 import mariot7.xlfoodmod.Main;
+import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -13,13 +14,14 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
-public class HealthyEnergyDrink extends ItemFood{
+public class HealthyEnergyDrink extends ItemFood {
 	
 	public HealthyEnergyDrink(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 		this.setMaxStackSize(1);
-		this.setCreativeTab(Main.tabXLFoodMod);
+		this.setCreativeTab(XLFoodModTab.tabXLFoodMod);
 	}
 	
 	public HealthyEnergyDrink(int amount, float saturation, boolean isWolfFood) {
@@ -31,7 +33,7 @@ public class HealthyEnergyDrink extends ItemFood{
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
 	}
 	
-	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva){
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva) {
 		list.add("Regeneration (0:30)");
 	}
 	

@@ -9,7 +9,8 @@ import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class Craftingxlfoodmod {
 	
-	public static void initRecipes(){
+	public static void initRecipes() {
+		
 		//shaped
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.dough, 8), new Object [] {"WW ","WW "," B ", 'W', Items.WHEAT, 'B', Items.WATER_BUCKET});
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ItemListxlfoodmod.butter, 2), new Object [] {"MMM","MSM","   ", 'M', Items.MILK_BUCKET, 'S', "itemSalt"}));
@@ -20,13 +21,20 @@ public class Craftingxlfoodmod {
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.top_bun), new Object [] {" W ","W W","   ", 'W', Items.WHEAT});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.bottom_bun), new Object [] {"W W"," W ","   ", 'W', Items.WHEAT});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.hamburger), new Object [] {" T ","OGP"," B ", 'T', ItemListxlfoodmod.top_bun, 'O', ItemListxlfoodmod.tomato, 'G', ItemListxlfoodmod.ground_beef, 'P', ItemListxlfoodmod.cucumber, 'B', ItemListxlfoodmod.bottom_bun});
+		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.chickenburger), new Object [] {" T ","HCL"," B ", 'T', ItemListxlfoodmod.top_bun, 'H', ItemListxlfoodmod.hot_sauce, 'C', Items.COOKED_CHICKEN, 'L', ItemListxlfoodmod.lettuce, 'B', ItemListxlfoodmod.bottom_bun});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.cheeseburger), new Object [] {" T ","CGP"," B ", 'T', ItemListxlfoodmod.top_bun, 'P', ItemListxlfoodmod.cucumber, 'G', ItemListxlfoodmod.ground_beef, 'C', ItemListxlfoodmod.cheese, 'B', ItemListxlfoodmod.bottom_bun});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.hot_dog), new Object [] {" C ","CSC"," C ", 'C', ItemListxlfoodmod.cooked_dough, 'S', ItemListxlfoodmod.sausage});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.tortilla), new Object [] {"DDD","DCD","DDD", 'D', ItemListxlfoodmod.cooked_dough, 'C', ItemListxlfoodmod.corn});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.taco), new Object [] {" H ","TGC"," O ", 'H', ItemListxlfoodmod.cheese, 'T', ItemListxlfoodmod.tomato, 'G', ItemListxlfoodmod.ground_beef, 'C', ItemListxlfoodmod.cucumber, 'O', ItemListxlfoodmod.tortilla});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.burrito), new Object [] {" O ","TGC"," O ", 'C', ItemListxlfoodmod.cheese, 'T', ItemListxlfoodmod.tomato, 'G', ItemListxlfoodmod.ground_beef, 'O', ItemListxlfoodmod.tortilla});
+		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.salad_bowl, 2), new Object [] {"   ","I I"," S ", 'I', Items.IRON_INGOT, 'S', Items.STICK});
+		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.garden_salad), new Object [] {" L ","HTC"," S ", 'L', ItemListxlfoodmod.lettuce, 'H', ItemListxlfoodmod.cheese, 'T', ItemListxlfoodmod.tomato, 'C', ItemListxlfoodmod.cucumber, 'S', ItemListxlfoodmod.salad_bowl});
+		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.chicken_salad), new Object [] {" U ","PCE"," S ", 'U', ItemListxlfoodmod.cucumber, 'P', ItemListxlfoodmod.pepper, 'C', Items.COOKED_CHICKEN, 'E', Items.EGG, 'S', ItemListxlfoodmod.salad_bowl});
+		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.caesar_salad), new Object [] {"LP ","HCE"," S ", 'L', ItemListxlfoodmod.lettuce, 'P', ItemListxlfoodmod.pepper_seeds, 'H', ItemListxlfoodmod.cheese, 'C', ItemListxlfoodmod.crouton, 'E', Items.EGG, 'S', ItemListxlfoodmod.salad_bowl});
+		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.taco_salad), new Object [] {" L ","HTO"," S ", 'L', ItemListxlfoodmod.lettuce, 'H', ItemListxlfoodmod.cheese, 'T', ItemListxlfoodmod.tortilla, 'O', ItemListxlfoodmod.tomato, 'S', ItemListxlfoodmod.salad_bowl});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.oreo_cookie), new Object [] {"SCS"," M ","SCS", 'S', ItemListxlfoodmod.chocolate_syrup, 'C', Items.COOKIE, 'M', ItemListxlfoodmod.marshmallow});
-		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.brownie), new Object [] {"CC ","CC ","   ", 'C', ItemListxlfoodmod.chocolate_syrup});
+		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.twinkie), new Object [] {"   ","CVC"," C ", 'C', ItemListxlfoodmod.cooked_dough, 'V', ItemListxlfoodmod.vanilla_cream});
+		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.chocolate), new Object [] {"CCC","CDC","CCC", 'C', ItemListxlfoodmod.chocolate_syrup, 'D', new ItemStack(Items.DYE, 1, 3)});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.icecream_cone), new Object [] {"W W","W W"," W ", 'W', Items.WHEAT});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.crescent_roll), new Object [] {"D D"," D ","   ", 'D', ItemListxlfoodmod.cooked_dough});
 		GameRegistry.addRecipe(new ItemStack(ItemListxlfoodmod.donut, 4), new Object [] {"CCC","C C","CCC", 'C', ItemListxlfoodmod.cooked_dough});
@@ -54,8 +62,11 @@ public class Craftingxlfoodmod {
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.pepper_seeds), new Object [] {ItemListxlfoodmod.pepper});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.corn_seeds), new Object [] {ItemListxlfoodmod.raw_corn});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.cucumber_seeds), new Object [] {ItemListxlfoodmod.cucumber});
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.lettuce_seeds), new Object [] {ItemListxlfoodmod.lettuce});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.tomato_seeds), new Object [] {ItemListxlfoodmod.tomato});
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.strawberry_seeds), new Object [] {ItemListxlfoodmod.strawberry});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.butter_rice), new Object [] {ItemListxlfoodmod.rice, ItemListxlfoodmod.butter});
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.crouton, 4), new Object [] {Items.BREAD, ItemListxlfoodmod.butter});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.cheesy_bread), new Object [] {Items.BREAD, ItemListxlfoodmod.cheese});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.corn_bread), new Object [] {Items.BREAD, ItemListxlfoodmod.corn});
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ItemListxlfoodmod.chips, 8), new Object [] {ItemListxlfoodmod.cooked_dough, "itemSalt"}));
@@ -69,6 +80,7 @@ public class Craftingxlfoodmod {
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.spicy_chicken_wing), new Object [] {ItemListxlfoodmod.cooked_chicken_wing, ItemListxlfoodmod.hot_sauce});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.bucket_of_fried_chicken), new Object [] {Items.BUCKET, Items.COOKED_CHICKEN});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.slice_of_pizza, 2), new Object [] {BlockListxlfoodmod.pizza});
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.brownie), new Object [] {ItemListxlfoodmod.chocolate, ItemListxlfoodmod.chocolate_syrup});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.chocolate_icecream_ball), new Object [] {new ItemStack(Items.DYE, 1, 3), ItemListxlfoodmod.vanilla_cream, Items.SNOWBALL, Items.MILK_BUCKET});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.vanilla_icecream_ball), new Object [] {ItemListxlfoodmod.vanilla_cream, Items.SNOWBALL, Items.MILK_BUCKET});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.strawberry_icecream_ball), new Object [] {ItemListxlfoodmod.strawberry, Items.SNOWBALL, Items.MILK_BUCKET});
@@ -81,7 +93,7 @@ public class Craftingxlfoodmod {
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.golden_apple_pie), new Object [] {ItemListxlfoodmod.pie_shell, Items.GOLDEN_APPLE});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.cheese_pie), new Object [] {ItemListxlfoodmod.pie_shell, ItemListxlfoodmod.cheese});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.chicken_pot_pie), new Object [] {ItemListxlfoodmod.pie_shell, Items.COOKED_CHICKEN});
-		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.chocolate_pie), new Object [] {ItemListxlfoodmod.pie_shell, ItemListxlfoodmod.chocolate_syrup});
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.chocolate_pie), new Object [] {ItemListxlfoodmod.pie_shell, ItemListxlfoodmod.chocolate, ItemListxlfoodmod.chocolate_syrup});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.bacon_pie), new Object [] {ItemListxlfoodmod.pie_shell, ItemListxlfoodmod.bacon});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.fish_pie), new Object [] {ItemListxlfoodmod.pie_shell, Items.COOKED_FISH});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.strawberry_pie), new Object [] {ItemListxlfoodmod.pie_shell, ItemListxlfoodmod.strawberry});
@@ -90,7 +102,7 @@ public class Craftingxlfoodmod {
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.coffee), new Object [] {ItemListxlfoodmod.coffee_cup, new ItemStack(Items.DYE, 1, 3)});
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemListxlfoodmod.cappuccino), new Object [] {ItemListxlfoodmod.coffee, Items.MILK_BUCKET});
 		
-
 		}
+	
 
 }

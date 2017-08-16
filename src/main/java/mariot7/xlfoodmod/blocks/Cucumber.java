@@ -8,6 +8,7 @@ public class Cucumber extends BlockCrops{
 	
 	public Cucumber(String name) {
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 	}
 	
 	public Item getSeed() {

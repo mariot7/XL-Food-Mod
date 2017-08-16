@@ -8,6 +8,7 @@ public class Rice extends BlockCrops{
 	
 	public Rice(String name) {
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 	}
 	
 	public Item getSeed() {

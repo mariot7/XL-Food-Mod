@@ -21,6 +21,8 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.corn);
 		regItem(ItemListxlfoodmod.cucumber_seeds);
 		regItem(ItemListxlfoodmod.cucumber);
+		regItem(ItemListxlfoodmod.lettuce_seeds);
+		regItem(ItemListxlfoodmod.lettuce);
 		regItem(ItemListxlfoodmod.tomato_seeds);
 		regItem(ItemListxlfoodmod.tomato);
 		regItem(ItemListxlfoodmod.strawberry_seeds);
@@ -29,6 +31,7 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.salt);
 		regItem(ItemListxlfoodmod.dough);
 		regItem(ItemListxlfoodmod.cooked_dough);
+		regItem(ItemListxlfoodmod.crouton);
 		regItem(ItemListxlfoodmod.butter);
 		regItem(ItemListxlfoodmod.cheese);
 		regItem(ItemListxlfoodmod.cheese_puff);
@@ -53,17 +56,26 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.top_bun);
 		regItem(ItemListxlfoodmod.bottom_bun);
 		regItem(ItemListxlfoodmod.hamburger);
+		regItem(ItemListxlfoodmod.chickenburger);
 		regItem(ItemListxlfoodmod.cheeseburger);
 		regItem(ItemListxlfoodmod.hot_dog);
 		regItem(ItemListxlfoodmod.tortilla);
 		regItem(ItemListxlfoodmod.taco);
 		regItem(ItemListxlfoodmod.burrito);
 		regItem(ItemListxlfoodmod.slice_of_pizza);
+		//salad
+		regItem(ItemListxlfoodmod.salad_bowl);
+		regItem(ItemListxlfoodmod.garden_salad);
+		regItem(ItemListxlfoodmod.chicken_salad);
+		regItem(ItemListxlfoodmod.caesar_salad);
+		regItem(ItemListxlfoodmod.taco_salad);
 		//candy etc.
 		regItem(ItemListxlfoodmod.marshmallow);
 		regItem(ItemListxlfoodmod.roasted_marshmallow);
 		regItem(ItemListxlfoodmod.oreo_cookie);
+		regItem(ItemListxlfoodmod.twinkie);
 		regItem(ItemListxlfoodmod.brownie);
+		regItem(ItemListxlfoodmod.chocolate);
 		regItem(ItemListxlfoodmod.chocolate_icecream_ball);
 		regItem(ItemListxlfoodmod.vanilla_icecream_ball);
 		regItem(ItemListxlfoodmod.strawberry_icecream_ball);

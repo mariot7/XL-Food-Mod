@@ -8,6 +8,7 @@ public class Tomato extends BlockCrops{
 	
 	public Tomato(String name) {
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 	}
 	
 	public Item getSeed() {

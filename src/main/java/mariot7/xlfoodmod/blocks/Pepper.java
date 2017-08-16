@@ -8,6 +8,7 @@ public class Pepper extends BlockCrops{
 	
 	public Pepper(String name) {
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 	}
 	
 	public Item getSeed() {
