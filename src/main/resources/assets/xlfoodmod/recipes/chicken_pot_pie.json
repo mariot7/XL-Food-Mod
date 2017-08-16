@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+        {        
+            "item": "xlfoodmod:pie_shell"
+        },
+        {        
+            "item": "minecraft:cooked_chicken"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:chicken_pot_pie"
+	}
+}

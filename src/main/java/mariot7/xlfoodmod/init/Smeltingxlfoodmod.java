@@ -6,7 +6,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Smeltingxlfoodmod {
-	public static void initSmelting(){
+	
+	public static void initSmelting() {
 		
 		GameRegistry.addSmelting(ItemListxlfoodmod.rice, new ItemStack(ItemListxlfoodmod.fried_rice), 0);
 		GameRegistry.addSmelting(ItemListxlfoodmod.raw_corn, new ItemStack(ItemListxlfoodmod.corn), 0);
@@ -21,5 +22,6 @@ public class Smeltingxlfoodmod {
 		GameRegistry.addSmelting(new ItemStack(Items.DYE, 1, 3), new ItemStack(ItemListxlfoodmod.chocolate_syrup), 0);
 		
 	}
+	
 
 }

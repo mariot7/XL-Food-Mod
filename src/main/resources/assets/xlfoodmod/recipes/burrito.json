@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" O ",
+		"TGC",
+		" O "
+	],
+	"key": {
+		"C": {
+			"item": "xlfoodmod:cheese"
+		},
+		"T": {
+			"item": "xlfoodmod:tomato"
+		},
+	     "G": {
+			"item": "xlfoodmod:ground_beef"
+		},
+	     "O": {
+			"item": "xlfoodmod:tortilla"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:burrito"
+	}
+}

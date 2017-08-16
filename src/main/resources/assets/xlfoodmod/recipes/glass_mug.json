@@ -1,0 +1,17 @@
+{
+	"type": "forge:ore_shaped",
+	"pattern": [
+		"GG ",
+		"GGG",
+		"GG "
+	],
+	"key": {
+		"G": {
+                "type": "forge:ore_dict",
+			"ore": "blockGlass"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:glass_mug", "count": 2
+	}
+}

@@ -2,8 +2,12 @@ package mariot7.xlfoodmod.items;
 
 import java.util.List;
 
+import javax.annotation.Nullable;
+
 import mariot7.xlfoodmod.Main;
+import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.EnumAction;
@@ -12,27 +16,38 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class HealthyEnergyDrink extends ItemFood{
+public class HealthyEnergyDrink extends ItemFood {
+	
+	protected String name;
 	
 	public HealthyEnergyDrink(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
-		this.setUnlocalizedName(name);
 		this.setMaxStackSize(1);
-		this.setCreativeTab(Main.tabXLFoodMod);
+		this.setCreativeTab(XLFoodModTab.tabXLFoodMod);
+		this.name = name;
+		setUnlocalizedName(name);
+		setRegistryName(name);
 	}
 	
 	public HealthyEnergyDrink(int amount, float saturation, boolean isWolfFood) {
         super(amount, saturation, isWolfFood);
     }
 	
+	public void registerItemModel() {
+		Main.proxy.registerItemRenderer(this, 0, name);
+	}
+	
 	protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
 		player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 600, 0));
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
 	}
 	
-	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva){
-		list.add("Regeneration (0:30)");
+	@SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+		tooltip.add("Regeneration (0:30)");
 	}
 	
 	@Override

@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		"CCC",
+		"   "
+	],
+	"key": {
+		"C": {
+			"item": "xlfoodmod:cooked_dough"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:pancake"
+	}
+}

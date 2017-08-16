@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+        {        
+            "item": "xlfoodmod:coffee_cup"
+        },
+        {        
+            "item": "minecraft:dye",
+            "data": 3
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:coffee"
+	}
+}

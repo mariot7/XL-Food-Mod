@@ -1,7 +1,9 @@
 package mariot7.xlfoodmod.init;
 
+import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.Reference;
 import mariot7.xlfoodmod.blocks.Grass;
+import mariot7.xlfoodmod.blocks.Lettuce;
 import mariot7.xlfoodmod.blocks.NetherCake;
 import mariot7.xlfoodmod.blocks.OreoCake;
 import mariot7.xlfoodmod.blocks.CheeseCake;
@@ -20,43 +22,96 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.RegistryEvent.Register;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.registries.IForgeRegistry;
 
 public class BlockListxlfoodmod {
 	
-	public static Block rock_salt;
-	public static Block grass;
-	public static Block vanilla_flower;
-	public static Block rice_plant;
-	public static Block pepper_plant;
-	public static Block corn_plant;
-	public static Block cucumber_plant;
-	public static Block tomato_plant;
-	public static Block strawberry_plant;
-	public static Block chocolate_cake;
-	public static Block oreo_cake;
-	public static Block cheese_cake;
-	public static Block nether_cake;
-	public static Block strawberry_cake;
-	public static Block pizza;
-
-	public static void initBlocks()
-	{
-		GameRegistry.registerBlock(rock_salt = new RockSalt("rock_salt", Material.GRASS), "rock_salt");
-		GameRegistry.registerBlock(grass = new Grass("grass", Material.GRASS, 0, 0), "grass");
-		GameRegistry.registerBlock(vanilla_flower = new VanillaFlower("vanilla_flower", Material.GRASS, 0, 0), "vanilla_flower");
-		GameRegistry.registerBlock(rice_plant = new Rice("rice_plant"), "rice_plant");
-		GameRegistry.registerBlock(pepper_plant = new Pepper("pepper_plant"), "pepper_plant");
-		GameRegistry.registerBlock(corn_plant = new Corn("corn_plant"), "corn_plant");
-		GameRegistry.registerBlock(cucumber_plant = new Cucumber("cucumber_plant"), "cucumber_plant");
-		GameRegistry.registerBlock(tomato_plant = new Tomato("tomato_plant"), "tomato_plant");
-		GameRegistry.registerBlock(strawberry_plant = new Strawberry("strawberry_plant"), "strawberry_plant");
-		GameRegistry.registerBlock(chocolate_cake = new ChocolateCake("chocolate_cake", 14, 0.2F), "chocolate_cake");
-		GameRegistry.registerBlock(oreo_cake = new OreoCake("oreo_cake", 14, 0.2F), "oreo_cake");
-		GameRegistry.registerBlock(cheese_cake = new CheeseCake("cheese_cake", 14, 0.2F), "cheese_cake");
-		GameRegistry.registerBlock(nether_cake = new NetherCake("nether_cake", 14, 0.2F), "nether_cake");
-		GameRegistry.registerBlock(strawberry_cake = new StrawberryCake("strawberry_cake", 14, 0.2F), "strawberry_cake");
-		GameRegistry.registerBlock(pizza = new Pizza("pizza", 14, 0.2F), "pizza");
+	public static RockSalt rock_salt = new RockSalt("rock_salt", Material.ROCK);
+	public static Grass grass = new Grass("grass", Material.GRASS, 0, 0);
+	public static VanillaFlower vanilla_flower = new VanillaFlower("vanilla_flower", Material.GRASS, 0, 0);
+	public static Rice rice_plant = new Rice("rice_plant");
+	public static Pepper pepper_plant = new Pepper("pepper_plant");
+	public static Corn corn_plant = new Corn("corn_plant");
+	public static Cucumber cucumber_plant = new Cucumber("cucumber_plant");
+	public static Lettuce lettuce_plant = new Lettuce("lettuce_plant");
+	public static Tomato tomato_plant = new Tomato("tomato_plant");
+	public static Strawberry strawberry_plant = new Strawberry("strawberry_plant");
+	public static ChocolateCake chocolate_cake = new ChocolateCake("chocolate_cake", 14, 2.8F);
+	public static OreoCake oreo_cake = new OreoCake("oreo_cake", 14, 2.8F);
+	public static CheeseCake cheese_cake = new CheeseCake("cheese_cake", 14, 2.8F);
+	public static NetherCake nether_cake = new NetherCake("nether_cake", 14, 2.8F);
+	public static StrawberryCake strawberry_cake = new StrawberryCake("strawberry_cake", 14, 2.8F);
+	public static Pizza pizza = new Pizza("pizza", 14, 2.8F);
+	
+	
+	public static void register(IForgeRegistry<Block> registry) {
+		
+		registry.registerAll(rock_salt);
+		registry.registerAll(grass);
+		registry.registerAll(vanilla_flower);
+		registry.registerAll(rice_plant);
+		registry.registerAll(pepper_plant);
+		registry.registerAll(corn_plant);
+		registry.registerAll(cucumber_plant);
+		registry.registerAll(lettuce_plant);
+		registry.registerAll(tomato_plant);
+		registry.registerAll(strawberry_plant);
+		registry.registerAll(chocolate_cake);
+		registry.registerAll(oreo_cake);
+		registry.registerAll(cheese_cake);
+		registry.registerAll(nether_cake);
+		registry.registerAll(strawberry_cake);
+		registry.registerAll(pizza);
+		
 	}
 
+	public static void registerItemBlocks(IForgeRegistry<Item> registry) {
+		
+		registry.register(rock_salt.createItemBlock());
+		registry.register(grass.createItemBlock());
+		registry.register(vanilla_flower.createItemBlock());
+		registry.register(rice_plant.createItemBlock());
+		registry.register(pepper_plant.createItemBlock());
+		registry.register(corn_plant.createItemBlock());
+		registry.register(cucumber_plant.createItemBlock());
+		registry.register(lettuce_plant.createItemBlock());
+		registry.register(tomato_plant.createItemBlock());
+		registry.register(strawberry_plant.createItemBlock());
+		registry.register(chocolate_cake.createItemBlock());
+		registry.register(oreo_cake.createItemBlock());
+		registry.register(cheese_cake.createItemBlock());
+		registry.register(nether_cake.createItemBlock());
+		registry.register(strawberry_cake.createItemBlock());
+		registry.register(pizza.createItemBlock());
+		
+	}
+
+	public static void registerModels() {
+		
+		rock_salt.registerItemModel(Item.getItemFromBlock(rock_salt));
+		grass.registerItemModel(Item.getItemFromBlock(grass));
+		vanilla_flower.registerItemModel(Item.getItemFromBlock(vanilla_flower));
+		rice_plant.registerItemModel(Item.getItemFromBlock(rice_plant));
+		pepper_plant.registerItemModel(Item.getItemFromBlock(pepper_plant));
+		corn_plant.registerItemModel(Item.getItemFromBlock(corn_plant));
+		cucumber_plant.registerItemModel(Item.getItemFromBlock(cucumber_plant));
+		lettuce_plant.registerItemModel(Item.getItemFromBlock(lettuce_plant));
+		tomato_plant.registerItemModel(Item.getItemFromBlock(tomato_plant));
+		strawberry_plant.registerItemModel(Item.getItemFromBlock(strawberry_plant));
+		chocolate_cake.registerItemModel(Item.getItemFromBlock(chocolate_cake));
+		oreo_cake.registerItemModel(Item.getItemFromBlock(oreo_cake));
+		cheese_cake.registerItemModel(Item.getItemFromBlock(cheese_cake));
+		nether_cake.registerItemModel(Item.getItemFromBlock(nether_cake));
+		strawberry_cake.registerItemModel(Item.getItemFromBlock(strawberry_cake));
+		pizza.registerItemModel(Item.getItemFromBlock(pizza));
+	
+	}
+	     
+	
 }

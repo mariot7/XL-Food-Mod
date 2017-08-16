@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" T ",
+		"CGP",
+		" B "
+	],
+	"key": {
+		"T": {
+			"item": "xlfoodmod:top_bun"
+		},
+		"P": {
+			"item": "xlfoodmod:cucumber"
+		},
+           "G": {
+			"item": "xlfoodmod:ground_beef"
+		},
+	      "C": {
+			"item": "xlfoodmod:cheese"
+		},
+	      "B": {
+			"item": "xlfoodmod:bottom_bun"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:cheeseburger"
+	}
+}

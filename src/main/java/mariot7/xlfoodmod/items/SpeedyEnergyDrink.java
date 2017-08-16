@@ -5,7 +5,9 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 import mariot7.xlfoodmod.Main;
+import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -16,19 +18,29 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.stats.StatList;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class SpeedyEnergyDrink extends ItemFood{
+public class SpeedyEnergyDrink extends ItemFood {
+	
+	protected String name;
 	
 	public SpeedyEnergyDrink(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
-		this.setUnlocalizedName(name);
 		this.setMaxStackSize(1);
-		this.setCreativeTab(Main.tabXLFoodMod);
+		this.setCreativeTab(XLFoodModTab.tabXLFoodMod);
+		this.name = name;
+		setUnlocalizedName(name);
+		setRegistryName(name);
 	}
 	
 	public SpeedyEnergyDrink(int amount, float saturation, boolean isWolfFood) {
         super(amount, saturation, isWolfFood);
     }
+	
+	public void registerItemModel() {
+		Main.proxy.registerItemRenderer(this, 0, name);
+	}
 	
 	protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
 		player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 500, 0));
@@ -36,9 +48,10 @@ public class SpeedyEnergyDrink extends ItemFood{
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
 	}
 	
-	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva){
-		list.add("Speed");
-		list.add("Haste III (0:25)");
+	@SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+		tooltip.add("Speed");
+		tooltip.add("Haste III (0:25)");
 	}
 	
 	@Override

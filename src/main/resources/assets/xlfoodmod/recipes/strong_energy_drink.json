@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"RE ",
+		"WM ",
+		"B  "
+	],
+	"key": {
+           "R": {
+			"item": "xlfoodmod:rice"
+		},
+           "E": {
+			"item": "xlfoodmod:empty_can"
+		},
+           "W": {
+			"item": "minecraft:water_bucket"
+		},
+           "M": {
+			"item": "minecraft:magma_cream"
+		},
+           "B": {
+			"item": "minecraft:blaze_powder"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:strong_energy_drink"
+	}
+}

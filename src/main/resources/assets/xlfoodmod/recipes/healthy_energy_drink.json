@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"GR ",
+		"EW ",
+		"L  "
+	],
+	"key": {
+		"G": {
+			"item": "minecraft:ghast_tear"
+		},
+           "R": {
+			"item": "xlfoodmod:rice"
+		},
+           "E": {
+			"item": "xlfoodmod:empty_can"
+		},
+           "W": {
+			"item": "minecraft:water_bucket"
+		},
+           "L": {
+			"item": "minecraft:speckled_melon"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:healthy_energy_drink"
+	}
+}

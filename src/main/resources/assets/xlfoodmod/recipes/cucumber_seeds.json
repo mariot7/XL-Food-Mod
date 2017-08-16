@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+        {        
+            "item": "xlfoodmod:cucumber"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:cucumber_seeds"
+	}
+}

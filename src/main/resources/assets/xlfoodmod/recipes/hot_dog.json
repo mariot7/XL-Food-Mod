@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" C ",
+		"CSC",
+		" C "
+	],
+	"key": {
+		"C": {
+			"item": "xlfoodmod:cooked_dough"
+		},
+		"S": {
+			"item": "xlfoodmod:sausage"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:hot_dog"
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SR ",
+		"EW ",
+		"   "
+	],
+	"key": {
+		"S": {
+			"item": "minecraft:sugar"
+		},
+           "R": {
+			"item": "xlfoodmod:rice"
+		},
+           "E": {
+			"item": "xlfoodmod:empty_can"
+		},
+           "W": {
+			"item": "minecraft:water_bucket"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:speedy_energy_drink"
+	}
+}

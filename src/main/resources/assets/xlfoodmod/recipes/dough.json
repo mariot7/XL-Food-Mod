@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"WW ",
+		"WW ",
+		" B "
+	],
+	"key": {
+		"W": {
+			"item": "minecraft:wheat"
+		},
+		"B": {
+			"item": "minecraft:water_bucket"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:dough", "count": 8
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+        {        
+            "item": "xlfoodmod:cooked_chicken_wing"
+        },
+        {        
+            "item": "xlfoodmod:hot_sauce"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:spicy_chicken_wing"
+	}
+}

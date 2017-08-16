@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"MM ",
+		"MM ",
+		"MM "
+	],
+	"key": {
+		"M": {
+			"item": "minecraft:milk_bucket"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:cheese", "count": 4
+	}
+}

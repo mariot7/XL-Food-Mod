@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" T ",
+		"OGP",
+		" B "
+	],
+	"key": {
+		"T": {
+			"item": "xlfoodmod:top_bun"
+		},
+		"O": {
+			"item": "xlfoodmod:tomato"
+		},
+           "G": {
+			"item": "xlfoodmod:ground_beef"
+		},
+	      "P": {
+			"item": "xlfoodmod:cucumber"
+		},
+	      "B": {
+			"item": "xlfoodmod:bottom_bun"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:hamburger"
+	}
+}

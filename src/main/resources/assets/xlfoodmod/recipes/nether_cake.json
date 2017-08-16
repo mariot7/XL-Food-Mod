@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"MMM",
+		"SBS",
+		"WWW"
+	],
+	"key": {
+		"M": {
+			"item": "minecraft:milk_bucket"
+		},
+           "S": {
+			"item": "minecraft:sugar"
+		},
+           "B": {
+			"item": "minecraft:blaze_powder"
+		},
+           "W": {
+			"item": "minecraft:wheat"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:nether_cake"
+	}
+}

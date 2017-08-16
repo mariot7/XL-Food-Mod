@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+        {        
+            "item": "minecraft:dye",
+            "data": 3
+        },
+        {        
+            "item": "xlfoodmod:vanilla_cream"
+        },
+        {        
+            "item": "minecraft:snowball"
+        },
+        {        
+            "item": "minecraft:milk_bucket"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:chocolate_icecream_ball"
+	}
+}

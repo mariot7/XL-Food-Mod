@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"RE ",
+		"WF ",
+		"S  "
+	],
+	"key": {
+           "R": {
+			"item": "xlfoodmod:rice"
+		},
+           "E": {
+			"item": "xlfoodmod:empty_can"
+		},
+           "W": {
+			"item": "minecraft:water_bucket"
+		},
+           "F": {
+			"item": "minecraft:fermented_spider_eye"
+		},
+           "S": {
+			"item": "minecraft:spider_eye"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:deadly_energy_drink"
+	}
+}

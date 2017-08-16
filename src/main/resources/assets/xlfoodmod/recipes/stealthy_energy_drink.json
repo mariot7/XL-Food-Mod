@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"RE ",
+		"WS ",
+		"G  "
+	],
+	"key": {
+           "R": {
+			"item": "xlfoodmod:rice"
+		},
+           "E": {
+			"item": "xlfoodmod:empty_can"
+		},
+           "W": {
+			"item": "minecraft:water_bucket"
+		},
+           "S": {
+			"item": "minecraft:sugar"
+		},
+           "G": {
+			"item": "minecraft:golden_carrot"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:stealthy_energy_drink"
+	}
+}

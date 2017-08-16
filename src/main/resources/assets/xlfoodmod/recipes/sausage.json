@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C  ",
+		" C ",
+		"  C"
+	],
+	"key": {
+		"C": {
+			"item": "minecraft:cooked_porkchop"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:sausage", "count": 3
+	}
+}

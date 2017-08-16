@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"MMM",
+		"SOS",
+		"WWW"
+	],
+	"key": {
+		"M": {
+			"item": "minecraft:milk_bucket"
+		},
+           "S": {
+			"item": "minecraft:sugar"
+		},
+           "O": {
+			"item": "xlfoodmod:oreo_cookie"
+		},
+           "W": {
+			"item": "minecraft:wheat"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:oreo_cake"
+	}
+}

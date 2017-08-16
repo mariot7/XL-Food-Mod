@@ -2,16 +2,20 @@ package mariot7.xlfoodmod.blocks;
 
 import java.util.Random;
 import javax.annotation.Nullable;
+
+import mariot7.xlfoodmod.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
+import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateBase;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
 import net.minecraft.util.BlockRenderLayer;
@@ -24,9 +28,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockCake extends Block{
+public class BlockCake extends Block {
 	
-    public static final PropertyInteger BITES = PropertyInteger.create("bites", 0, 6);
+	public static final PropertyInteger BITES = PropertyInteger.create("bites", 0, 6);
     protected static final AxisAlignedBB[] CAKE_AABB = new AxisAlignedBB[] {new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 0.5D, 0.9375D), new AxisAlignedBB(0.1875D, 0.0D, 0.0625D, 0.9375D, 0.5D, 0.9375D), new AxisAlignedBB(0.3125D, 0.0D, 0.0625D, 0.9375D, 0.5D, 0.9375D), new AxisAlignedBB(0.4375D, 0.0D, 0.0625D, 0.9375D, 0.5D, 0.9375D), new AxisAlignedBB(0.5625D, 0.0D, 0.0625D, 0.9375D, 0.5D, 0.9375D), new AxisAlignedBB(0.6875D, 0.0D, 0.0625D, 0.9375D, 0.5D, 0.9375D), new AxisAlignedBB(0.8125D, 0.0D, 0.0625D, 0.9375D, 0.5D, 0.9375D)};
 
     protected BlockCake()
@@ -41,12 +45,6 @@ public class BlockCake extends Block{
         return CAKE_AABB[((Integer)state.getValue(BITES)).intValue()];
     }
 
-    @SideOnly(Side.CLIENT)
-    public AxisAlignedBB getSelectedBoundingBox(IBlockState state, World worldIn, BlockPos pos)
-    {
-        return state.getCollisionBoundingBox(worldIn, pos);
-    }
-
     public boolean isFullCube(IBlockState state)
     {
         return false;
@@ -57,15 +55,26 @@ public class BlockCake extends Block{
         return false;
     }
 
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
-        this.eatCake(worldIn, pos, state, playerIn);
-        return true;
+        if (!worldIn.isRemote)
+        {
+            return this.eatCake(worldIn, pos, state, playerIn);
+        }
+        else
+        {
+            ItemStack itemstack = playerIn.getHeldItem(hand);
+            return this.eatCake(worldIn, pos, state, playerIn) || itemstack.isEmpty();
+        }
     }
 
-    private void eatCake(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player)
+    private boolean eatCake(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player)
     {
-        if (player.canEat(false))
+        if (!player.canEat(false))
+        {
+            return false;
+        }
+        else
         {
             player.addStat(StatList.CAKE_SLICES_EATEN);
             player.getFoodStats().addStats(2, 0.1F);
@@ -79,6 +88,8 @@ public class BlockCake extends Block{
             {
                 worldIn.setBlockToAir(pos);
             }
+
+            return true;
         }
     }
 
@@ -87,7 +98,7 @@ public class BlockCake extends Block{
         return super.canPlaceBlockAt(worldIn, pos) ? this.canBlockStay(worldIn, pos) : false;
     }
 
-    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn)
+    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
     {
         if (!this.canBlockStay(worldIn, pos))
         {
@@ -105,10 +116,14 @@ public class BlockCake extends Block{
         return 0;
     }
 
-    @Nullable
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return null;
+        return Items.AIR;
+    }
+
+    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
+    {
+        return new ItemStack(Items.CAKE);
     }
 
     public IBlockState getStateFromMeta(int meta)
@@ -142,5 +157,10 @@ public class BlockCake extends Block{
         return true;
     }
 
+    public BlockFaceShape getBlockFaceShape(IBlockAccess p_193383_1_, IBlockState p_193383_2_, BlockPos p_193383_3_, EnumFacing p_193383_4_)
+    {
+        return BlockFaceShape.UNDEFINED;
+    }
+    
     
 }

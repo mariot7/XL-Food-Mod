@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" L ",
+		"HTC",
+		" S "
+	],
+	"key": {
+		"L": {
+			"item": "xlfoodmod:lettuce"
+		},
+		"H": {
+			"item": "xlfoodmod:cheese"
+		},
+           "T": {
+			"item": "xlfoodmod:tomato"
+		},
+	      "C": {
+			"item": "xlfoodmod:cucumber"
+		},
+	      "S": {
+			"item": "xlfoodmod:salad_bowl"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:garden_salad"
+	}
+}

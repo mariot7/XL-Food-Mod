@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" R ",
+		" F ",
+		" G "
+	],
+	"key": {
+		"R": {
+			"item": "xlfoodmod:rice"
+		},
+           "F": {
+			"item": "minecraft:fermented_spider_eye"
+		},
+           "G": {
+			"item": "xlfoodmod:glass_mug"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:beer"
+	}
+}

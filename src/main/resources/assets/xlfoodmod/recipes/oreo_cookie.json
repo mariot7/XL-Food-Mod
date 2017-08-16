@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SCS",
+		" M ",
+		"SCS"
+	],
+	"key": {
+		"S": {
+			"item": "xlfoodmod:chocolate_syrup"
+		},
+           "C": {
+			"item": "minecraft:cookie"
+		},
+           "M": {
+			"item": "xlfoodmod:marshmallow"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:oreo_cookie"
+	}
+}

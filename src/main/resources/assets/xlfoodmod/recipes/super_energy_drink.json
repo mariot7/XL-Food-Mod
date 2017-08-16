@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SH ",
+		"PT ",
+		"D  "
+	],
+	"key": {
+           "S": {
+			"item": "xlfoodmod:stealthy_energy_drink"
+		},
+           "H": {
+			"item": "xlfoodmod:healthy_energy_drink"
+		},
+           "P": {
+			"item": "xlfoodmod:speedy_energy_drink"
+		},
+           "T": {
+			"item": "xlfoodmod:strong_energy_drink"
+		},
+           "D": {
+			"item": "minecraft:diamond"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:super_energy_drink"
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" T ",
+		"HCL",
+		" B "
+	],
+	"key": {
+		"T": {
+			"item": "xlfoodmod:top_bun"
+		},
+		"H": {
+			"item": "xlfoodmod:hot_sauce"
+		},
+           "C": {
+			"item": "minecraft:cooked_chicken"
+		},
+	      "L": {
+			"item": "xlfoodmod:lettuce"
+		},
+	      "B": {
+			"item": "xlfoodmod:bottom_bun"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:chickenburger"
+	}
+}

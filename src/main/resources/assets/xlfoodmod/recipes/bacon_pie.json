@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+        {        
+            "item": "xlfoodmod:pie_shell"
+        },
+        {        
+            "item": "xlfoodmod:bacon"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:bacon_pie"
+	}
+}

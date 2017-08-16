@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+        {        
+            "item": "xlfoodmod:chocolate_syrup"
+        },
+        {        
+            "item": "xlfoodmod:donut"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:chocolate_donut"
+	}
+}

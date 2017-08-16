@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+        {        
+            "item": "xlfoodmod:rice"
+        },
+        {        
+            "item": "xlfoodmod:butter"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:butter_rice"
+	}
+}

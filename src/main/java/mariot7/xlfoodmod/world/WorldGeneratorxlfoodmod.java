@@ -1,15 +1,14 @@
 package mariot7.xlfoodmod.world;
 
 import java.util.Random;
-
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeCache;
-import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
@@ -34,13 +33,13 @@ public class WorldGeneratorxlfoodmod implements IWorldGenerator{
 
 	private void generateNether(World world, Random rand, int blockX, int blockZ) 
 	{
-			
+		
 	}
 
 	private void generateOverworld(World world, Random rand, int blockX, int blockZ) 
 	{
 		WorldGenerator genCookieBushes = new WorldGenxlfoodmod();
-		Biome biome = world.getBiomeGenForCoords(new BlockPos(blockX, 64, blockZ));		
+		Biome biome = world.getBiomeForCoordsBody(new BlockPos(blockX, 64, blockZ));		
 		{
 			int MIN = 0;
 			int MAX = 8;
@@ -71,5 +70,6 @@ public class WorldGeneratorxlfoodmod implements IWorldGenerator{
 
 		return y;
 	}
+	
 
 }

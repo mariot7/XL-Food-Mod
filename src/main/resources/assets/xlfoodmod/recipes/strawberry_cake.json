@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"MMM",
+		"STS",
+		"WWW"
+	],
+	"key": {
+		"M": {
+			"item": "minecraft:milk_bucket"
+		},
+           "S": {
+			"item": "minecraft:sugar"
+		},
+           "T": {
+			"item": "xlfoodmod:strawberry"
+		},
+           "W": {
+			"item": "minecraft:wheat"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:strawberry_cake"
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"LP ",
+		"HCE",
+		" S "
+	],
+	"key": {
+		"L": {
+			"item": "xlfoodmod:lettuce"
+		},
+		"P": {
+			"item": "xlfoodmod:pepper_seeds"
+		},
+           "H": {
+			"item": "xlfoodmod:cheese"
+		},
+	      "C": {
+			"item": "xlfoodmod:crouton"
+		},
+           "E": {
+			"item": "minecraft:egg"
+		},
+	      "S": {
+			"item": "xlfoodmod:salad_bowl"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:caesar_salad"
+	}
+}

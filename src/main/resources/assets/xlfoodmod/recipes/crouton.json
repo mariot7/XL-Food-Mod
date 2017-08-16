@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+        {        
+            "item": "minecraft:bread"
+        },
+        {        
+            "item": "xlfoodmod:butter"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:crouton", "count": 4
+	}
+}

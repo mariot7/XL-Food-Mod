@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+        {        
+            "item": "xlfoodmod:chips"
+        },
+        {        
+            "item": "xlfoodmod:hot_sauce"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:spicy_chips"
+	}
+}

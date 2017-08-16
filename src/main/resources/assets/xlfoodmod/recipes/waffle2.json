@@ -1,0 +1,14 @@
+{
+     "type": "minecraft:crafting_shapeless",
+     "ingredients": [
+        {        
+            "item": "minecraft:milk_bucket"
+        },
+        {        
+            "item": "xlfoodmod:cooked_dough"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:waffle"
+	}
+}
