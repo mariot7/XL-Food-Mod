@@ -6,7 +6,11 @@
     "1.9.4-latest": "0.7.1",
     "1.9.4-recommended": "1.9.4-0.7.1",
     "1.10.2-latest": "0.7.1",
-    "1.10.2-recommended": "1.10.2-0.7.1"
+    "1.10.2-recommended": "1.10.2-0.7.1",
+    "1.11.2-latest": "1.0.0",
+    "1.11.2-recommended": "1.11.2-1.0.0",
+    "1.12-latest": "1.0.0",
+    "1.12-recommended": "1.12-1.0.0"
   },
     "1.8.9": {
     "0.7.1": "Added Salty Chips, texture changes and more.",
@@ -19,5 +23,14 @@
     "1.10.2": {
     "0.7.1": "Added Salty Chips, texture changes and more.",
     "1.10.2-0.7.1": "Added Salty Chips, texture changes and more."
+  },
+    "1.11.2": {
+    "1.0.0": "Added Lettuce, Chickenburger, Chocolate, Twinkie, Salads and more.",
+    "1.11.2-1.0.0": "Added Lettuce, Chickenburger, Chocolate, Twinkie, Salads and more."
+  },
+    "1.12": {
+    "1.0.0": "Added Lettuce, Chickenburger, Chocolate, Twinkie, Salads and more.",
+    "1.12-1.0.0": "Added Lettuce, Chickenburger, Chocolate, Twinkie, Salads and more."
   }
+
 }
