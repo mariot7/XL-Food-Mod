@@ -4,7 +4,7 @@ import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.init.BlockListxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import mariot7.xlfoodmod.init.Smeltingxlfoodmod;
-import mariot7.xlfoodmod.world.WorldGeneratorxlfoodmod;
+import mariot7.xlfoodmod.world.WorldGeneratorGrassxlfoodmod;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventHandler;

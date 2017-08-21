@@ -10,20 +10,20 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-public class SaltWorldGeneratorxlfoodmod implements IWorldGenerator {
+public class WorldGeneratorRockSaltxlfoodmod implements IWorldGenerator {
 
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		switch (world.provider.getDimension()) {
 	    case 0: //Overworld
-	    this.runGenerator(this.gen_rock_salt, world, random, chunkX, chunkZ, 20, 0, 64);
+	    this.runGenerator(this.gen_rock_salt, world, random, chunkX, chunkZ, 18, 0, 64);
         }
         
 	}
 	
 		public WorldGenerator gen_rock_salt;
-		public SaltWorldGeneratorxlfoodmod() {
-		    this.gen_rock_salt = new WorldGenMinable(BlockListxlfoodmod.rock_salt.getDefaultState(), 10);
+		public WorldGeneratorRockSaltxlfoodmod() {
+		    this.gen_rock_salt = new WorldGenMinable(BlockListxlfoodmod.rock_salt.getDefaultState(), 8);
 		}
 		
 		private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z, int chancesToSpawn, int minHeight, int maxHeight) {

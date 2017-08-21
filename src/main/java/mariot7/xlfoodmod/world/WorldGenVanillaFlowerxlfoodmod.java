@@ -10,12 +10,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
-public class WorldGenxlfoodmod extends WorldGenerator{
+public class WorldGenVanillaFlowerxlfoodmod extends WorldGenerator {
 	
 	@Override
 	public boolean generate(World worldIn, Random rand, BlockPos pos) 
 	{
-		Block grass = rand.nextBoolean() ? BlockListxlfoodmod.grass : BlockListxlfoodmod.vanilla_flower;
+		Block grass = rand.nextBoolean() ? BlockListxlfoodmod.vanilla_flower : BlockListxlfoodmod.vanilla_flower;
 		int y = 1 + getGroundFromAbove(worldIn, pos.getX(), pos.getZ());
 		if(y >= pos.getY())
 		{

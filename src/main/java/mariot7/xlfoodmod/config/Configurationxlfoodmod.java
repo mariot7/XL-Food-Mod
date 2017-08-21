@@ -10,7 +10,10 @@ public class Configurationxlfoodmod {
 	public static final String SALTGEN_NAME = "Disable the generation of the Rock Salt";
 	public static boolean GrassGen;
 	public static final boolean GRASSGEN_DEFAULT = false;
-	public static final String GRASSGEN_NAME = "Disable the generation of Grass & Vanilla Flowers";
+	public static final String GRASSGEN_NAME = "Disable the generation of Grass";
+	public static boolean FlowerGen;
+	public static final boolean FLOWERGEN_DEFAULT = false;
+	public static final String FLOWERGEN_NAME = "Disable the generation of Vanilla Flowers";
 	
 	public static void syncConfig() {
 		FMLCommonHandler.instance().bus().register(Main.instance);
@@ -23,6 +26,11 @@ public class Configurationxlfoodmod {
 		}
 		
 		GrassGen = Main.config.get(WORLDGEN, GRASSGEN_NAME, GRASSGEN_DEFAULT).getBoolean(GRASSGEN_DEFAULT);
+		if(Main.config.hasChanged()){
+			Main.config.save();
+		}
+		
+		FlowerGen = Main.config.get(WORLDGEN, FLOWERGEN_NAME, FLOWERGEN_DEFAULT).getBoolean(FLOWERGEN_DEFAULT);
 		if(Main.config.hasChanged()){
 			Main.config.save();
 		}
