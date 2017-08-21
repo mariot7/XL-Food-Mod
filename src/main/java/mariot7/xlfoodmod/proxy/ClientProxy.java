@@ -3,7 +3,7 @@ package mariot7.xlfoodmod.proxy;
 import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.render.BlockRenderxlfoodmod;
 import mariot7.xlfoodmod.render.ItemRenderxlfoodmod;
-import mariot7.xlfoodmod.world.WorldGeneratorxlfoodmod;
+import mariot7.xlfoodmod.world.WorldGeneratorGrassxlfoodmod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -20,9 +20,6 @@ public class ClientProxy extends CommonProxy {
 	public void init(FMLInitializationEvent event) {
 		ItemRenderxlfoodmod.registerItemRender();
 		BlockRenderxlfoodmod.registerBlockRender();
-		if(!Configurationxlfoodmod.GrassGen){
-		GameRegistry.registerWorldGenerator(new WorldGeneratorxlfoodmod(), 10);
-		}
 	}
 	
     public void postInit(FMLPostInitializationEvent postEvent) {

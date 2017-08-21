@@ -13,7 +13,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-public class WorldGeneratorxlfoodmod implements IWorldGenerator{
+public class WorldGeneratorGrassxlfoodmod implements IWorldGenerator {
 
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) 
 	{
@@ -39,17 +39,17 @@ public class WorldGeneratorxlfoodmod implements IWorldGenerator{
 
 	private void generateOverworld(World world, Random rand, int blockX, int blockZ) 
 	{
-		WorldGenerator genCookieBushes = new WorldGenxlfoodmod();
+		WorldGenerator genGrass = new WorldGenGrassxlfoodmod();
 		Biome biome = world.getBiomeForCoordsBody(new BlockPos(blockX, 64, blockZ));		
 		{
-			int MIN = 0;
-			int MAX = 8;
+			int MIN = 1;
+			int MAX = 4;
 			int numBushes = MIN + rand.nextInt(MAX - MIN);
 			for(int i = 0; i < numBushes; i++)
 			{
-				int randX = blockX + rand.nextInt(16);
-				int randZ = blockZ + rand.nextInt(16);
-				genCookieBushes.generate(world, rand, new BlockPos(randX, 24, randZ));
+				int randX = blockX + rand.nextInt(16)+ 8;
+				int randZ = blockZ + rand.nextInt(16)+ 8;
+				genGrass.generate(world, rand, new BlockPos(randX, 24, randZ));
 			}
 		}
 	}
@@ -71,5 +71,6 @@ public class WorldGeneratorxlfoodmod implements IWorldGenerator{
 
 		return y;
 	}
+	
 
 }

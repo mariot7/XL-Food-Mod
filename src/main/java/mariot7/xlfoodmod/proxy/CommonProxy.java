@@ -5,7 +5,7 @@ import mariot7.xlfoodmod.init.BlockListxlfoodmod;
 import mariot7.xlfoodmod.init.Craftingxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import mariot7.xlfoodmod.init.Smeltingxlfoodmod;
-import mariot7.xlfoodmod.world.WorldGeneratorxlfoodmod;
+import mariot7.xlfoodmod.world.WorldGeneratorGrassxlfoodmod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -21,9 +21,8 @@ public class CommonProxy {
 	}
 	
 	public void init(FMLInitializationEvent event) {
-		if(!Configurationxlfoodmod.GrassGen){
-		GameRegistry.registerWorldGenerator(new WorldGeneratorxlfoodmod(), 10);
-		}
+
+		
 	}
 
 	public void postInit(FMLPostInitializationEvent postEvent) {

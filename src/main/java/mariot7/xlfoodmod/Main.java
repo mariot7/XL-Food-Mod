@@ -8,8 +8,9 @@ import mariot7.xlfoodmod.init.Smeltingxlfoodmod;
 import mariot7.xlfoodmod.proxy.CommonProxy;
 import mariot7.xlfoodmod.render.BlockRenderxlfoodmod;
 import mariot7.xlfoodmod.render.ItemRenderxlfoodmod;
-import mariot7.xlfoodmod.world.SaltWorldGeneratorxlfoodmod;
-import mariot7.xlfoodmod.world.WorldGeneratorxlfoodmod;
+import mariot7.xlfoodmod.world.WorldGeneratorRockSaltxlfoodmod;
+import mariot7.xlfoodmod.world.WorldGeneratorGrassxlfoodmod;
+import mariot7.xlfoodmod.world.WorldGeneratorVanillaFlowerxlfoodmod;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
@@ -39,7 +40,7 @@ public class Main {
 	
 	@SubscribeEvent
 	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent eventArgs) {
-		if(eventArgs.getModID().equals(Reference.MOD_ID)){
+		if(eventArgs.getModID().equals(Reference.MOD_ID)) {
 			Configurationxlfoodmod.syncConfig();
 		}
 	}
@@ -50,6 +51,15 @@ public class Main {
 		this.proxy.preInit(preEvent);
 		config = new Configuration(preEvent.getSuggestedConfigurationFile());
 		Configurationxlfoodmod.syncConfig();
+		if(!Configurationxlfoodmod.SaltGen) {
+		GameRegistry.registerWorldGenerator(new WorldGeneratorRockSaltxlfoodmod(), 0);
+		}
+		if(!Configurationxlfoodmod.GrassGen) {
+		GameRegistry.registerWorldGenerator(new WorldGeneratorGrassxlfoodmod(), 2);
+		}
+		if(!Configurationxlfoodmod.FlowerGen) {
+		GameRegistry.registerWorldGenerator(new WorldGeneratorVanillaFlowerxlfoodmod(), 1);
+		}
 	}
     
 	@EventHandler
@@ -57,12 +67,6 @@ public class Main {
     {
 		this.proxy.init(event);
 		FMLCommonHandler.instance().bus().register(instance);
-		if(!Configurationxlfoodmod.SaltGen){
-		GameRegistry.registerWorldGenerator(new SaltWorldGeneratorxlfoodmod(), 0);
-		}
-		if(!Configurationxlfoodmod.GrassGen){
-		GameRegistry.registerWorldGenerator(new WorldGeneratorxlfoodmod(), 10);
-		}
     }
     
 	@EventHandler
