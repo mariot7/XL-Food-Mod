@@ -1,6 +1,6 @@
 package mariot7.xlfoodmod;
 
-import mariot7.xlfoodmod.config.Configurationxlfoodmod;
+import mariot7.xlfoodmod.config.GuiConfigurationxlfoodmod;
 import mariot7.xlfoodmod.init.BlockListxlfoodmod;
 import mariot7.xlfoodmod.init.Craftingxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
@@ -15,10 +15,13 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.config.Config;
+import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -38,38 +41,30 @@ public class Main {
 	@Mod.Instance(Reference.MOD_ID)
 	public static Main instance;
 	
-	@SubscribeEvent
-	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent eventArgs) {
-		if(eventArgs.getModID().equals(Reference.MOD_ID)) {
-			Configurationxlfoodmod.syncConfig();
-		}
-	}
-	
-	@EventHandler
+	@Mod.EventHandler
     public void preInit(FMLPreInitializationEvent preEvent)
     {
 		this.proxy.preInit(preEvent);
 		config = new Configuration(preEvent.getSuggestedConfigurationFile());
-		Configurationxlfoodmod.syncConfig();
-		if(!Configurationxlfoodmod.SaltGen) {
+		if(!GuiConfigurationxlfoodmod.WorldGen.RockGen) {
 		GameRegistry.registerWorldGenerator(new WorldGeneratorRockSaltxlfoodmod(), 0);
 		}
-		if(!Configurationxlfoodmod.GrassGen) {
+		if(!GuiConfigurationxlfoodmod.WorldGen.GrassGen) {
 		GameRegistry.registerWorldGenerator(new WorldGeneratorGrassxlfoodmod(), 2);
 		}
-		if(!Configurationxlfoodmod.FlowerGen) {
+		if(!GuiConfigurationxlfoodmod.WorldGen.FlowerGen) {
 		GameRegistry.registerWorldGenerator(new WorldGeneratorVanillaFlowerxlfoodmod(), 1);
-		}
+        }
 	}
     
-	@EventHandler
+	@Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
 		this.proxy.init(event);
 		FMLCommonHandler.instance().bus().register(instance);
     }
     
-	@EventHandler
+	@Mod.EventHandler
     public void postInit(FMLPostInitializationEvent postEvent)
     {
 		this.proxy.postInit(postEvent);

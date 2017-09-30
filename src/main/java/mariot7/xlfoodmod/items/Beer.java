@@ -37,12 +37,12 @@ public class Beer extends ItemFood {
     }
 
 	protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
-		player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 600, 1));
+		player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 300, 1));
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.glass_mug));
 	}
 	
 	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva) {
-		list.add("Nauesa II (0:30)");
+		list.add("Nauesa II (0:15)");
 	}
 	
 	@Override

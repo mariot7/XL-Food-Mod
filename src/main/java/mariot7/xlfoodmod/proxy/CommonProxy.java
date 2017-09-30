@@ -1,6 +1,5 @@
 package mariot7.xlfoodmod.proxy;
 
-import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.init.BlockListxlfoodmod;
 import mariot7.xlfoodmod.init.Craftingxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;

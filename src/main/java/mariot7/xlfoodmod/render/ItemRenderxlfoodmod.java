@@ -23,6 +23,7 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.cucumber);
 		regItem(ItemListxlfoodmod.lettuce_seeds);
 		regItem(ItemListxlfoodmod.lettuce);
+		regItem(ItemListxlfoodmod.onion);
 		regItem(ItemListxlfoodmod.tomato_seeds);
 		regItem(ItemListxlfoodmod.tomato);
 		regItem(ItemListxlfoodmod.strawberry_seeds);

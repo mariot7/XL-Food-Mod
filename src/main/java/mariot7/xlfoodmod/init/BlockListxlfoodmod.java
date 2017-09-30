@@ -5,6 +5,7 @@ import mariot7.xlfoodmod.Reference;
 import mariot7.xlfoodmod.blocks.Grass;
 import mariot7.xlfoodmod.blocks.Lettuce;
 import mariot7.xlfoodmod.blocks.NetherCake;
+import mariot7.xlfoodmod.blocks.Onion;
 import mariot7.xlfoodmod.blocks.OreoCake;
 import mariot7.xlfoodmod.blocks.CheeseCake;
 import mariot7.xlfoodmod.blocks.ChocolateCake;
@@ -45,6 +46,8 @@ public class BlockListxlfoodmod {
 	public static ItemBlock ibcucumber_plant;
 	public static Block lettuce_plant;
 	public static ItemBlock iblettuce_plant;
+	public static Block onion_plant;
+	public static ItemBlock ibonion_plant;
 	public static Block tomato_plant;
 	public static ItemBlock ibtomato_plant;
 	public static Block strawberry_plant;
@@ -82,6 +85,8 @@ public class BlockListxlfoodmod {
 		ibcucumber_plant = (ItemBlock) new ItemBlock(cucumber_plant);
 		lettuce_plant = new Lettuce("lettuce_plant");	  
 		iblettuce_plant = (ItemBlock) new ItemBlock(lettuce_plant);
+		onion_plant = new Onion("onion_plant");	  
+		ibonion_plant = (ItemBlock) new ItemBlock(onion_plant);
 		tomato_plant = new Tomato("tomato_plant");	  
 		ibtomato_plant = (ItemBlock) new ItemBlock(tomato_plant);
 		strawberry_plant = new Strawberry("strawberry_plant");	  
@@ -115,6 +120,8 @@ public class BlockListxlfoodmod {
 		GameRegistry.register(ibcucumber_plant, cucumber_plant.getRegistryName());
 		GameRegistry.register(lettuce_plant);
 		GameRegistry.register(iblettuce_plant, lettuce_plant.getRegistryName());
+		GameRegistry.register(onion_plant);
+		GameRegistry.register(ibonion_plant, onion_plant.getRegistryName());
 		GameRegistry.register(tomato_plant);
 		GameRegistry.register(ibtomato_plant, tomato_plant.getRegistryName());
 		GameRegistry.register(strawberry_plant);

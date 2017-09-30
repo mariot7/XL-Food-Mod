@@ -1,6 +1,5 @@
 package mariot7.xlfoodmod.proxy;
 
-import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.render.BlockRenderxlfoodmod;
 import mariot7.xlfoodmod.render.ItemRenderxlfoodmod;
 import mariot7.xlfoodmod.world.WorldGeneratorGrassxlfoodmod;

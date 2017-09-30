@@ -26,6 +26,7 @@ item.cucumber.name=Cucumber
 tile.lettuce_plant.name=Lettuce Plant
 item.lettuce_seeds.name=Lettuce Seeds
 item.lettuce.name=Lettuce
+item.onion.name=Onion
 tile.tomato_plant.name=Tomato Plant
 item.tomato_seeds.name=Tomato Seeds
 item.tomato.name=Tomato
@@ -112,3 +113,11 @@ item.beer.name=Beer
 item.coffee_cup.name=Coffee Cup
 item.coffee.name=Coffee
 item.cappuccino.name=Cappuccino
+
+xlfoodmod.config.title=XL Food Mod Config
+xlfoodmod.general.worldgen=World Gen
+xlfoodmod.general.worldgen.tooltip=World Generation Settings
+xlfoodmod.general.worldgen.rockgen=Rock Salt Generation
+xlfoodmod.general.worldgen.grassgen=Grass Generation
+xlfoodmod.general.worldgen.flowergen=Vanilla Flower Generation
+

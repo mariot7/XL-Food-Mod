@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "xlfoodmod:blocks/onion_plant0"
+    }
+}

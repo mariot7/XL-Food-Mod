@@ -4,10 +4,12 @@ import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.Reference;
 import mariot7.xlfoodmod.items.Beer;
 import mariot7.xlfoodmod.items.BucketOfFriedChicken;
+import mariot7.xlfoodmod.items.Salad;
 import mariot7.xlfoodmod.items.Cappuccino;
 import mariot7.xlfoodmod.items.Coffee;
 import mariot7.xlfoodmod.items.DeadlyEnergyDrink;
 import mariot7.xlfoodmod.items.HealthyEnergyDrink;
+import mariot7.xlfoodmod.items.Onion;
 import mariot7.xlfoodmod.items.SpeedyEnergyDrink;
 import mariot7.xlfoodmod.items.StealthyEnergyDrink;
 import mariot7.xlfoodmod.items.StrongEnergyDrink;
@@ -37,6 +39,7 @@ public class ItemListxlfoodmod {
 	public static Item cucumber;
 	public static Item lettuce_seeds;
 	public static Item lettuce;
+	public static Item onion;
 	public static Item tomato_seeds;
 	public static Item tomato;
 	public static Item strawberry_seeds;
@@ -147,6 +150,7 @@ public class ItemListxlfoodmod {
 		GameRegistry.register(cucumber = new ItemFoodxlfoodmod("cucumber", 1, 0.6F, false));
 		GameRegistry.register(lettuce_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.lettuce_plant, Blocks.FARMLAND, "lettuce_seeds"));
 		GameRegistry.register(lettuce = new ItemFoodxlfoodmod("lettuce", 1, 0.6F, false));
+		GameRegistry.register(onion = new Onion(1, 0.6F, BlockListxlfoodmod.onion_plant, Blocks.FARMLAND));
 		GameRegistry.register(tomato_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.tomato_plant, Blocks.FARMLAND, "tomato_seeds"));
 		GameRegistry.register(tomato = new ItemFoodxlfoodmod("tomato", 1, 0.6F, false));
 		GameRegistry.register(strawberry_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.strawberry_plant, Blocks.FARMLAND, "strawberry_seeds"));
@@ -191,10 +195,10 @@ public class ItemListxlfoodmod {
 		GameRegistry.register(slice_of_pizza = new ItemFoodxlfoodmod("slice_of_pizza", 7, 1.4F, false));
 		//salad
 		GameRegistry.register(salad_bowl = new Itemxlfoodmod("salad_bowl"));
-		GameRegistry.register(garden_salad = new ItemFoodxlfoodmod("garden_salad", 5, 5.8F, false));
-		GameRegistry.register(chicken_salad = new ItemFoodxlfoodmod("chicken_salad", 8, 10F, false));
-		GameRegistry.register(caesar_salad = new ItemFoodxlfoodmod("caesar_salad", 6, 7.4F, false));
-		GameRegistry.register(taco_salad = new ItemFoodxlfoodmod("taco_salad", 10, 12F, false));
+		GameRegistry.register(garden_salad = new Salad("garden_salad", 5, 5.8F, false));
+		GameRegistry.register(chicken_salad = new Salad("chicken_salad", 8, 10F, false));
+		GameRegistry.register(caesar_salad = new Salad("caesar_salad", 6, 7.4F, false));
+		GameRegistry.register(taco_salad = new Salad("taco_salad", 10, 12F, false));
 		//candy etc.
 		GameRegistry.register(marshmallow = new ItemFoodxlfoodmod("marshmallow", 1, 0.6F, false));
 		GameRegistry.register(roasted_marshmallow = new ItemFoodxlfoodmod("roasted_marshmallow", 2, 1.2F, false));
