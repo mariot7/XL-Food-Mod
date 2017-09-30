@@ -1,0 +1,15 @@
+{
+	"type": "forge:ore_shapeless",
+	"ingredients": [
+        {        
+            "item": "xlfoodmod:chips"
+        },
+        {        
+            "type": "forge:ore_dict",
+		 "ore": "dustSalt"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:salty_chips"
+	}
+}

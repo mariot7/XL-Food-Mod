@@ -1,0 +1,15 @@
+{
+	"type": "forge:ore_shapeless",
+	"ingredients": [
+        {        
+            "item": "xlfoodmod:cooked_dough"
+        },
+        {        
+            "type": "forge:ore_dict",
+		 "ore": "dustSalt"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:chips", "count": 8
+	}
+}

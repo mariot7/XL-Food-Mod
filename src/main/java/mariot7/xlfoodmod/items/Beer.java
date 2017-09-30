@@ -7,6 +7,7 @@ import javax.annotation.Nullable;
 import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -21,6 +22,8 @@ import net.minecraft.stats.StatList;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Beer extends ItemFood {
 	
@@ -44,13 +47,14 @@ public class Beer extends ItemFood {
 	}
 
 	protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
-		player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 600, 1));
+		player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 300, 1));
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.glass_mug));
 	}
 	
-	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean adva){
-		list.add("Nauesa II (0:30)");
-	}
+	@SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+        tooltip.add("Nauesa II (0:15)");
+    }
 	
 	@Override
 	public EnumAction getItemUseAction(ItemStack stack) {

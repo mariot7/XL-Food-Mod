@@ -1,6 +1,6 @@
 package mariot7.xlfoodmod;
 
-import mariot7.xlfoodmod.config.Configurationxlfoodmod;
+import mariot7.xlfoodmod.config.GuiConfigurationxlfoodmod;
 import mariot7.xlfoodmod.init.BlockListxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import mariot7.xlfoodmod.init.Smeltingxlfoodmod;
@@ -60,26 +60,18 @@ public class Main {
 		
 	}
 	
-	@SubscribeEvent
-	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent eventArgs) {
-		if(eventArgs.getModID().equals(Reference.MOD_ID)) {
-			Configurationxlfoodmod.syncConfig();
-		}
-	}
-	
 	@EventHandler
     public void preInit(FMLPreInitializationEvent preEvent)
     {
 		this.proxy.preInit(preEvent);
 		config = new Configuration(preEvent.getSuggestedConfigurationFile());
-		Configurationxlfoodmod.syncConfig();
-		if(!Configurationxlfoodmod.SaltGen) {
+		if(!GuiConfigurationxlfoodmod.WorldGen.RockGen) {
 		GameRegistry.registerWorldGenerator(new WorldGeneratorRockSaltxlfoodmod(), 0);
 		}
-		if(!Configurationxlfoodmod.GrassGen) {
+		if(!GuiConfigurationxlfoodmod.WorldGen.GrassGen) {
 		GameRegistry.registerWorldGenerator(new WorldGeneratorGrassxlfoodmod(), 2);
 		}
-		if(!Configurationxlfoodmod.FlowerGen) {
+		if(!GuiConfigurationxlfoodmod.WorldGen.FlowerGen) {
 		GameRegistry.registerWorldGenerator(new WorldGeneratorVanillaFlowerxlfoodmod(), 1);
 		}
 	}

@@ -1,11 +1,14 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		" U ",
+		"OU ",
 		"PCE",
 		" S "
 	],
 	"key": {
+	     "O": {
+			"item": "xlfoodmod:onion"
+		},
 		"U": {
 			"item": "xlfoodmod:cucumber"
 		},

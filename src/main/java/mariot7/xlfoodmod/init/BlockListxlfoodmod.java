@@ -5,6 +5,7 @@ import mariot7.xlfoodmod.Reference;
 import mariot7.xlfoodmod.blocks.Grass;
 import mariot7.xlfoodmod.blocks.Lettuce;
 import mariot7.xlfoodmod.blocks.NetherCake;
+import mariot7.xlfoodmod.blocks.Onion;
 import mariot7.xlfoodmod.blocks.OreoCake;
 import mariot7.xlfoodmod.blocks.CheeseCake;
 import mariot7.xlfoodmod.blocks.ChocolateCake;
@@ -40,6 +41,7 @@ public class BlockListxlfoodmod {
 	public static Corn corn_plant = new Corn("corn_plant");
 	public static Cucumber cucumber_plant = new Cucumber("cucumber_plant");
 	public static Lettuce lettuce_plant = new Lettuce("lettuce_plant");
+	public static Onion onion_plant = new Onion("onion_plant");
 	public static Tomato tomato_plant = new Tomato("tomato_plant");
 	public static Strawberry strawberry_plant = new Strawberry("strawberry_plant");
 	public static ChocolateCake chocolate_cake = new ChocolateCake("chocolate_cake", 14, 2.8F);
@@ -60,6 +62,7 @@ public class BlockListxlfoodmod {
 		registry.registerAll(corn_plant);
 		registry.registerAll(cucumber_plant);
 		registry.registerAll(lettuce_plant);
+		registry.registerAll(onion_plant);
 		registry.registerAll(tomato_plant);
 		registry.registerAll(strawberry_plant);
 		registry.registerAll(chocolate_cake);
@@ -81,6 +84,7 @@ public class BlockListxlfoodmod {
 		registry.register(corn_plant.createItemBlock());
 		registry.register(cucumber_plant.createItemBlock());
 		registry.register(lettuce_plant.createItemBlock());
+		registry.register(onion_plant.createItemBlock());
 		registry.register(tomato_plant.createItemBlock());
 		registry.register(strawberry_plant.createItemBlock());
 		registry.register(chocolate_cake.createItemBlock());
@@ -102,6 +106,7 @@ public class BlockListxlfoodmod {
 		corn_plant.registerItemModel(Item.getItemFromBlock(corn_plant));
 		cucumber_plant.registerItemModel(Item.getItemFromBlock(cucumber_plant));
 		lettuce_plant.registerItemModel(Item.getItemFromBlock(lettuce_plant));
+		onion_plant.registerItemModel(Item.getItemFromBlock(onion_plant));
 		tomato_plant.registerItemModel(Item.getItemFromBlock(tomato_plant));
 		strawberry_plant.registerItemModel(Item.getItemFromBlock(strawberry_plant));
 		chocolate_cake.registerItemModel(Item.getItemFromBlock(chocolate_cake));

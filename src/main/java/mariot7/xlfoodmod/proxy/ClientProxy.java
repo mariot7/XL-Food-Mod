@@ -1,7 +1,6 @@
 package mariot7.xlfoodmod.proxy;
 
 import mariot7.xlfoodmod.Reference;
-import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import mariot7.xlfoodmod.world.WorldGeneratorGrassxlfoodmod;
 import net.minecraft.client.renderer.block.model.ModelBakery;

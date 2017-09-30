@@ -8,6 +8,8 @@ import mariot7.xlfoodmod.items.Cappuccino;
 import mariot7.xlfoodmod.items.Coffee;
 import mariot7.xlfoodmod.items.DeadlyEnergyDrink;
 import mariot7.xlfoodmod.items.HealthyEnergyDrink;
+import mariot7.xlfoodmod.items.Onion;
+import mariot7.xlfoodmod.items.Salad;
 import mariot7.xlfoodmod.items.SpeedyEnergyDrink;
 import mariot7.xlfoodmod.items.StealthyEnergyDrink;
 import mariot7.xlfoodmod.items.StrongEnergyDrink;
@@ -40,6 +42,7 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod cucumber = new ItemFoodxlfoodmod("cucumber", 1, 0.6F, false);
 	public static ItemSeedsxlfoodmod lettuce_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.lettuce_plant, Blocks.FARMLAND, "lettuce_seeds");
 	public static ItemFoodxlfoodmod lettuce = new ItemFoodxlfoodmod("lettuce", 1, 0.6F, false);
+	public static Onion onion = new Onion(1, 0.6F, BlockListxlfoodmod.onion_plant, Blocks.FARMLAND);
 	public static ItemSeedsxlfoodmod tomato_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.tomato_plant, Blocks.FARMLAND, "tomato_seeds");
 	public static ItemFoodxlfoodmod tomato = new ItemFoodxlfoodmod("tomato", 1, 0.6F, false);
 	public static ItemSeedsxlfoodmod strawberry_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.strawberry_plant, Blocks.FARMLAND, "strawberry_seeds");
@@ -82,10 +85,10 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod slice_of_pizza = new ItemFoodxlfoodmod("slice_of_pizza", 7, 1.4F, false);
     //salad
 	public static Itemxlfoodmod salad_bowl = new Itemxlfoodmod("salad_bowl");
-	public static ItemFoodxlfoodmod garden_salad = new ItemFoodxlfoodmod("garden_salad", 5, 5.8F, false);
-	public static ItemFoodxlfoodmod chicken_salad = new ItemFoodxlfoodmod("chicken_salad", 8, 10.0F, false);
-	public static ItemFoodxlfoodmod caesar_salad = new ItemFoodxlfoodmod("caesar_salad", 6, 7.4F, false);
-	public static ItemFoodxlfoodmod taco_salad = new ItemFoodxlfoodmod("taco_salad", 10, 12.0F, false);
+	public static Salad garden_salad = new Salad("garden_salad", 5, 5.8F, false);
+	public static Salad chicken_salad = new Salad("chicken_salad", 8, 10.0F, false);
+	public static Salad caesar_salad = new Salad("caesar_salad", 6, 7.4F, false);
+	public static Salad taco_salad = new Salad("taco_salad", 10, 12.0F, false);
     //candy etc.
 	public static ItemFoodxlfoodmod marshmallow = new ItemFoodxlfoodmod("marshmallow", 1, 0.6F, false);
 	public static ItemFoodxlfoodmod roasted_marshmallow = new ItemFoodxlfoodmod("roasted_marshmallow", 2, 1.2F, false);
@@ -150,6 +153,7 @@ public class ItemListxlfoodmod {
 		registry.registerAll(cucumber);
 		registry.registerAll(lettuce_seeds);
 		registry.registerAll(lettuce);
+		registry.registerAll(onion);
 		registry.registerAll(tomato_seeds);
 		registry.registerAll(tomato);
 		registry.registerAll(strawberry_seeds);
@@ -263,6 +267,7 @@ public class ItemListxlfoodmod {
 		cucumber.registerItemModel();
 		lettuce_seeds.registerItemModel();
 		lettuce.registerItemModel();
+		onion.registerItemModel();
 		tomato_seeds.registerItemModel();
 		tomato.registerItemModel();
 		strawberry_seeds.registerItemModel();
