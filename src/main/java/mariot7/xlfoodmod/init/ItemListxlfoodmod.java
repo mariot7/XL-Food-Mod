@@ -58,6 +58,7 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod chips = new ItemFoodxlfoodmod("chips", 1, 4.8F, false);
 	public static ItemFoodxlfoodmod salty_chips = new ItemFoodxlfoodmod("salty_chips", 1, 1.5F, false);
 	public static ItemFoodxlfoodmod spicy_chips = new ItemFoodxlfoodmod("spicy_chips", 1, 1.6F, false);
+	public static ItemFoodxlfoodmod onion_rings = new ItemFoodxlfoodmod("onion_rings", 2, 3.0F, false);
 	public static ItemFoodxlfoodmod cheesy_bread = new ItemFoodxlfoodmod("cheesy_bread", 6, 6.4F, false);
 	public static ItemFoodxlfoodmod corn_bread = new ItemFoodxlfoodmod("corn_bread", 8, 7.8F, false);
 	public static ItemFoodxlfoodmod fried_egg = new ItemFoodxlfoodmod("fried_egg", 3, 3.0F, false);
@@ -88,8 +89,10 @@ public class ItemListxlfoodmod {
 	public static Salad garden_salad = new Salad("garden_salad", 5, 5.8F, false);
 	public static Salad chicken_salad = new Salad("chicken_salad", 8, 10.0F, false);
 	public static Salad caesar_salad = new Salad("caesar_salad", 6, 7.4F, false);
+	public static Salad onion_salad = new Salad("onion_salad", 4, 5.0F, false);
 	public static Salad taco_salad = new Salad("taco_salad", 10, 12.0F, false);
     //candy etc.
+	public static ItemFoodxlfoodmod pumpkin_stew = new ItemFoodxlfoodmod("pumpkin_stew", 6, 9.5F, false);
 	public static ItemFoodxlfoodmod marshmallow = new ItemFoodxlfoodmod("marshmallow", 1, 0.6F, false);
 	public static ItemFoodxlfoodmod roasted_marshmallow = new ItemFoodxlfoodmod("roasted_marshmallow", 2, 1.2F, false);
 	public static ItemFoodxlfoodmod oreo_cookie = new ItemFoodxlfoodmod("oreo_cookie", 3, 3.4F, false);
@@ -171,6 +174,7 @@ public class ItemListxlfoodmod {
 		registry.registerAll(chips);
 		registry.registerAll(salty_chips);
 		registry.registerAll(spicy_chips);
+		registry.registerAll(onion_rings);
 		registry.registerAll(cheesy_bread);
 		registry.registerAll(corn_bread);
 		registry.registerAll(fried_egg);
@@ -201,8 +205,10 @@ public class ItemListxlfoodmod {
 		registry.registerAll(garden_salad);
 		registry.registerAll(chicken_salad);
 		registry.registerAll(caesar_salad);
+		registry.registerAll(onion_salad);
 		registry.registerAll(taco_salad);
 		//candy etc.
+		registry.registerAll(pumpkin_stew);
 		registry.registerAll(marshmallow);
 		registry.registerAll(roasted_marshmallow);
 		registry.registerAll(oreo_cookie);
@@ -283,6 +289,7 @@ public class ItemListxlfoodmod {
 		chips.registerItemModel();
 		salty_chips.registerItemModel();
 		spicy_chips.registerItemModel();
+		onion_rings.registerItemModel();
 		cheesy_bread.registerItemModel();
 		corn_bread.registerItemModel();
 		fried_egg.registerItemModel();
@@ -313,8 +320,10 @@ public class ItemListxlfoodmod {
 		garden_salad.registerItemModel();
 		chicken_salad.registerItemModel();
 		caesar_salad.registerItemModel();
+		onion_salad.registerItemModel();
 		taco_salad.registerItemModel();
 		//candy etc.
+		pumpkin_stew.registerItemModel();
 		marshmallow.registerItemModel();
 		roasted_marshmallow.registerItemModel();
 		oreo_cookie.registerItemModel();

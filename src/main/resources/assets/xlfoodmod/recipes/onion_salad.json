@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		"LOT",
+		" S "
+	],
+	"key": {
+		"L": {
+			"item": "xlfoodmod:lettuce"
+		},
+		"O": {
+			"item": "xlfoodmod:onion"
+		},
+	     "T": {
+			"item": "xlfoodmod:tomato"
+		},
+	      "S": {
+			"item": "xlfoodmod:salad_bowl"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:onion_salad"
+	}
+}
