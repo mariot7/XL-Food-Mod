@@ -55,6 +55,7 @@ public class ItemListxlfoodmod {
 	public static Item chips;
 	public static Item salty_chips;
 	public static Item spicy_chips;
+	public static Item onion_rings;
     public static Item cheesy_bread;
     public static Item corn_bread;
     public static Item fried_egg;
@@ -85,8 +86,10 @@ public class ItemListxlfoodmod {
     public static Item garden_salad;
     public static Item chicken_salad;
     public static Item caesar_salad;
+    public static Item onion_salad;
     public static Item taco_salad;
     //candy etc.
+    public static Item pumpkin_stew;
     public static Item marshmallow;
     public static Item roasted_marshmallow;
     public static Item oreo_cookie;
@@ -168,6 +171,7 @@ public class ItemListxlfoodmod {
 		GameRegistry.register(chips = new ItemFoodxlfoodmod("chips", 1, 4.8F, false));
 		GameRegistry.register(salty_chips = new ItemFoodxlfoodmod("salty_chips", 1, 5.0F, false));
 		GameRegistry.register(spicy_chips = new ItemFoodxlfoodmod("spicy_chips", 1, 6.0F, false));
+		GameRegistry.register(onion_rings = new ItemFoodxlfoodmod("onion_rings", 2, 7.0F, false));
 		GameRegistry.register(cheesy_bread = new ItemFoodxlfoodmod("cheesy_bread", 6, 6.4F, false));
 		GameRegistry.register(corn_bread = new ItemFoodxlfoodmod("corn_bread", 8, 7.8F, false));
 		GameRegistry.register(fried_egg = new ItemFoodxlfoodmod("fried_egg", 3, 3.0F, false));
@@ -198,8 +202,10 @@ public class ItemListxlfoodmod {
 		GameRegistry.register(garden_salad = new Salad("garden_salad", 5, 5.8F, false));
 		GameRegistry.register(chicken_salad = new Salad("chicken_salad", 8, 10F, false));
 		GameRegistry.register(caesar_salad = new Salad("caesar_salad", 6, 7.4F, false));
+		GameRegistry.register(onion_salad = new Salad("onion_salad", 4, 5.0F, false));
 		GameRegistry.register(taco_salad = new Salad("taco_salad", 10, 12F, false));
 		//candy etc.
+		GameRegistry.register(pumpkin_stew = new ItemFoodxlfoodmod("pumpkin_stew", 6, 9.5F, false));
 		GameRegistry.register(marshmallow = new ItemFoodxlfoodmod("marshmallow", 1, 0.6F, false));
 		GameRegistry.register(roasted_marshmallow = new ItemFoodxlfoodmod("roasted_marshmallow", 2, 1.2F, false));
 		GameRegistry.register(oreo_cookie = new ItemFoodxlfoodmod("oreo_cookie", 3, 3.4F, false));

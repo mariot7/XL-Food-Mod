@@ -39,6 +39,7 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.chips);
 		regItem(ItemListxlfoodmod.salty_chips);
 		regItem(ItemListxlfoodmod.spicy_chips);
+		regItem(ItemListxlfoodmod.onion_rings);
 		regItem(ItemListxlfoodmod.cheesy_bread);
 		regItem(ItemListxlfoodmod.corn_bread);
 		regItem(ItemListxlfoodmod.fried_egg);
@@ -69,8 +70,10 @@ public class ItemRenderxlfoodmod {
 		regItem(ItemListxlfoodmod.garden_salad);
 		regItem(ItemListxlfoodmod.chicken_salad);
 		regItem(ItemListxlfoodmod.caesar_salad);
+		regItem(ItemListxlfoodmod.onion_salad);
 		regItem(ItemListxlfoodmod.taco_salad);
 		//candy etc.
+		regItem(ItemListxlfoodmod.pumpkin_stew);
 		regItem(ItemListxlfoodmod.marshmallow);
 		regItem(ItemListxlfoodmod.roasted_marshmallow);
 		regItem(ItemListxlfoodmod.oreo_cookie);
