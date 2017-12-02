@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" S ",
+		" D ",
+		" P "
+	],
+	"key": {
+		"S": {
+			"item": "xlfoodmod:strawberry"
+		},
+	     "D": {
+			"item": "xlfoodmod:cooked_dough"
+		},
+		"P": {
+			"item": "xlfoodmod:paper_cup"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:strawberry_cupcake"
+	}
+}

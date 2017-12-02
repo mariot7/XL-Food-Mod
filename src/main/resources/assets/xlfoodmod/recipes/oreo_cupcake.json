@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" O ",
+		" D ",
+		" P "
+	],
+	"key": {
+		"O": {
+			"item": "xlfoodmod:oreo_cookie"
+		},
+	     "D": {
+			"item": "xlfoodmod:cooked_dough"
+		},
+		"P": {
+			"item": "xlfoodmod:paper_cup"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:oreo_cupcake"
+	}
+}

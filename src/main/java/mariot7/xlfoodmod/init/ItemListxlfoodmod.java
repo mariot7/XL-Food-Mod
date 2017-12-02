@@ -110,6 +110,11 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod donut = new ItemFoodxlfoodmod("donut", 4, 4.8F, false);
 	public static ItemFoodxlfoodmod sugar_donut = new ItemFoodxlfoodmod("sugar_donut", 4, 5.0F, false);
 	public static ItemFoodxlfoodmod chocolate_donut = new ItemFoodxlfoodmod("chocolate_donut", 4, 5.8F, false);
+	//cupcakes
+	public static Itemxlfoodmod paper_cup = new Itemxlfoodmod("paper_cup");
+	public static ItemFoodxlfoodmod chocolate_cupcake = new ItemFoodxlfoodmod("chocolate_cupcake", 3, 2.0F, false);
+	public static ItemFoodxlfoodmod oreo_cupcake = new ItemFoodxlfoodmod("oreo_cupcake", 5, 4.0F, false);
+	public static ItemFoodxlfoodmod strawberry_cupcake = new ItemFoodxlfoodmod("strawberry_cupcake", 3, 1.8F, false);
     //pies
 	public static Itemxlfoodmod pie_shell = new Itemxlfoodmod("pie_shell");
 	public static ItemFoodxlfoodmod apple_pie = new ItemFoodxlfoodmod("apple_pie", 8, 4.8F, false);
@@ -226,6 +231,11 @@ public class ItemListxlfoodmod {
 		registry.registerAll(donut);
 		registry.registerAll(sugar_donut);
 		registry.registerAll(chocolate_donut);
+		//cupcakes
+		registry.registerAll(paper_cup);
+		registry.registerAll(chocolate_cupcake);
+		registry.registerAll(oreo_cupcake);
+		registry.registerAll(strawberry_cupcake);
 		//pies
 		registry.registerAll(pie_shell);
 		registry.registerAll(apple_pie);
@@ -341,6 +351,11 @@ public class ItemListxlfoodmod {
 		donut.registerItemModel();
 		sugar_donut.registerItemModel();
 		chocolate_donut.registerItemModel();
+		//cupcake
+		paper_cup.registerItemModel();
+		chocolate_cupcake.registerItemModel();
+		oreo_cupcake.registerItemModel();
+		strawberry_cupcake.registerItemModel();
 		//pies
 		pie_shell.registerItemModel();
 		apple_pie.registerItemModel();

@@ -1,0 +1,12 @@
+{
+    "variants":
+    {
+        "bites=0": {"model": "xlfoodmod:pumpkin_cake_uneaten"},
+        "bites=1": {"model": "xlfoodmod:pumpkin_cake_slice1"},
+        "bites=2": {"model": "xlfoodmod:pumpkin_cake_slice2"},
+        "bites=3": {"model": "xlfoodmod:pumpkin_cake_slice3"},
+        "bites=4": {"model": "xlfoodmod:pumpkin_cake_slice4"},
+        "bites=5": {"model": "xlfoodmod:pumpkin_cake_slice5"},
+        "bites=6": {"model": "xlfoodmod:pumpkin_cake_slice6"}
+    }
+}

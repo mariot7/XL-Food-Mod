@@ -12,6 +12,7 @@ import mariot7.xlfoodmod.blocks.ChocolateCake;
 import mariot7.xlfoodmod.blocks.Corn;
 import mariot7.xlfoodmod.blocks.Pepper;
 import mariot7.xlfoodmod.blocks.Pizza;
+import mariot7.xlfoodmod.blocks.PumpkinCake;
 import mariot7.xlfoodmod.blocks.Cucumber;
 import mariot7.xlfoodmod.blocks.Rice;
 import mariot7.xlfoodmod.blocks.RockSalt;
@@ -49,6 +50,7 @@ public class BlockListxlfoodmod {
 	public static CheeseCake cheese_cake = new CheeseCake("cheese_cake", 14, 2.8F);
 	public static NetherCake nether_cake = new NetherCake("nether_cake", 14, 2.8F);
 	public static StrawberryCake strawberry_cake = new StrawberryCake("strawberry_cake", 14, 2.8F);
+	public static PumpkinCake pumpkin_cake = new PumpkinCake("pumpkin_cake", 14, 2.8F);
 	public static Pizza pizza = new Pizza("pizza", 14, 2.8F);
 	
 	
@@ -70,6 +72,7 @@ public class BlockListxlfoodmod {
 		registry.registerAll(cheese_cake);
 		registry.registerAll(nether_cake);
 		registry.registerAll(strawberry_cake);
+		registry.registerAll(pumpkin_cake);
 		registry.registerAll(pizza);
 		
 	}
@@ -92,6 +95,7 @@ public class BlockListxlfoodmod {
 		registry.register(cheese_cake.createItemBlock());
 		registry.register(nether_cake.createItemBlock());
 		registry.register(strawberry_cake.createItemBlock());
+		registry.register(pumpkin_cake.createItemBlock());
 		registry.register(pizza.createItemBlock());
 		
 	}
@@ -114,6 +118,7 @@ public class BlockListxlfoodmod {
 		cheese_cake.registerItemModel(Item.getItemFromBlock(cheese_cake));
 		nether_cake.registerItemModel(Item.getItemFromBlock(nether_cake));
 		strawberry_cake.registerItemModel(Item.getItemFromBlock(strawberry_cake));
+		pumpkin_cake.registerItemModel(Item.getItemFromBlock(pumpkin_cake));
 		pizza.registerItemModel(Item.getItemFromBlock(pizza));
 	
 	}
