@@ -10,7 +10,9 @@
     "1.11.2-latest": "1.2.0",
     "1.11.2-recommended": "1.11.2-1.2.0",
     "1.12-latest": "1.2.0",
-    "1.12-recommended": "1.12-1.2.0"
+    "1.12-recommended": "1.12-1.2.0",
+    "1.12.2-latest": "1.3.0",
+    "1.12.2-recommended": "1.12.2-1.3.0"
   },
     "1.8.9": {
     "0.7.1": "Added Salty Chips, texture changes and more.",
@@ -31,6 +33,10 @@
     "1.12": {
     "1.2.0": "Added Onion Salad, Onion Rings and Pumpkin Stew.",
     "1.12-1.2.0": "Added Onion Salad, Onion Rings and Pumpkin Stew."
+  },
+    "1.12.2": {
+    "1.3.0": "Added Pumpkin Cake, Chocolate Cupcake, Oreo Cupcake and Strawberry Cupcake.",
+    "1.12.2-1.3.0": "Added Pumpkin Cake, Chocolate Cupcake, Oreo Cupcake and Strawberry Cupcake."
   }
 
 }
