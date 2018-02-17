@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" P ",
+		" C ",
+		" B "
+	],
+	"key": {
+		"P": {
+			"item": "minecraft:baked_potato"
+		},
+	     "C": {
+			"item": "xlfoodmod:cucumber"
+		},
+	      "B": {
+			"item": "xlfoodmod:bowl"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:cucumber_soup"
+	}
+}

@@ -3,7 +3,7 @@
 	"pattern": [
 		"OU ",
 		"PCE",
-		" S "
+		" B "
 	],
 	"key": {
 	     "O": {
@@ -21,8 +21,8 @@
 	      "E": {
 			"item": "minecraft:egg"
 		},
-	      "S": {
-			"item": "xlfoodmod:salad_bowl"
+	      "B": {
+			"item": "xlfoodmod:bowl"
 		}
 	},
 	"result": {

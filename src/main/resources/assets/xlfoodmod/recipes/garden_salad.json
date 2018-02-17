@@ -3,7 +3,7 @@
 	"pattern": [
 		" L ",
 		"HTC",
-		" S "
+		" B "
 	],
 	"key": {
 		"L": {
@@ -18,8 +18,8 @@
 	      "C": {
 			"item": "xlfoodmod:cucumber"
 		},
-	      "S": {
-			"item": "xlfoodmod:salad_bowl"
+	      "B": {
+			"item": "xlfoodmod:bowl"
 		}
 	},
 	"result": {

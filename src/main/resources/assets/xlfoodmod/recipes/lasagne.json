@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"DDD",
+		"GTC",
+		"DDD"
+	],
+	"key": {
+		"D": {
+			"item": "xlfoodmod:cooked_dough"
+		},
+		"G": {
+			"item": "xlfoodmod:ground_beef"
+		},
+           "T": {
+			"item": "xlfoodmod:tomato_sauce"
+		},
+           "C": {
+			"item": "xlfoodmod:cheese"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:lasagne"
+	}
+}

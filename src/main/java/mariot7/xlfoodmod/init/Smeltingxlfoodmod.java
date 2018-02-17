@@ -19,6 +19,7 @@ public class Smeltingxlfoodmod {
 		GameRegistry.addSmelting(ItemListxlfoodmod.onion, new ItemStack(ItemListxlfoodmod.onion_rings, 4), 0);
 		GameRegistry.addSmelting(Items.SUGAR, new ItemStack(ItemListxlfoodmod.marshmallow), 0);
 		GameRegistry.addSmelting(ItemListxlfoodmod.marshmallow, new ItemStack(ItemListxlfoodmod.roasted_marshmallow), 0);
+		GameRegistry.addSmelting(ItemListxlfoodmod.tomato, new ItemStack(ItemListxlfoodmod.tomato_sauce), 0);
 		GameRegistry.addSmelting(ItemListxlfoodmod.pepper, new ItemStack(ItemListxlfoodmod.hot_sauce), 0);
 		GameRegistry.addSmelting(new ItemStack(Items.DYE, 1, 3), new ItemStack(ItemListxlfoodmod.chocolate_syrup), 0);
 		

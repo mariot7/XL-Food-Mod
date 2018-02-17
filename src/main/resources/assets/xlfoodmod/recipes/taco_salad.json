@@ -3,7 +3,7 @@
 	"pattern": [
 		" L ",
 		"HTO",
-		" S "
+		" B "
 	],
 	"key": {
 		"L": {
@@ -18,8 +18,8 @@
 	      "O": {
 			"item": "xlfoodmod:tomato"
 		},
-	      "S": {
-			"item": "xlfoodmod:salad_bowl"
+	      "B": {
+			"item": "xlfoodmod:bowl"
 		}
 	},
 	"result": {

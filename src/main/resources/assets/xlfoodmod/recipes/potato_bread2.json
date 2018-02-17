@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		"WPW",
+		"   "
+	],
+	"key": {
+		"W": {
+			"item": "minecraft:wheat"
+		},
+		"P": {
+			"item": "minecraft:baked_potato"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:potato_bread"
+	}
+}

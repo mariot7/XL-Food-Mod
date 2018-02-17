@@ -1,0 +1,34 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CAE",
+		"TOP",
+		" B "
+	],
+	"key": {
+	     "C": {
+			"item": "xlfoodmod:cucumber"
+		},
+           "A": {
+			"item": "minecraft:carrot"
+		},
+           "E": {
+			"item": "xlfoodmod:pepper"
+		},
+           "T": {
+			"item": "xlfoodmod:tomato"
+		},
+           "O": {
+			"item": "xlfoodmod:onion"
+		},
+           "P": {
+			"item": "minecraft:potato"
+		},
+	      "B": {
+			"item": "xlfoodmod:bowl"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:vegetable_soup"
+	}
+}
