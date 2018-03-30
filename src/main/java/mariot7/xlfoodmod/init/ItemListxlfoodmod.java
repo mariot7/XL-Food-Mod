@@ -66,8 +66,10 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod fried_egg = new ItemFoodxlfoodmod("fried_egg", 3, 3.0F, false);
 	public static ItemFoodxlfoodmod pancake = new ItemFoodxlfoodmod("pancake", 5, 4.6F, false);
 	public static ItemFoodxlfoodmod waffle = new ItemFoodxlfoodmod("waffle", 5, 5.8F, false);
+	//traditional food
+	public static ItemFoodxlfoodmod enchilada = new ItemFoodxlfoodmod("enchilada", 9, 9.2F, false);
 	public static Bowl spaghetti = new Bowl("spaghetti", 9, 8.8F, false);
-	public static ItemFoodxlfoodmod lasagne = new ItemFoodxlfoodmod("lasagne", 12, 9.5F, false);
+	public static ItemFoodxlfoodmod lasagne = new ItemFoodxlfoodmod("lasagne", 12, 9.4F, false);
     //meat
 	public static ItemFoodxlfoodmod flesh = new ItemFoodxlfoodmod("flesh", 4, 1.2F, false);
 	public static ItemFoodxlfoodmod sausage = new ItemFoodxlfoodmod("sausage", 3, 4.2F, false);
@@ -87,6 +89,7 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod tortilla = new ItemFoodxlfoodmod("tortilla", 4, 3.0F, false);
 	public static ItemFoodxlfoodmod taco = new ItemFoodxlfoodmod("taco", 7, 9.4F, false);
 	public static ItemFoodxlfoodmod burrito = new ItemFoodxlfoodmod("burrito", 7, 9.0F, false);
+	public static ItemFoodxlfoodmod kebab = new ItemFoodxlfoodmod("kebab", 12, 13.6F, false);
 	public static ItemFoodxlfoodmod slice_of_pizza = new ItemFoodxlfoodmod("slice_of_pizza", 7, 1.4F, false);
     //salad
 	public static Itemxlfoodmod bowl = new Itemxlfoodmod("bowl");
@@ -99,8 +102,11 @@ public class ItemListxlfoodmod {
 	public static Bowl cucumber_soup = new Bowl("cucumber_soup", 6, 6.6F, false);
 	public static Bowl tomato_soup = new Bowl("tomato_soup", 3, 1.4F, false);
 	public static Bowl vegetable_soup = new Bowl("vegetable_soup", 8, 5.2F, false);
+	public static Bowl chicken_soup = new Bowl("chicken_soup", 10, 11.0F, false);
+	public static Bowl beef_stew = new Bowl("beef_stew", 12, 17.6F, false);
 	public static ItemFoodxlfoodmod pumpkin_stew = new ItemFoodxlfoodmod("pumpkin_stew", 6, 9.5F, false);
     //candy etc.
+	public static ItemFoodxlfoodmod caramel_apple = new ItemFoodxlfoodmod("caramel_apple", 6, 3.5F, false);
 	public static ItemFoodxlfoodmod marshmallow = new ItemFoodxlfoodmod("marshmallow", 1, 0.6F, false);
 	public static ItemFoodxlfoodmod roasted_marshmallow = new ItemFoodxlfoodmod("roasted_marshmallow", 2, 1.2F, false);
 	public static ItemFoodxlfoodmod oreo_cookie = new ItemFoodxlfoodmod("oreo_cookie", 3, 3.4F, false);
@@ -120,6 +126,7 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod chocolate_donut = new ItemFoodxlfoodmod("chocolate_donut", 4, 5.8F, false);
 	//cupcakes
 	public static Itemxlfoodmod paper_cup = new Itemxlfoodmod("paper_cup");
+	public static ItemFoodxlfoodmod vanilla_cupcake = new ItemFoodxlfoodmod("vanilla_cupcake", 2, 1.8F, false);
 	public static ItemFoodxlfoodmod chocolate_cupcake = new ItemFoodxlfoodmod("chocolate_cupcake", 3, 2.0F, false);
 	public static ItemFoodxlfoodmod oreo_cupcake = new ItemFoodxlfoodmod("oreo_cupcake", 5, 4.0F, false);
 	public static ItemFoodxlfoodmod strawberry_cupcake = new ItemFoodxlfoodmod("strawberry_cupcake", 3, 1.8F, false);
@@ -196,6 +203,8 @@ public class ItemListxlfoodmod {
 		registry.registerAll(fried_egg);
 		registry.registerAll(pancake);
 		registry.registerAll(waffle);
+		//traditional food
+		registry.registerAll(enchilada);
 		registry.registerAll(spaghetti);
 		registry.registerAll(lasagne);
 		//meat
@@ -217,6 +226,7 @@ public class ItemListxlfoodmod {
 		registry.registerAll(tortilla);
 		registry.registerAll(taco);
 		registry.registerAll(burrito);
+		registry.registerAll(kebab);
 		registry.registerAll(slice_of_pizza);
 		//salad
 		registry.registerAll(bowl);
@@ -229,8 +239,11 @@ public class ItemListxlfoodmod {
 		registry.registerAll(cucumber_soup);
 		registry.registerAll(tomato_soup);
 		registry.registerAll(vegetable_soup);
+		registry.registerAll(chicken_soup);
+		registry.registerAll(beef_stew);
 		registry.registerAll(pumpkin_stew);
 		//candy etc.
+		registry.registerAll(caramel_apple);
 		registry.registerAll(marshmallow);
 		registry.registerAll(roasted_marshmallow);
 		registry.registerAll(oreo_cookie);
@@ -250,6 +263,7 @@ public class ItemListxlfoodmod {
 		registry.registerAll(chocolate_donut);
 		//cupcakes
 		registry.registerAll(paper_cup);
+		registry.registerAll(vanilla_cupcake);
 		registry.registerAll(chocolate_cupcake);
 		registry.registerAll(oreo_cupcake);
 		registry.registerAll(strawberry_cupcake);
@@ -325,6 +339,8 @@ public class ItemListxlfoodmod {
 		fried_egg.registerItemModel();
 		pancake.registerItemModel();
 		waffle.registerItemModel();
+		//traditional food
+		enchilada.registerItemModel();
 		spaghetti.registerItemModel();
 		lasagne.registerItemModel();
 		//meat
@@ -346,6 +362,7 @@ public class ItemListxlfoodmod {
 		tortilla.registerItemModel();
 		taco.registerItemModel();
 		burrito.registerItemModel();
+		kebab.registerItemModel();
 		slice_of_pizza.registerItemModel();
 		//salad
 		bowl.registerItemModel();
@@ -358,8 +375,11 @@ public class ItemListxlfoodmod {
 		cucumber_soup.registerItemModel();
 		tomato_soup.registerItemModel();
 		vegetable_soup.registerItemModel();
+		chicken_soup.registerItemModel();
+		beef_stew.registerItemModel();
 		pumpkin_stew.registerItemModel();
 		//candy etc.
+		caramel_apple.registerItemModel();
 		marshmallow.registerItemModel();
 		roasted_marshmallow.registerItemModel();
 		oreo_cookie.registerItemModel();
@@ -379,6 +399,7 @@ public class ItemListxlfoodmod {
 		chocolate_donut.registerItemModel();
 		//cupcake
 		paper_cup.registerItemModel();
+		vanilla_cupcake.registerItemModel();
 		chocolate_cupcake.registerItemModel();
 		oreo_cupcake.registerItemModel();
 		strawberry_cupcake.registerItemModel();

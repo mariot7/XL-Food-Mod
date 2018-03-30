@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SSS",
+		"SAS",
+		"SSS"
+	],
+	"key": {
+		"S": {
+			"item": "minecraft:sugar"
+		},
+           "A": {
+			"item": "minecraft:apple"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:caramel_apple"
+	}
+}

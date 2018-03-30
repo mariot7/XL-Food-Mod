@@ -1,0 +1,31 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"RTC",
+		"MGO",
+		" T "
+	],
+	"key": {
+           "R": {
+			"item": "xlfoodmod:rice"
+		},
+           "C": {
+			"item": "xlfoodmod:cheese"
+		},
+           "M": {
+			"item": "xlfoodmod:tomato_sauce"
+		},
+	     "G": {
+			"item": "xlfoodmod:ground_beef"
+		},
+	     "O": {
+			"item": "xlfoodmod:onion"
+		},
+	     "T": {
+			"item": "xlfoodmod:tortilla"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:enchilada"
+	}
+}

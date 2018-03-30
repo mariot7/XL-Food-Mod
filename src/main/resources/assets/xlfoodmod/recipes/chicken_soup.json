@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" A ",
+		" C ",
+		" B "
+	],
+	"key": {
+		"A": {
+			"item": "minecraft:carrot"
+		},
+		"C": {
+			"item": "minecraft:cooked_chicken"
+           },
+	      "B": {
+			"item": "xlfoodmod:bowl"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:chicken_soup"
+	}
+}

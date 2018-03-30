@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		"ACO",
+		" B "
+	],
+	"key": {
+		"A": {
+			"item": "minecraft:carrot"
+		},
+		"C": {
+			"item": "minecraft:cooked_beef"
+           },
+           "O": {
+			"item": "xlfoodmod:onion"
+           },
+	      "B": {
+			"item": "xlfoodmod:bowl"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:beef_stew"
+	}
+}

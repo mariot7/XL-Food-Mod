@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" T ",
+		"LGN",
+		" O "
+	],
+	"key": {
+           "T": {
+			"item": "xlfoodmod:tomato"
+		},
+           "L": {
+			"item": "xlfoodmod:lettuce"
+		},
+	     "G": {
+			"item": "xlfoodmod:ground_beef"
+		},
+	     "N": {
+			"item": "xlfoodmod:onion"
+		},
+	     "O": {
+			"item": "xlfoodmod:tortilla"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:kebab"
+	}
+}

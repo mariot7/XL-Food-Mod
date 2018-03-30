@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" V ",
+		" D ",
+		" P "
+	],
+	"key": {
+           "V": {
+			"item": "xlfoodmod:vanilla_cream"
+		},
+		"D": {
+			"item": "xlfoodmod:cooked_dough"
+		},
+		"P": {
+			"item": "xlfoodmod:paper_cup"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:vanilla_cupcake"
+	}
+}
