@@ -11,8 +11,8 @@
     "1.11.2-recommended": "1.11.2-1.2.0",
     "1.12-latest": "1.2.0",
     "1.12-recommended": "1.12-1.2.0",
-    "1.12.2-latest": "1.5.0",
-    "1.12.2-recommended": "1.12.2-1.5.0"
+    "1.12.2-latest": "1.6.0",
+    "1.12.2-recommended": "1.12.2-1.6.0"
   },
     "1.8.9": {
     "0.7.1": "Added Salty Chips, texture changes and more.",
@@ -35,8 +35,8 @@
     "1.12-1.2.0": "Added Onion Salad, Onion Rings and Pumpkin Stew."
   },
     "1.12.2": {
-    "1.5.0": "Added Enchilada, Kebab, Chicken Soup, Beef Stew and more.",
-    "1.12.2-1.5.0": "Added Enchilada, Kebab, Chicken Soup, Beef Stew and more."
+    "1.6.0": "FIXED ABNORMAL SATURATION VALUES, added Chicken Sandwich, BLT Sandwich and Ice Cream Sandwich. Please update to this version ASAP!",
+    "1.12.2-1.6.0": "FIXED ABNORMAL SATURATION VALUES, added Chicken Sandwich, BLT Sandwich and Ice Cream Sandwich. Please update to this version ASAP!"
   }
 
 }
