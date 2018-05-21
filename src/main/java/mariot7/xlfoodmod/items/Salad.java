@@ -33,7 +33,7 @@ public class Salad extends ItemFood {
 	}
 	
 	public void onFoodEaten(ItemStack stack, World world, EntityPlayer player) {
-		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.salad_bowl));
+		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.bowl));
 	}
 	
 

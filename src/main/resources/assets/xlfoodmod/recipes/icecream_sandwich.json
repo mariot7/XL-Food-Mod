@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"HCH",
+		"III",
+		"HCH"
+	],
+	"key": {
+		"H": {
+			"item": "xlfoodmod:chocolate_syrup"
+		},
+        "C": {
+			"item": "minecraft:cookie"
+		},
+		"I": {
+            "item": "xlfoodmod:vanilla_icecream_ball"
+        }
+	},
+	"result": {
+		"item": "xlfoodmod:icecream_sandwich"
+	}
+}

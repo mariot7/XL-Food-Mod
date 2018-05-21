@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"DDD",
+		"BLT",
+		"DDD"
+	],
+	"key": {
+		"D": {
+			"item": "xlfoodmod:cooked_dough"
+		},
+        "B": {
+			"item": "xlfoodmod:bacon"
+		},
+		"L": {
+            "item": "xlfoodmod:lettuce"
+        },
+        "T": {
+            "item": "xlfoodmod:tomato"
+        }
+	},
+	"result": {
+		"item": "xlfoodmod:blt_sandwich"
+	}
+}

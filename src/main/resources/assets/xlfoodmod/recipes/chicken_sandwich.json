@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"DDD",
+		"LCL",
+		"DDD"
+	],
+	"key": {
+		"D": {
+			"item": "xlfoodmod:cooked_dough"
+		},
+        "L": {
+			"item": "xlfoodmod:lettuce"
+		},
+		"C": {
+            "item": "minecraft:cooked_chicken"
+        }
+	},
+	"result": {
+		"item": "xlfoodmod:chicken_sandwich"
+	}
+}
