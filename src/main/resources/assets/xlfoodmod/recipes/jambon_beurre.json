@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " P ",
+        " U ",
+        " B "
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:cooked_porkchop"
+        },
+        "U": {
+            "item": "xlfoodmod:butter"
+        },
+        "B": {
+            "item": "xlfoodmod:baguette"
+        }
+    },
+    "result": {
+        "item": "xlfoodmod:jambon_beurre"
+    }
+}
