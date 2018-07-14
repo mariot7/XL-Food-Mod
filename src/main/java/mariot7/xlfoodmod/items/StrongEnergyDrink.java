@@ -14,6 +14,7 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -47,8 +48,8 @@ public class StrongEnergyDrink extends ItemFood {
 	
 	@SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-		tooltip.add("Strength II");
-		tooltip.add("Fire Resistance II (2:00)");
+		tooltip.add(TextFormatting.BLUE + "Strength II");
+		tooltip.add(TextFormatting.BLUE + "Fire Resistance II (2:00)");
 	}
 	
 	@Override

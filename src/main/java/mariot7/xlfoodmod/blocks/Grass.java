@@ -3,6 +3,7 @@ package mariot7.xlfoodmod.blocks;
 import java.util.ArrayList;
 import java.util.Random;
 import mariot7.xlfoodmod.Main;
+import mariot7.xlfoodmod.Reference;
 import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.block.BlockBush;
@@ -27,7 +28,7 @@ public class Grass extends BlockBush {
 		this.setResistance(resistance);
 		this.setSoundType(SoundType.PLANT);
 		this.name = name;
-		setUnlocalizedName(name);
+		setUnlocalizedName(Reference.MOD_ID + name);
 		setRegistryName(name);
 	}
 
@@ -57,22 +58,30 @@ public class Grass extends BlockBush {
 	@Override
 	public ArrayList getDrops(IBlockAccess world, BlockPos pos, IBlockState blockstate, int fortune) {
 	    ArrayList drops = new ArrayList();
-	    if (RANDOM.nextFloat() < 0.35F)
+	    if (RANDOM.nextFloat() < 0.30F) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.rice_seeds));
-	    if (RANDOM.nextFloat() < 0.35F)
+	    }
+	    if (RANDOM.nextFloat() < 0.30F) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.pepper_seeds));
-	    if (RANDOM.nextFloat() < 0.35F)
+	    }
+	    if (RANDOM.nextFloat() < 0.30F) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.corn_seeds));
-	    if (RANDOM.nextFloat() < 0.35F)
+	    }
+	    if (RANDOM.nextFloat() < 0.30F) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.cucumber_seeds));
-	    if (RANDOM.nextFloat() < 0.35F)
+	    }
+	    if (RANDOM.nextFloat() < 0.30F) {
 		drops.add(new ItemStack(ItemListxlfoodmod.lettuce_seeds));
-	    if (RANDOM.nextFloat() < 0.35F)
-	    	drops.add(new ItemStack(ItemListxlfoodmod.onion));
-	    if (RANDOM.nextFloat() < 0.35F)
+	    }
+	    if (RANDOM.nextFloat() < 0.30F) {
+	    drops.add(new ItemStack(ItemListxlfoodmod.onion));
+	    }
+	    if (RANDOM.nextFloat() < 0.30F) {
 		drops.add(new ItemStack(ItemListxlfoodmod.tomato_seeds));
-	    if (RANDOM.nextFloat() < 0.35F)
+	    }
+	    if (RANDOM.nextFloat() < 0.30F) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.strawberry_seeds));
+	    }
 	    return drops;
 	}
 	

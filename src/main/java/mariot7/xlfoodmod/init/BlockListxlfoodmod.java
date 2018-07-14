@@ -46,12 +46,12 @@ public class BlockListxlfoodmod {
 	public static Tomato tomato_plant = new Tomato("tomato_plant");
 	public static Strawberry strawberry_plant = new Strawberry("strawberry_plant");
 	public static ChocolateCake chocolate_cake = new ChocolateCake("chocolate_cake", 14, 0.2F);
-	public static OreoCake oreo_cake = new OreoCake("oreo_cake", 14, 0.2F);
-	public static CheeseCake cheese_cake = new CheeseCake("cheese_cake", 14, 0.2F);
+	public static OreoCake oreo_cake = new OreoCake("oreo_cake", 17, 0.2F);
+	public static CheeseCake cheese_cake = new CheeseCake("cheese_cake", 15, 0.2F);
 	public static NetherCake nether_cake = new NetherCake("nether_cake", 14, 0.2F);
-	public static StrawberryCake strawberry_cake = new StrawberryCake("strawberry_cake", 14, 0.2F);
+	public static StrawberryCake strawberry_cake = new StrawberryCake("strawberry_cake", 15, 0.2F);
 	public static PumpkinCake pumpkin_cake = new PumpkinCake("pumpkin_cake", 14, 0.2F);
-	public static Pizza pizza = new Pizza("pizza", 14, 0.2F);
+	public static Pizza pizza = new Pizza("pizza", 18, 0.2F);
 	
 	
 	public static void register(IForgeRegistry<Block> registry) {

@@ -1,6 +1,6 @@
 itemGroup.tabXLFoodMod=XL Food Mod
 tile.rock_salt.name=Rock Salt
-tile.grass.name=Grass
+tile.xlfoodmodgrass.name=Grass
 tile.vanilla_flower.name=Vanilla Flower
 tile.chocolate_cake.name=Chocolate Cake
 tile.oreo_cake.name=Oreo Cake
@@ -27,6 +27,7 @@ item.cucumber.name=Cucumber
 tile.lettuce_plant.name=Lettuce Plant
 item.lettuce_seeds.name=Lettuce Seeds
 item.lettuce.name=Lettuce
+tile.onion_plant.name=Onion Plant
 item.onion.name=Onion
 tile.tomato_plant.name=Tomato Plant
 item.tomato_seeds.name=Tomato Seeds

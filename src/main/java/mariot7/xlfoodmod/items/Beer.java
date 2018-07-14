@@ -19,6 +19,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.stats.StatList;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -47,13 +48,13 @@ public class Beer extends ItemFood {
 	}
 
 	protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
-		player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 300, 1));
+		player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 100, 1));
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.glass_mug));
 	}
 	
 	@SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-        tooltip.add("Nauesa II (0:15)");
+        tooltip.add(TextFormatting.RED + "Nauesa II (0:05)");
     }
 	
 	@Override

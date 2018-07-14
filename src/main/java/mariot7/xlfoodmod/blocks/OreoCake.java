@@ -4,6 +4,7 @@ import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.BlockListxlfoodmod;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockCake;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;

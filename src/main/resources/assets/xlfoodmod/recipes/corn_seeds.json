@@ -2,7 +2,7 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
         {        
-            "item": "xlfoodmod:corn"
+            "item": "xlfoodmod:raw_corn"
         }
 	],
 	"result": {

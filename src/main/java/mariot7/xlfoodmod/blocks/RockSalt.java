@@ -41,7 +41,7 @@ public class RockSalt extends BlockOre {
 	
     @Override
     public int quantityDropped(Random rand) {
-    return 4;
+    return rand.nextInt(3) + 2;
     }
     
     public void registerItemModel(Item itemBlock) {

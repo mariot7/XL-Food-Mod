@@ -17,6 +17,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.stats.StatList;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -50,8 +51,8 @@ public class SpeedyEnergyDrink extends ItemFood {
 	
 	@SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-		tooltip.add("Speed");
-		tooltip.add("Haste III (0:25)");
+		tooltip.add(TextFormatting.BLUE + "Speed");
+		tooltip.add(TextFormatting.BLUE + "Haste III (0:25)");
 	}
 	
 	@Override

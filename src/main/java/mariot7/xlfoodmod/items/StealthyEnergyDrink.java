@@ -14,6 +14,7 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -48,9 +49,9 @@ public class StealthyEnergyDrink extends ItemFood {
 	
 	@SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-		tooltip.add("Night Vision");
-		tooltip.add("Speed");
-		tooltip.add("Invisibility (2:00)");
+		tooltip.add(TextFormatting.BLUE + "Night Vision");
+		tooltip.add(TextFormatting.BLUE + "Speed");
+		tooltip.add(TextFormatting.BLUE + "Invisibility (2:00)");
 	}
 	
 	@Override
