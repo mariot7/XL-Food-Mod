@@ -10,7 +10,8 @@
 			"item": "xlfoodmod:cooked_dough"
 		},
         "L": {
-			"item": "xlfoodmod:lettuce"
+			"type": "forge:ore_dict",
+            "ore": "cropLettuce"
 		},
 		"C": {
             "item": "minecraft:cooked_chicken"

@@ -7,7 +7,8 @@
 	],
 	"key": {
            "R": {
-			"item": "xlfoodmod:rice"
+			"type": "forge:ore_dict",
+            "ore": "cropRice"
 		},
            "C": {
 			"item": "xlfoodmod:cheese"
@@ -19,7 +20,8 @@
 			"item": "xlfoodmod:ground_beef"
 		},
 	     "O": {
-			"item": "xlfoodmod:onion"
+			"type": "forge:ore_dict",
+            "ore": "cropOnion"
 		},
 	     "T": {
 			"item": "xlfoodmod:tortilla"

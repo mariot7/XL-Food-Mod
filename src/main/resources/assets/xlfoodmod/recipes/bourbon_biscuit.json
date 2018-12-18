@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C",
+		"I",
+		"C"
+	],
+	"key": {
+		"C": {
+			"item": "xlfoodmod:chocolate"
+		},
+        "I": {
+			"item": "xlfoodmod:chocolate_icecream_ball"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:bourbon_biscuit"
+	}
+}

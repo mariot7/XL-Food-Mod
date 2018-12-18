@@ -10,7 +10,8 @@
 			"item": "xlfoodmod:cooked_dough"
 		},
 		"C": {
-			"item": "xlfoodmod:corn"
+			"type": "forge:ore_dict",
+            "ore": "cropCorn"
 		}
 	},
 	"result": {

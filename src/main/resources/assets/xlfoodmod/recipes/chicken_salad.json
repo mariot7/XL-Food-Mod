@@ -7,10 +7,12 @@
 	],
 	"key": {
 	     "O": {
-			"item": "xlfoodmod:onion"
+			"type": "forge:ore_dict",
+            "ore": "cropOnion"
 		},
 		"U": {
-			"item": "xlfoodmod:cucumber"
+			"type": "forge:ore_dict",
+            "ore": "cropCucumber"
 		},
 		"P": {
 			"item": "xlfoodmod:pepper"

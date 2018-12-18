@@ -16,7 +16,8 @@
 			"item": "minecraft:cooked_chicken"
 		},
 	      "L": {
-			"item": "xlfoodmod:lettuce"
+			"type": "forge:ore_dict",
+            "ore": "cropLettuce"
 		},
 	      "B": {
 			"item": "xlfoodmod:bottom_bun"

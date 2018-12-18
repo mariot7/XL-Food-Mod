@@ -13,7 +13,8 @@
 			"item": "minecraft:sugar"
 		},
            "T": {
-			"item": "xlfoodmod:strawberry"
+			"type": "forge:ore_dict",
+            "ore": "cropStrawberry"
 		},
            "W": {
 			"item": "minecraft:wheat"

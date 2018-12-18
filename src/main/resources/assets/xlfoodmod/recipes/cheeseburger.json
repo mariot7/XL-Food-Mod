@@ -10,7 +10,8 @@
 			"item": "xlfoodmod:top_bun"
 		},
 		"P": {
-			"item": "xlfoodmod:cucumber"
+			"type": "forge:ore_dict",
+            "ore": "cropCucumber"
 		},
            "G": {
 			"item": "xlfoodmod:ground_beef"

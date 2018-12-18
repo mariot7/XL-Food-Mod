@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"DDD",
+		"BCE",
+		"DDD"
+	],
+	"key": {
+		"D": {
+			"item": "xlfoodmod:cooked_dough"
+		},
+		"B": {
+            "item": "xlfoodmod:bacon"
+        },
+        "C": {
+			"item": "xlfoodmod:cheese"
+		},
+		"E": {
+            "item": "xlfoodmod:fried_egg"
+        }
+	},
+	"result": {
+		"item": "xlfoodmod:breakfast_sandwich"
+	}
+}

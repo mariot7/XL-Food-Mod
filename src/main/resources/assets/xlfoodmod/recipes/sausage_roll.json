@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"D",
+		"S",
+		"D"
+	],
+	"key": {
+		"D": {
+			"item": "xlfoodmod:cooked_dough"
+		},
+	    "S": {
+			"item": "xlfoodmod:sausage"
+		}
+	},
+	"result": {
+		"item": "xlfoodmod:sausage_roll"
+	}
+}

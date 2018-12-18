@@ -5,7 +5,8 @@
             "item": "minecraft:bread"
         },
         {        
-            "item": "xlfoodmod:corn"
+            "type": "forge:ore_dict",
+            "ore": "cropCorn"
         }
 	],
 	"result": {

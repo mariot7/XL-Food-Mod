@@ -10,7 +10,8 @@
 			"item": "xlfoodmod:cheese"
 		},
 		"T": {
-			"item": "xlfoodmod:tomato"
+			"type": "forge:ore_dict",
+            "ore": "cropTomato"
 		},
 	     "G": {
 			"item": "xlfoodmod:ground_beef"

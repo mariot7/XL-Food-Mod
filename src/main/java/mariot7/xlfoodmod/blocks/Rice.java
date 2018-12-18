@@ -1,5 +1,6 @@
 package mariot7.xlfoodmod.blocks;
 
+import biomesoplenty.api.block.BOPBlocks;
 import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.block.BlockCrops;
@@ -39,14 +40,24 @@ public class Rice extends BlockCrops {
 	@Override
 	protected boolean canSustainBush(IBlockState state)
     {
-		return state.getBlock() == Blocks.FARMLAND;
+		if (Main.isBiomesoPlentyLoaded) {
+			return state.getBlock() == Blocks.FARMLAND || state.getBlock() == BOPBlocks.farmland_0 || state.getBlock() == BOPBlocks.farmland_1;
+		}
+		else {
+			return state.getBlock() == Blocks.FARMLAND;
+		}
     }
 	
 	@Override
 	public boolean canBlockStay(World worldIn, BlockPos pos, IBlockState state)
     {
 		IBlockState soil = worldIn.getBlockState(pos.down());
-		return (worldIn.getLight(pos) >= 8 || worldIn.canSeeSky(pos)) && soil.getBlock() == Blocks.FARMLAND;
+		if (Main.isBiomesoPlentyLoaded) {
+			return (worldIn.getLight(pos) >= 8 || worldIn.canSeeSky(pos)) && soil.getBlock() == Blocks.FARMLAND || soil.getBlock() == BOPBlocks.farmland_0 || soil.getBlock() == BOPBlocks.farmland_1;
+		}
+		else {
+			return (worldIn.getLight(pos) >= 8 || worldIn.canSeeSky(pos)) && soil.getBlock() == Blocks.FARMLAND;
+		}
     }
 	
 	

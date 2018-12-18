@@ -13,10 +13,12 @@
 			"item": "xlfoodmod:bacon"
 		},
 		"L": {
-            "item": "xlfoodmod:lettuce"
+            "type": "forge:ore_dict",
+            "ore": "cropLettuce"
         },
         "T": {
-            "item": "xlfoodmod:tomato"
+            "type": "forge:ore_dict",
+            "ore": "cropTomato"
         }
 	},
 	"result": {

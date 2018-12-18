@@ -1,8 +1,13 @@
 package mariot7.xlfoodmod.init;
 
+import biomesoplenty.api.block.BOPBlocks;
+import mariot7.xlfoodmod.Main;
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
@@ -26,22 +31,6 @@ public class ItemSeedFoodxlfoodmod extends ItemFood implements IPlantable {
         this.soilId = soil;
     }
 
-    public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        ItemStack itemstack = player.getHeldItem(hand);
-        IBlockState state = worldIn.getBlockState(pos);
-        if (facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, itemstack) && state.getBlock().canSustainPlant(state, worldIn, pos, EnumFacing.UP, this) && worldIn.isAirBlock(pos.up()))
-        {
-            worldIn.setBlockState(pos.up(), this.crops.getDefaultState(), 11);
-            itemstack.shrink(1);
-            return EnumActionResult.SUCCESS;
-        }
-        else
-        {
-            return EnumActionResult.FAIL;
-        }
-    }
-
     @Override
     public EnumPlantType getPlantType(IBlockAccess world, BlockPos pos)
     {
@@ -53,6 +42,49 @@ public class ItemSeedFoodxlfoodmod extends ItemFood implements IPlantable {
     {
         return this.crops.getDefaultState();
     }
+    
+    public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
+	{
+		ItemStack itemstack = player.getHeldItem(hand);
+		net.minecraft.block.state.IBlockState state = worldIn.getBlockState(pos);
+		if (Main.isBiomesoPlentyLoaded) {
+			if (facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, itemstack) && state.getBlock() == Blocks.FARMLAND || state.getBlock() == BOPBlocks.farmland_0 || state.getBlock() == BOPBlocks.farmland_1 && worldIn.isAirBlock(pos.up()))
+			{
+				worldIn.setBlockState(pos.up(), this.crops.getDefaultState());
+
+				if (player instanceof EntityPlayerMP)
+				{
+					CriteriaTriggers.PLACED_BLOCK.trigger((EntityPlayerMP)player, pos.up(), itemstack);
+				}
+
+				itemstack.shrink(1);
+				return EnumActionResult.SUCCESS;
+	        	}
+	        	else
+	        	{
+	        		return EnumActionResult.FAIL;
+	        	}
+		}
+		else {
+			if (facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, itemstack) && state.getBlock() == Blocks.FARMLAND && worldIn.isAirBlock(pos.up()))
+			{
+				worldIn.setBlockState(pos.up(), this.crops.getDefaultState());
+
+				if (player instanceof EntityPlayerMP)
+				{
+					CriteriaTriggers.PLACED_BLOCK.trigger((EntityPlayerMP)player, pos.up(), itemstack);
+				}
+
+				itemstack.shrink(1);
+				return EnumActionResult.SUCCESS;
+	        	}
+	        	else
+	        	{
+	        		return EnumActionResult.FAIL;
+	        	}
+		
+		}
+	}
     
 
 }

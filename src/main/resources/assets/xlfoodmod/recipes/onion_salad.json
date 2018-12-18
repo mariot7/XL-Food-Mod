@@ -7,13 +7,16 @@
 	],
 	"key": {
 		"L": {
-			"item": "xlfoodmod:lettuce"
+			"type": "forge:ore_dict",
+            "ore": "cropLettuce"
 		},
 		"O": {
-			"item": "xlfoodmod:onion"
+			"type": "forge:ore_dict",
+            "ore": "cropOnion"
 		},
 	     "T": {
-			"item": "xlfoodmod:tomato"
+			"type": "forge:ore_dict",
+            "ore": "cropTomato"
 		},
 	      "B": {
 			"item": "xlfoodmod:bowl"

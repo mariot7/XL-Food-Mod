@@ -10,13 +10,15 @@
 			"item": "xlfoodmod:top_bun"
 		},
 		"O": {
-			"item": "xlfoodmod:tomato"
+			"type": "forge:ore_dict",
+            "ore": "cropTomato"
 		},
            "G": {
 			"item": "xlfoodmod:ground_beef"
 		},
 	      "P": {
-			"item": "xlfoodmod:cucumber"
+			"type": "forge:ore_dict",
+            "ore": "cropCucumber"
 		},
 	      "B": {
 			"item": "xlfoodmod:bottom_bun"

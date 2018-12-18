@@ -7,7 +7,8 @@
 	],
 	"key": {
            "R": {
-			"item": "xlfoodmod:rice"
+			"type": "forge:ore_dict",
+            "ore": "cropRice"
 		},
            "E": {
 			"item": "xlfoodmod:empty_can"

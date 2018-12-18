@@ -2,7 +2,8 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
         {        
-            "item": "xlfoodmod:rice"
+            "type": "forge:ore_dict",
+            "ore": "cropRice"
         },
         {        
             "item": "xlfoodmod:butter"

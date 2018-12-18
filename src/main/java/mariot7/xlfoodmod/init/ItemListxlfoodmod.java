@@ -89,6 +89,7 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod chickenburger = new ItemFoodxlfoodmod("chickenburger", 9, 0.6F, false);
 	public static ItemFoodxlfoodmod cheeseburger = new ItemFoodxlfoodmod("cheeseburger", 10, 0.6F, false);
 	public static ItemFoodxlfoodmod hot_dog = new ItemFoodxlfoodmod("hot_dog", 8, 0.6F, false);
+	public static ItemFoodxlfoodmod sausage_roll = new ItemFoodxlfoodmod("sausage_roll", 7, 0.6F, false);
 	public static ItemFoodxlfoodmod slice_of_pizza = new ItemFoodxlfoodmod("slice_of_pizza", 7, 0.6F, false);
 	public static ItemFoodxlfoodmod tortilla = new ItemFoodxlfoodmod("tortilla", 4, 0.6F, false);
 	public static ItemFoodxlfoodmod taco = new ItemFoodxlfoodmod("taco", 7, 0.6F, false);
@@ -97,6 +98,8 @@ public class ItemListxlfoodmod {
 	//sandwiches
 	public static ItemFoodxlfoodmod chicken_sandwich = new ItemFoodxlfoodmod("chicken_sandwich", 10, 0.6F, false);
 	public static ItemFoodxlfoodmod blt_sandwich = new ItemFoodxlfoodmod("blt_sandwich", 12, 0.4F, false);
+	public static ItemFoodxlfoodmod breakfast_sandwich = new ItemFoodxlfoodmod("breakfast_sandwich", 8, 0.6F, false);
+	public static ItemFoodxlfoodmod grilled_cheese_sandwich = new ItemFoodxlfoodmod("grilled_cheese_sandwich", 11, 0.4F, false);
 	public static ItemFoodxlfoodmod icecream_sandwich = new ItemFoodxlfoodmod("icecream_sandwich", 6, 0.6F, false);
     //salad
 	public static Itemxlfoodmod bowl = new Itemxlfoodmod("bowl");
@@ -119,6 +122,7 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod oreo_cookie = new ItemFoodxlfoodmod("oreo_cookie", 3, 0.6F, false);
 	public static ItemFoodxlfoodmod twinkie = new ItemFoodxlfoodmod("twinkie", 4, 0.6F, false);
 	public static ItemFoodxlfoodmod brownie = new ItemFoodxlfoodmod("brownie", 3, 0.6F, false);
+	public static ItemFoodxlfoodmod bourbon_biscuit = new ItemFoodxlfoodmod("bourbon_biscuit", 3, 0.6F, false);
 	public static ItemFoodxlfoodmod chocolate = new ItemFoodxlfoodmod("chocolate", 1, 0.6F, false);
 	public static Itemxlfoodmod chocolate_icecream_ball = new Itemxlfoodmod("chocolate_icecream_ball");
 	public static Itemxlfoodmod vanilla_icecream_ball = new Itemxlfoodmod("vanilla_icecream_ball");
@@ -173,23 +177,37 @@ public class ItemListxlfoodmod {
 		
 		//crops
 		registry.registerAll(rice_seeds);
+		OreDictionary.registerOre("seedRice", rice_seeds);
 		registry.registerAll(rice);
+		OreDictionary.registerOre("cropRice", rice);
 		registry.registerAll(butter_rice);
 		registry.registerAll(fried_rice);
 		registry.registerAll(pepper_seeds);
 		registry.registerAll(pepper);
 		registry.registerAll(corn_seeds);
+		OreDictionary.registerOre("seedCorn", corn_seeds);
 		registry.registerAll(raw_corn);
 		registry.registerAll(corn);
+		OreDictionary.registerOre("cropCorn", corn);
 		registry.registerAll(cucumber_seeds);
+		OreDictionary.registerOre("seedCucumber", cucumber_seeds);
 		registry.registerAll(cucumber);
+		OreDictionary.registerOre("cropCucumber", cucumber);
 		registry.registerAll(lettuce_seeds);
+		OreDictionary.registerOre("seedLettuce", lettuce_seeds);
 		registry.registerAll(lettuce);
+		OreDictionary.registerOre("cropLettuce", lettuce);
 		registry.registerAll(onion);
+		OreDictionary.registerOre("seedOnion", onion);
+		OreDictionary.registerOre("cropOnion", onion);
 		registry.registerAll(tomato_seeds);
+		OreDictionary.registerOre("seedTomato", tomato_seeds);
 		registry.registerAll(tomato);
+		OreDictionary.registerOre("cropTomato", tomato);
 		registry.registerAll(strawberry_seeds);
+		OreDictionary.registerOre("seedStrawberry", strawberry_seeds);
 		registry.registerAll(strawberry);
+		OreDictionary.registerOre("cropStrawberry", strawberry);
 		//other foods
 		registry.registerAll(salt);
 		OreDictionary.registerOre("itemSalt", salt);
@@ -234,6 +252,7 @@ public class ItemListxlfoodmod {
 		registry.registerAll(chickenburger);
 		registry.registerAll(cheeseburger);
 		registry.registerAll(hot_dog);
+		registry.registerAll(sausage_roll);
 		registry.registerAll(slice_of_pizza);
 		registry.registerAll(tortilla);
 		registry.registerAll(taco);
@@ -242,6 +261,8 @@ public class ItemListxlfoodmod {
 		//sandwiches
 		registry.registerAll(chicken_sandwich);
 		registry.registerAll(blt_sandwich);
+		registry.registerAll(breakfast_sandwich);
+		registry.registerAll(grilled_cheese_sandwich);
         registry.registerAll(icecream_sandwich);
 		//salad
 		registry.registerAll(bowl);
@@ -264,6 +285,7 @@ public class ItemListxlfoodmod {
 		registry.registerAll(oreo_cookie);
 		registry.registerAll(twinkie);
 		registry.registerAll(brownie);
+		registry.registerAll(bourbon_biscuit);
 		registry.registerAll(chocolate);
 		registry.registerAll(chocolate_icecream_ball);
 		registry.registerAll(vanilla_icecream_ball);
@@ -378,6 +400,7 @@ public class ItemListxlfoodmod {
 		chickenburger.registerItemModel();
 		cheeseburger.registerItemModel();
 		hot_dog.registerItemModel();
+		sausage_roll.registerItemModel();
 		slice_of_pizza.registerItemModel();
 		tortilla.registerItemModel();
 		taco.registerItemModel();
@@ -386,6 +409,8 @@ public class ItemListxlfoodmod {
 		//sandwiches
 		chicken_sandwich.registerItemModel();
 		blt_sandwich.registerItemModel();
+		breakfast_sandwich.registerItemModel();
+		grilled_cheese_sandwich.registerItemModel();
 		icecream_sandwich.registerItemModel();
 		//salad
 		bowl.registerItemModel();
@@ -408,6 +433,7 @@ public class ItemListxlfoodmod {
 		oreo_cookie.registerItemModel();
 		twinkie.registerItemModel();
 		brownie.registerItemModel();
+		bourbon_biscuit.registerItemModel();
 		chocolate.registerItemModel();
 		chocolate_icecream_ball.registerItemModel();
 		vanilla_icecream_ball.registerItemModel();

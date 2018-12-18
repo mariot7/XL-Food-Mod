@@ -10,7 +10,8 @@
 			"item": "minecraft:baked_potato"
 		},
 	     "C": {
-			"item": "xlfoodmod:cucumber"
+			"type": "forge:ore_dict",
+            "ore": "cropCucumber"
 		},
 	      "B": {
 			"item": "xlfoodmod:bowl"

@@ -5,7 +5,8 @@
             "item": "xlfoodmod:pie_shell"
         },
         {        
-            "item": "xlfoodmod:strawberry"
+            "type": "forge:ore_dict",
+            "ore": "cropStrawberry"
         }
 	],
 	"result": {

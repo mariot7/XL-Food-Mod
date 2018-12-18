@@ -2,7 +2,8 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
         {        
-            "item": "xlfoodmod:strawberry"
+            "type": "forge:ore_dict",
+            "ore": "cropStrawberry"
         },
         {        
             "item": "minecraft:snowball"

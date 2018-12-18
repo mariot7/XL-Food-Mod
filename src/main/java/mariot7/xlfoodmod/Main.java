@@ -18,6 +18,7 @@ import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -29,6 +30,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, updateJSON = Reference.updateJSON)
 public class Main {
+	
+	public static boolean isBiomesoPlentyLoaded;
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
@@ -63,6 +66,7 @@ public class Main {
 	@EventHandler
     public void preInit(FMLPreInitializationEvent preEvent)
     {
+		isBiomesoPlentyLoaded = Loader.isModLoaded("biomesoplenty");
 		this.proxy.preInit(preEvent);
 		config = new Configuration(preEvent.getSuggestedConfigurationFile());
 		if(!GuiConfigurationxlfoodmod.WorldGen.RockGen) {
