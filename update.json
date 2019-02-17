@@ -11,8 +11,8 @@
     "1.11.2-recommended": "1.11.2-1.2.0",
     "1.12-latest": "1.2.0",
     "1.12-recommended": "1.12-1.2.0",
-    "1.12.2-latest": "1.8.0",
-    "1.12.2-recommended": "1.12.2-1.8.0"
+    "1.12.2-latest": "1.8.1",
+    "1.12.2-recommended": "1.12.2-1.8.1"
   },
     "1.8.9": {
     "0.7.1": "Added Salty Chips, texture changes and more.",
@@ -35,8 +35,8 @@
     "1.12-1.2.0": "Added Onion Salad, Onion Rings and Pumpkin Stew."
   },
     "1.12.2": {
-    "1.8.0": "Added Grilled Cheese Sandwich, Breakfast Sandwich, Sausage Roll, Bourbon Biscuit, added support for Biomes 'o Plenty farmland and more!",
-    "1.12.2-1.8.0": "Added Grilled Cheese Sandwich, Breakfast Sandwich, Sausage Roll, Bourbon Biscuit, added support for Biomes 'o Plenty farmland and more!"
+    "1.8.1": "Added right click harvesting, added more items to the ore dictionary!",
+    "1.12.2-1.8.1": "Added right click harvesting, added more items to the ore dictionary!"
   }
 
 }
