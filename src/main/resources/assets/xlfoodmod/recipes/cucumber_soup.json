@@ -11,7 +11,7 @@
 		},
 	     "C": {
 			"type": "forge:ore_dict",
-            "ore": "cropCucumber"
+            	"ore": "cropCucumber"
 		},
 	      "B": {
 			"item": "xlfoodmod:bowl"

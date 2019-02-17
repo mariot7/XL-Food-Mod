@@ -7,11 +7,12 @@
 	],
 	"key": {
 		"D": {
-			"item": "xlfoodmod:cooked_dough"
+			"type": "forge:ore_dict",
+            	"ore": "foodDough"
 		},
 		"C": {
 			"type": "forge:ore_dict",
-            "ore": "cropCorn"
+            	"ore": "cropCorn"
 		}
 	},
 	"result": {

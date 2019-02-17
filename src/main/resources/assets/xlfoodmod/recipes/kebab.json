@@ -8,21 +8,23 @@
 	"key": {
            "T": {
 			"type": "forge:ore_dict",
-            "ore": "cropTomato"
+            	"ore": "cropTomato"
 		},
            "L": {
 			"type": "forge:ore_dict",
-            "ore": "cropLettuce"
+            	"ore": "cropLettuce"
 		},
 	     "G": {
-			"item": "xlfoodmod:ground_beef"
+			"type": "forge:ore_dict",
+            	"ore": "foodGroundbeef"
 		},
 	     "N": {
 			"type": "forge:ore_dict",
-            "ore": "cropOnion"
+            	"ore": "cropOnion"
 		},
 	     "O": {
-			"item": "xlfoodmod:tortilla"
+			"type": "forge:ore_dict",
+            	"ore": "foodTortilla"
 		}
 	},
 	"result": {

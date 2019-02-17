@@ -10,7 +10,8 @@
             "item": "minecraft:cooked_porkchop"
         },
         "U": {
-            "item": "xlfoodmod:butter"
+            "type": "forge:ore_dict",
+            "ore": "foodButter"
         },
         "B": {
             "item": "xlfoodmod:baguette"

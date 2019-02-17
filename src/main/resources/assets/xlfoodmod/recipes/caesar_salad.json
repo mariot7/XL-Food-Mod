@@ -8,13 +8,14 @@
 	"key": {
 		"L": {
 			"type": "forge:ore_dict",
-            "ore": "cropLettuce"
+            	"ore": "cropLettuce"
 		},
 		"P": {
 			"item": "xlfoodmod:pepper_seeds"
 		},
            "H": {
-			"item": "xlfoodmod:cheese"
+			"type": "forge:ore_dict",
+            	"ore": "foodCheese"
 		},
 	      "C": {
 			"item": "xlfoodmod:crouton"

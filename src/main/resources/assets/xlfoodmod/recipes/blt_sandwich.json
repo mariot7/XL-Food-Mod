@@ -7,18 +7,19 @@
 	],
 	"key": {
 		"D": {
-			"item": "xlfoodmod:cooked_dough"
+			"type": "forge:ore_dict",
+            	"ore": "foodDough"
 		},
-        "B": {
+           "B": {
 			"item": "xlfoodmod:bacon"
 		},
 		"L": {
-            "type": "forge:ore_dict",
-            "ore": "cropLettuce"
+            	"type": "forge:ore_dict",
+            	"ore": "cropLettuce"
         },
-        "T": {
-            "type": "forge:ore_dict",
-            "ore": "cropTomato"
+           "T": {
+            	"type": "forge:ore_dict",
+            	"ore": "cropTomato"
         }
 	},
 	"result": {

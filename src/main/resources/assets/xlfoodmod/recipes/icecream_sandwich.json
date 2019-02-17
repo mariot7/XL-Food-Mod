@@ -9,11 +9,11 @@
 		"H": {
 			"item": "xlfoodmod:chocolate_syrup"
 		},
-        "C": {
+        	"C": {
 			"item": "minecraft:cookie"
 		},
 		"I": {
-            "item": "xlfoodmod:vanilla_icecream_ball"
+            	"item": "xlfoodmod:vanilla_icecream_ball"
         }
 	},
 	"result": {

@@ -1,13 +1,21 @@
 package mariot7.xlfoodmod.blocks;
 
+import java.util.Random;
+
 import biomesoplenty.api.block.BOPBlocks;
 import mariot7.xlfoodmod.Main;
+import mariot7.xlfoodmod.config.GuiConfigurationxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -28,6 +36,11 @@ public class Tomato extends BlockCrops {
 	public Item getCrop() {
 		return ItemListxlfoodmod.tomato;
 	}
+	
+	@Override
+    public int quantityDropped(Random rand) {
+    return rand.nextInt(2) + 1;
+    }
 	
 	public void registerItemModel(Item itemBlock) {
 		Main.proxy.registerItemRenderer(itemBlock, 0, name);
@@ -59,6 +72,26 @@ public class Tomato extends BlockCrops {
 			return (worldIn.getLight(pos) >= 8 || worldIn.canSeeSky(pos)) && soil.getBlock() == Blocks.FARMLAND;
 		}
     }
+	
+	@Override
+	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing heldItem, float side, float hitX, float hitY)
+	{
+		if(!GuiConfigurationxlfoodmod.RightClickHarvesting.RightClickHarvest)
+		{
+			if(!worldIn.isRemote)
+			{
+				if(this.isMaxAge(state))
+				{
+					worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemListxlfoodmod.tomato, 2)));
+					worldIn.setBlockState(pos, this.withAge(0));
+					return true;
+				}
+			}
+		}
+		
+		return false;
+		
+	}
 	
 	
 }

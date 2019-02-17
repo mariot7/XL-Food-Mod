@@ -2,7 +2,8 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
         {        
-            "item": "xlfoodmod:chocolate"
+            "type": "forge:ore_dict",
+            "ore": "foodChocolatebar"
         },
         {        
             "item": "xlfoodmod:chocolate_syrup"

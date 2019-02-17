@@ -5,7 +5,8 @@
             "item": "xlfoodmod:pie_shell"
         },
         {        
-            "item": "xlfoodmod:chocolate"
+            "type": "forge:ore_dict",
+            "ore": "foodChocolatebar"
         },
         {        
             "item": "xlfoodmod:chocolate_syrup"

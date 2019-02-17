@@ -6,7 +6,8 @@
 	],
 	"key": {
 		"C": {
-			"item": "xlfoodmod:cooked_dough"
+			"type": "forge:ore_dict",
+            	"ore": "foodDough"
 		}
 	},
 	"result": {

@@ -5,7 +5,8 @@
             "item": "minecraft:milk_bucket"
         },
         {        
-            "item": "xlfoodmod:cooked_dough"
+            "type": "forge:ore_dict",
+            "ore": "foodDough"
         }
 	],
 	"result": {

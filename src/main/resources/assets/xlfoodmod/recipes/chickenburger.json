@@ -17,7 +17,7 @@
 		},
 	      "L": {
 			"type": "forge:ore_dict",
-            "ore": "cropLettuce"
+            	"ore": "cropLettuce"
 		},
 	      "B": {
 			"item": "xlfoodmod:bottom_bun"

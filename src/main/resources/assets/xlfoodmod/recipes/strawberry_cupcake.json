@@ -8,10 +8,11 @@
 	"key": {
 		"S": {
 			"type": "forge:ore_dict",
-            "ore": "cropStrawberry"
+            	"ore": "cropStrawberry"
 		},
 	     "D": {
-			"item": "xlfoodmod:cooked_dough"
+			"type": "forge:ore_dict",
+            	"ore": "foodDough"
 		},
 		"P": {
 			"item": "xlfoodmod:paper_cup"

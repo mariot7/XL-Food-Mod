@@ -10,7 +10,8 @@
 			"item": "xlfoodmod:vanilla_cream"
 		},
 		"D": {
-			"item": "xlfoodmod:cooked_dough"
+			"type": "forge:ore_dict",
+            	"ore": "foodDough"
 		},
 		"P": {
 			"item": "xlfoodmod:paper_cup"

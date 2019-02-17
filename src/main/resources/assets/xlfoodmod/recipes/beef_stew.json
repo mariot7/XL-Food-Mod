@@ -13,7 +13,8 @@
 			"item": "minecraft:cooked_beef"
            },
            "O": {
-			"item": "xlfoodmod:onion"
+			"type": "forge:ore_dict",
+                "ore": "cropOnion"
            },
 	      "B": {
 			"item": "xlfoodmod:bowl"

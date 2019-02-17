@@ -8,7 +8,7 @@
 	"key": {
 	     "C": {
 			"type": "forge:ore_dict",
-            "ore": "cropCucumber"
+            	"ore": "cropCucumber"
 		},
            "A": {
 			"item": "minecraft:carrot"
@@ -18,11 +18,11 @@
 		},
            "T": {
 			"type": "forge:ore_dict",
-            "ore": "cropTomato"
+            	"ore": "cropTomato"
 		},
            "O": {
 			"type": "forge:ore_dict",
-            "ore": "cropOnion"
+            	"ore": "cropOnion"
 		},
            "P": {
 			"item": "minecraft:potato"

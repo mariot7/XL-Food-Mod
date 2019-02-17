@@ -157,3 +157,7 @@ xlfoodmod.general.worldgen.grassgen=Grass Generation
 xlfoodmod.general.worldgen.grassgen.tooltip=Disable the generation of Grass
 xlfoodmod.general.worldgen.flowergen=Vanilla Flower Generation
 xlfoodmod.general.worldgen.flowergen.tooltip=Disable the generation of Vanilla Flowers
+xlfoodmod.general.rightclickharvesting=Right Click Harvesting
+xlfoodmod.general.rightclickharvesting.tooltip=Right Click Harvesting Settings
+xlfoodmod.general.rightclickharvesting.rightclickharvest=Right Click Harvesting
+xlfoodmod.general.rightclickharvesting.rightclickharvest.tooltip=Disable right click harvesting

@@ -181,7 +181,9 @@ public class ItemListxlfoodmod {
 		registry.registerAll(rice);
 		OreDictionary.registerOre("cropRice", rice);
 		registry.registerAll(butter_rice);
+		OreDictionary.registerOre("foodButterrice", butter_rice);
 		registry.registerAll(fried_rice);
+		OreDictionary.registerOre("foodFriedrice", fried_rice);
 		registry.registerAll(pepper_seeds);
 		registry.registerAll(pepper);
 		registry.registerAll(corn_seeds);
@@ -214,9 +216,12 @@ public class ItemListxlfoodmod {
 		OreDictionary.registerOre("dustSalt", salt);
 		registry.registerAll(dough);
 		registry.registerAll(cooked_dough);
+		OreDictionary.registerOre("foodDough", cooked_dough);
 		registry.registerAll(crouton);
 		registry.registerAll(butter);
+		OreDictionary.registerOre("foodButter", butter);
 		registry.registerAll(cheese);
+		OreDictionary.registerOre("foodCheese", cheese);
 		registry.registerAll(cheese_puff);
 		registry.registerAll(chips);
 		registry.registerAll(salty_chips);
@@ -227,8 +232,11 @@ public class ItemListxlfoodmod {
 		registry.registerAll(corn_bread);
 		registry.registerAll(baguette);
 		registry.registerAll(fried_egg);
+		OreDictionary.registerOre("foodFriedegg", fried_egg);
 		registry.registerAll(pancake);
+		OreDictionary.registerOre("foodPancakes", pancake);
 		registry.registerAll(waffle);
+		OreDictionary.registerOre("foodWaffles", waffle);
 		registry.registerAll(macaroni_and_cheese);
 		//traditional food
 		registry.registerAll(spaghetti);
@@ -240,7 +248,9 @@ public class ItemListxlfoodmod {
 		registry.registerAll(sausage);
 		registry.registerAll(bacon);
 		registry.registerAll(beef_jerky);
+		OreDictionary.registerOre("foodBeefjerky", beef_jerky);
 		registry.registerAll(ground_beef);
+		OreDictionary.registerOre("foodGroundbeef", ground_beef);
 		registry.registerAll(raw_chicken_wing);
 		registry.registerAll(cooked_chicken_wing);
 		registry.registerAll(spicy_chicken_wing);
@@ -255,6 +265,7 @@ public class ItemListxlfoodmod {
 		registry.registerAll(sausage_roll);
 		registry.registerAll(slice_of_pizza);
 		registry.registerAll(tortilla);
+		OreDictionary.registerOre("foodTortilla", tortilla);
 		registry.registerAll(taco);
 		registry.registerAll(burrito);
 		registry.registerAll(kebab);
@@ -287,6 +298,7 @@ public class ItemListxlfoodmod {
 		registry.registerAll(brownie);
 		registry.registerAll(bourbon_biscuit);
 		registry.registerAll(chocolate);
+		OreDictionary.registerOre("foodChocolatebar", chocolate);
 		registry.registerAll(chocolate_icecream_ball);
 		registry.registerAll(vanilla_icecream_ball);
 		registry.registerAll(strawberry_icecream_ball);

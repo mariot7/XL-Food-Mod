@@ -9,7 +9,8 @@
             "item": "minecraft:cooked_beef"
         },
         {        
-            "item": "xlfoodmod:salt"
+            "type": "forge:ore_dict",
+            "ore": "itemSalt"
         }
 	],
 	"result": {

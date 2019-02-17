@@ -7,10 +7,12 @@
 	],
 	"key": {
            "C": {
-			"item": "xlfoodmod:chocolate"
+			"type": "forge:ore_dict",
+            	"ore": "foodChocolatebar"
 		},
 		"D": {
-			"item": "xlfoodmod:cooked_dough"
+			"type": "forge:ore_dict",
+            	"ore": "foodDough"
 		},
 		"P": {
 			"item": "xlfoodmod:paper_cup"

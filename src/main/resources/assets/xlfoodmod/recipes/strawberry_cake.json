@@ -14,7 +14,7 @@
 		},
            "T": {
 			"type": "forge:ore_dict",
-            "ore": "cropStrawberry"
+            	"ore": "cropStrawberry"
 		},
            "W": {
 			"item": "minecraft:wheat"

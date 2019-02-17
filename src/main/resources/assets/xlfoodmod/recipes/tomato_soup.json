@@ -8,7 +8,7 @@
 	"key": {
 	     "T": {
 			"type": "forge:ore_dict",
-            "ore": "cropTomato"
+            	"ore": "cropTomato"
 		},
 	      "B": {
 			"item": "xlfoodmod:bowl"

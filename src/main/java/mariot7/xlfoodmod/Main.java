@@ -66,8 +66,8 @@ public class Main {
 	@EventHandler
     public void preInit(FMLPreInitializationEvent preEvent)
     {
-		isBiomesoPlentyLoaded = Loader.isModLoaded("biomesoplenty");
 		this.proxy.preInit(preEvent);
+		isBiomesoPlentyLoaded = Loader.isModLoaded("biomesoplenty");
 		config = new Configuration(preEvent.getSuggestedConfigurationFile());
 		if(!GuiConfigurationxlfoodmod.WorldGen.RockGen) {
 		GameRegistry.registerWorldGenerator(new WorldGeneratorRockSaltxlfoodmod(), 0);

@@ -7,16 +7,19 @@
 	],
 	"key": {
 		"D": {
-			"item": "xlfoodmod:cooked_dough"
+			"type": "forge:ore_dict",
+            	"ore": "foodDough"
 		},
 		"G": {
-			"item": "xlfoodmod:ground_beef"
+			"type": "forge:ore_dict",
+            	"ore": "foodGroundbeef"
 		},
            "T": {
 			"item": "xlfoodmod:tomato_sauce"
 		},
            "C": {
-			"item": "xlfoodmod:cheese"
+			"type": "forge:ore_dict",
+            	"ore": "foodCheese"
 		}
 	},
 	"result": {

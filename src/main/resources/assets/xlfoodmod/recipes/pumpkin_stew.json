@@ -13,7 +13,8 @@
 			"item": "minecraft:potato"
 		},
            "G": {
-			"item": "xlfoodmod:ground_beef"
+			"type": "forge:ore_dict",
+            	"ore": "foodGroundbeef"
 		},
 	      "C": {
 			"item": "minecraft:carrot"

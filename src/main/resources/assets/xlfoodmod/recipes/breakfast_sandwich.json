@@ -7,17 +7,20 @@
 	],
 	"key": {
 		"D": {
-			"item": "xlfoodmod:cooked_dough"
+			"type": "forge:ore_dict",
+            	"ore": "foodDough"
 		},
 		"B": {
-            "item": "xlfoodmod:bacon"
-        },
-        "C": {
-			"item": "xlfoodmod:cheese"
+            	"item": "xlfoodmod:bacon"
+        	},
+       	"C": {
+			"type": "forge:ore_dict",
+           	"ore": "foodCheese"
 		},
 		"E": {
-            "item": "xlfoodmod:fried_egg"
-        }
+           	"type": "forge:ore_dict",
+           	"ore": "foodFriedegg"
+       	}
 	},
 	"result": {
 		"item": "xlfoodmod:breakfast_sandwich"

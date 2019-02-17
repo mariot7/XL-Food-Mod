@@ -7,17 +7,20 @@
 	],
 	"key": {
 		"C": {
-			"item": "xlfoodmod:cheese"
+			"type": "forge:ore_dict",
+            	"ore": "foodCheese"
 		},
 		"T": {
 			"type": "forge:ore_dict",
-            "ore": "cropTomato"
+            	"ore": "cropTomato"
 		},
 	     "G": {
-			"item": "xlfoodmod:ground_beef"
+			"type": "forge:ore_dict",
+            	"ore": "foodGroundbeef"
 		},
 	     "O": {
-			"item": "xlfoodmod:tortilla"
+			"type": "forge:ore_dict",
+            	"ore": "foodTortilla"
 		}
 	},
 	"result": {

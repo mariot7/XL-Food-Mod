@@ -1,13 +1,12 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"   ",
-		"CCC",
-		"   "
+		"CCC"
 	],
 	"key": {
 		"C": {
-			"item": "xlfoodmod:cooked_dough"
+			"type": "forge:ore_dict",
+            	"ore": "foodDough"
 		}
 	},
 	"result": {

@@ -8,11 +8,11 @@
 	"key": {
 	     "O": {
 			"type": "forge:ore_dict",
-            "ore": "cropOnion"
+            	"ore": "cropOnion"
 		},
 		"U": {
 			"type": "forge:ore_dict",
-            "ore": "cropCucumber"
+            	"ore": "cropCucumber"
 		},
 		"P": {
 			"item": "xlfoodmod:pepper"

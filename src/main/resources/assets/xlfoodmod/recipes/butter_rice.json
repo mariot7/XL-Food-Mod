@@ -6,7 +6,8 @@
             "ore": "cropRice"
         },
         {        
-            "item": "xlfoodmod:butter"
+            "type": "forge:ore_dict",
+            "ore": "foodButter"
         }
 	],
 	"result": {

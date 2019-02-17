@@ -7,14 +7,15 @@
 	],
 	"key": {
 		"D": {
-			"item": "xlfoodmod:cooked_dough"
-		},
-        "L": {
 			"type": "forge:ore_dict",
-            "ore": "cropLettuce"
+            	"ore": "foodDough"
+		},
+        	"L": {
+			"type": "forge:ore_dict",
+            	"ore": "cropLettuce"
 		},
 		"C": {
-            "item": "minecraft:cooked_chicken"
+            	"item": "minecraft:cooked_chicken"
         }
 	},
 	"result": {
