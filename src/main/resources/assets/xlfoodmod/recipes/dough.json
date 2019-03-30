@@ -1,19 +1,22 @@
 {
-	"type": "minecraft:crafting_shaped",
+	"result": {
+		"item": "xlfoodmod:dough",
+		"count": 8
+	},
 	"pattern": [
 		"WW",
 		"WW",
 		" B"
 	],
+	"type": "minecraft:crafting_shaped",
 	"key": {
 		"W": {
-			"item": "minecraft:wheat"
-		},
+			"item": "cropWheat",
+			"type": "forge:ore_dict",
 		"B": {
-			"item": "minecraft:water_bucket"
+			"item": "listAllWater",
+			"type": "forge:ore_dict"
 		}
-	},
-	"result": {
-		"item": "xlfoodmod:dough", "count": 8
 	}
+}
 }
