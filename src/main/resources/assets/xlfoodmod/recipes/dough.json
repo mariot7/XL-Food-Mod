@@ -12,11 +12,11 @@
 	"key": {
 		"W": {
 			"item": "cropWheat",
-			"type": "forge:ore_dict",
+			"type": "forge:ore_dict"
+		},
 		"B": {
 			"item": "listAllWater",
 			"type": "forge:ore_dict"
 		}
 	}
-}
 }
