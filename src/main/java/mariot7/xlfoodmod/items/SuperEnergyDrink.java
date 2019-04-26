@@ -2,11 +2,10 @@ package mariot7.xlfoodmod.items;
 
 import java.util.List;
 
-import javax.annotation.Nullable;
-
 import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -26,6 +25,7 @@ public class SuperEnergyDrink extends ItemFood {
 	
 	public SuperEnergyDrink(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
+		this.setAlwaysEdible();
 		this.setMaxStackSize(1);
 		this.setCreativeTab(XLFoodModTab.tabXLFoodMod);
 		this.name = name;
@@ -41,7 +41,6 @@ public class SuperEnergyDrink extends ItemFood {
 		Main.proxy.registerItemRenderer(this, 0, name);
 	}
 	
-	
     protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
     	player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 3600, 2));
 		player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 3600, 0));
@@ -54,21 +53,21 @@ public class SuperEnergyDrink extends ItemFood {
 		player.inventory.addItemStackToInventory(new ItemStack(ItemListxlfoodmod.empty_can));
 	}
 	
-	@SideOnly(Side.CLIENT)
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-		tooltip.add(TextFormatting.BLUE + "Jump Boost");
-		tooltip.add(TextFormatting.BLUE + "Speed");
-		tooltip.add(TextFormatting.BLUE + "Haste");
-		tooltip.add(TextFormatting.BLUE + "Water Breathing II");
-		tooltip.add(TextFormatting.BLUE + "Regeneration II");
-		tooltip.add(TextFormatting.BLUE + "Night Vision III");
-		tooltip.add(TextFormatting.BLUE + "Invisibility III");
-		tooltip.add(TextFormatting.BLUE + "Strength III (3:00)");
+    @SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+		tooltip.add(I18n.format("superenergydrink.tooltip", TextFormatting.BLUE, TextFormatting.RESET));
+		tooltip.add(I18n.format("superenergydrink2.tooltip", TextFormatting.BLUE, TextFormatting.RESET));
+		tooltip.add(I18n.format("superenergydrink3.tooltip", TextFormatting.BLUE, TextFormatting.RESET));
+		tooltip.add(I18n.format("superenergydrink4.tooltip", TextFormatting.BLUE, TextFormatting.RESET));
+		tooltip.add(I18n.format("superenergydrink5.tooltip", TextFormatting.BLUE, TextFormatting.RESET));
+		tooltip.add(I18n.format("superenergydrink6.tooltip", TextFormatting.BLUE, TextFormatting.RESET));
+		tooltip.add(I18n.format("superenergydrink7.tooltip", TextFormatting.BLUE, TextFormatting.RESET));
+		tooltip.add(I18n.format("superenergydrink8.tooltip", TextFormatting.BLUE, TextFormatting.RESET));
 	}
 	
 	@Override
 	public EnumAction getItemUseAction(ItemStack stack) {
-	return EnumAction.DRINK;
+		return EnumAction.DRINK;
 	}
 	
 

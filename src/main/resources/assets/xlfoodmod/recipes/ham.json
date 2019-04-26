@@ -1,0 +1,19 @@
+{
+	"type": "forge:ore_shapeless",
+	"ingredients": [
+        {        
+            "item": "minecraft:porkchop"
+        },
+        {        
+            "type": "forge:ore_dict",
+		 "ore": "dustSalt"
+        },
+        {        
+            "type": "forge:ore_dict",
+		 "ore": "dustSalt"
+        }
+	],
+	"result": {
+		"item": "xlfoodmod:ham"
+	}
+}

@@ -2,7 +2,8 @@ package mariot7.xlfoodmod.blocks;
 
 import biomesoplenty.api.block.BOPBlocks;
 import mariot7.xlfoodmod.Main;
-import mariot7.xlfoodmod.config.GuiConfigurationxlfoodmod;
+import mariot7.xlfoodmod.config.Configurationxlfoodmod;
+import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.state.IBlockState;
@@ -69,7 +70,7 @@ public class Lettuce extends BlockCrops {
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing heldItem, float side, float hitX, float hitY)
 	{
-		if(!GuiConfigurationxlfoodmod.RightClickHarvesting.RightClickHarvest)
+		if(Configurationxlfoodmod.rightclickharvesting.rightclickharvest)
 		{
 			if(!worldIn.isRemote)
 			{

@@ -16,7 +16,7 @@ public class WorldGenGrassxlfoodmod extends WorldGenerator {
 	@Override
 	public boolean generate(World worldIn, Random rand, BlockPos pos) 
 	{
-		Block grass = rand.nextBoolean() ? BlockListxlfoodmod.grass : BlockListxlfoodmod.grass;
+		Block grass = BlockListxlfoodmod.grass;
 		int y = 1 + getGroundFromAbove(worldIn, pos.getX(), pos.getZ());
 		if(y >= pos.getY())
 		{

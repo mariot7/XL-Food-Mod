@@ -5,6 +5,7 @@ import java.util.Random;
 import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.Reference;
 import mariot7.xlfoodmod.XLFoodModTab;
+import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.SoundType;
@@ -58,28 +59,28 @@ public class Grass extends BlockBush {
 	@Override
 	public ArrayList getDrops(IBlockAccess world, BlockPos pos, IBlockState blockstate, int fortune) {
 	    ArrayList drops = new ArrayList();
-	    if (RANDOM.nextFloat() < 0.30F) {
+	    if (RANDOM.nextFloat() < Configurationxlfoodmod.grassgeneration.ricechance) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.rice_seeds));
 	    }
-	    if (RANDOM.nextFloat() < 0.30F) {
+	    if (RANDOM.nextFloat() < Configurationxlfoodmod.grassgeneration.pepperchance) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.pepper_seeds));
 	    }
-	    if (RANDOM.nextFloat() < 0.30F) {
+	    if (RANDOM.nextFloat() < Configurationxlfoodmod.grassgeneration.cornchance) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.corn_seeds));
 	    }
-	    if (RANDOM.nextFloat() < 0.30F) {
+	    if (RANDOM.nextFloat() < Configurationxlfoodmod.grassgeneration.cucumberchance) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.cucumber_seeds));
 	    }
-	    if (RANDOM.nextFloat() < 0.30F) {
+	    if (RANDOM.nextFloat() < Configurationxlfoodmod.grassgeneration.lettucechance) {
 		drops.add(new ItemStack(ItemListxlfoodmod.lettuce_seeds));
 	    }
-	    if (RANDOM.nextFloat() < 0.30F) {
+	    if (RANDOM.nextFloat() < Configurationxlfoodmod.grassgeneration.onionchance) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.onion));
 	    }
-	    if (RANDOM.nextFloat() < 0.30F) {
+	    if (RANDOM.nextFloat() < Configurationxlfoodmod.grassgeneration.tomatochance) {
 		drops.add(new ItemStack(ItemListxlfoodmod.tomato_seeds));
 	    }
-	    if (RANDOM.nextFloat() < 0.30F) {
+	    if (RANDOM.nextFloat() < Configurationxlfoodmod.grassgeneration.strawberrychance) {
 	    drops.add(new ItemStack(ItemListxlfoodmod.strawberry_seeds));
 	    }
 	    return drops;

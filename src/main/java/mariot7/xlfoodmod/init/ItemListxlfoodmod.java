@@ -9,6 +9,7 @@ import mariot7.xlfoodmod.items.Coffee;
 import mariot7.xlfoodmod.items.DeadlyEnergyDrink;
 import mariot7.xlfoodmod.items.HealthyEnergyDrink;
 import mariot7.xlfoodmod.items.Onion;
+import mariot7.xlfoodmod.items.SauceBottle;
 import mariot7.xlfoodmod.items.Bowl;
 import mariot7.xlfoodmod.items.SpeedyEnergyDrink;
 import mariot7.xlfoodmod.items.StealthyEnergyDrink;
@@ -62,7 +63,8 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod cheesy_bread = new ItemFoodxlfoodmod("cheesy_bread", 6, 0.6F, false);
 	public static ItemFoodxlfoodmod potato_bread = new ItemFoodxlfoodmod("potato_bread", 6, 0.6F, false);
 	public static ItemFoodxlfoodmod corn_bread = new ItemFoodxlfoodmod("corn_bread", 8, 0.6F, false);
-	public static ItemFoodxlfoodmod baguette = new ItemFoodxlfoodmod("baguette", 6, 0.6F, false);
+	public static ItemFoodxlfoodmod rice_bread = new ItemFoodxlfoodmod("rice_bread", 5, 0.6F, false);
+	public static ItemFoodxlfoodmod baguette = new ItemFoodxlfoodmod("baguette", 5, 0.6F, false);
 	public static ItemFoodxlfoodmod fried_egg = new ItemFoodxlfoodmod("fried_egg", 3, 0.6F, false);
 	public static ItemFoodxlfoodmod pancake = new ItemFoodxlfoodmod("pancake", 5, 0.6F, false);
 	public static ItemFoodxlfoodmod waffle = new ItemFoodxlfoodmod("waffle", 5, 0.6F, false);
@@ -74,6 +76,7 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod jambon_beurre = new ItemFoodxlfoodmod("jambon_beurre", 15, 0.4F, false);
     //meat
 	public static ItemFoodxlfoodmod flesh = new ItemFoodxlfoodmod("flesh", 4, 0.2F, false);
+	public static ItemFoodxlfoodmod ham = new ItemFoodxlfoodmod("ham", 4, 0.6F, false);
 	public static ItemFoodxlfoodmod sausage = new ItemFoodxlfoodmod("sausage", 3, 1.2F, false);
 	public static ItemFoodxlfoodmod bacon = new ItemFoodxlfoodmod("bacon", 3, 1.2F, false);
 	public static ItemFoodxlfoodmod beef_jerky = new ItemFoodxlfoodmod("beef_jerky", 3, 0.6F, false);
@@ -153,11 +156,11 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod fish_pie = new ItemFoodxlfoodmod("fish_pie", 8, 0.6F, false);
 	public static ItemFoodxlfoodmod strawberry_pie = new ItemFoodxlfoodmod("strawberry_pie", 8, 0.6F, false);
     //syrup, cream etc.
-	public static Itemxlfoodmod tomato_sauce = new Itemxlfoodmod("tomato_sauce");
-	public static Itemxlfoodmod hot_sauce = new Itemxlfoodmod("hot_sauce");
-	public static Itemxlfoodmod chocolate_syrup = new Itemxlfoodmod("chocolate_syrup");
-	public static Itemxlfoodmod vanilla_extract = new Itemxlfoodmod("vanilla_extract");
-	public static Itemxlfoodmod vanilla_cream = new Itemxlfoodmod("vanilla_cream");
+	public static SauceBottle tomato_sauce = new SauceBottle("tomato_sauce");
+	public static SauceBottle hot_sauce = new SauceBottle("hot_sauce");
+	public static SauceBottle chocolate_syrup = new SauceBottle("chocolate_syrup");
+	public static SauceBottle vanilla_extract = new SauceBottle("vanilla_extract");
+	public static SauceBottle vanilla_cream = new SauceBottle("vanilla_cream");
 	//drinks
 	public static Itemxlfoodmod empty_can = new Itemxlfoodmod("empty_can");
 	public static SpeedyEnergyDrink speedy_energy_drink = new SpeedyEnergyDrink("speedy_energy_drink", 0, 0.0F, false);
@@ -230,6 +233,7 @@ public class ItemListxlfoodmod {
 		registry.registerAll(cheesy_bread);
 		registry.registerAll(potato_bread);
 		registry.registerAll(corn_bread);
+		registry.registerAll(rice_bread);
 		registry.registerAll(baguette);
 		registry.registerAll(fried_egg);
 		OreDictionary.registerOre("foodFriedegg", fried_egg);
@@ -245,6 +249,7 @@ public class ItemListxlfoodmod {
 		registry.registerAll(jambon_beurre);
 		//meat
 		registry.registerAll(flesh);
+		registry.registerAll(ham);
 		registry.registerAll(sausage);
 		registry.registerAll(bacon);
 		registry.registerAll(beef_jerky);
@@ -385,6 +390,7 @@ public class ItemListxlfoodmod {
 		cheesy_bread.registerItemModel();
 		potato_bread.registerItemModel();
 		corn_bread.registerItemModel();
+		rice_bread.registerItemModel();
 		baguette.registerItemModel();
 		fried_egg.registerItemModel();
 		pancake.registerItemModel();
@@ -397,6 +403,7 @@ public class ItemListxlfoodmod {
 		jambon_beurre.registerItemModel();
 		//meat
 		flesh.registerItemModel();
+		ham.registerItemModel();
 		sausage.registerItemModel();
 		bacon.registerItemModel();
 		beef_jerky.registerItemModel();

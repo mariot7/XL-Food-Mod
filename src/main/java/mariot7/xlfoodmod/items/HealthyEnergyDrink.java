@@ -2,11 +2,10 @@ package mariot7.xlfoodmod.items;
 
 import java.util.List;
 
-import javax.annotation.Nullable;
-
 import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.XLFoodModTab;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -26,6 +25,7 @@ public class HealthyEnergyDrink extends ItemFood {
 	
 	public HealthyEnergyDrink(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
+		this.setAlwaysEdible();
 		this.setMaxStackSize(1);
 		this.setCreativeTab(XLFoodModTab.tabXLFoodMod);
 		this.name = name;
@@ -47,13 +47,13 @@ public class HealthyEnergyDrink extends ItemFood {
 	}
 	
 	@SideOnly(Side.CLIENT)
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-		tooltip.add(TextFormatting.BLUE + "Regeneration (0:30)");
+    public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+		tooltip.add(I18n.format("healthyenergydrink.tooltip", TextFormatting.BLUE, TextFormatting.RESET));
 	}
 	
 	@Override
 	public EnumAction getItemUseAction(ItemStack stack) {
-	return EnumAction.DRINK;
+		return EnumAction.DRINK;
 	}
 
 

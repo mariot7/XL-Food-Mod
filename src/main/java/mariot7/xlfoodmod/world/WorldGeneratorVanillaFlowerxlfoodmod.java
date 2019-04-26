@@ -1,6 +1,8 @@
 package mariot7.xlfoodmod.world;
 
 import java.util.Random;
+
+import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
@@ -19,21 +21,7 @@ public class WorldGeneratorVanillaFlowerxlfoodmod implements IWorldGenerator {
 		int blockX = chunkX * 16;
 		int blockZ = chunkZ * 16;
 		
-		switch(world.provider.getDimension())
-		{
-		case -1: generateNether(world, random, blockX, blockZ);
-		break;
-		case 0: generateOverworld(world, random, blockX, blockZ);
-		break;
-		case 1: generateEnd(world, random, blockX, blockZ);
-		break;
-		}
-
-	}
-
-	private void generateNether(World world, Random rand, int blockX, int blockZ) 
-	{
-		
+		generateOverworld(world, random, blockX, blockZ);
 	}
 
 	private void generateOverworld(World world, Random rand, int blockX, int blockZ) 
@@ -41,8 +29,8 @@ public class WorldGeneratorVanillaFlowerxlfoodmod implements IWorldGenerator {
 		WorldGenerator genVanillaFlower = new WorldGenVanillaFlowerxlfoodmod();
 		Biome biome = world.getBiomeForCoordsBody(new BlockPos(blockX, 64, blockZ));		
 		{
-			int MIN = 0;
-			int MAX = 2;
+			int MIN = Configurationxlfoodmod.vanillaflowergeneration.minchunk;
+			int MAX = Configurationxlfoodmod.vanillaflowergeneration.maxchunk;
 			int numBushes = MIN + rand.nextInt(MAX - MIN);
 			for(int i = 0; i < numBushes; i++)
 			{
@@ -51,11 +39,6 @@ public class WorldGeneratorVanillaFlowerxlfoodmod implements IWorldGenerator {
 				genVanillaFlower.generate(world, rand, new BlockPos(randX, 24, randZ));
 			}
 		}
-	}
-
-	private void generateEnd(World world, Random rand, int blockX, int blockZ) 
-	{
-
 	}
 
 	public static int getGroundFromAbove(World world, int x, int z)

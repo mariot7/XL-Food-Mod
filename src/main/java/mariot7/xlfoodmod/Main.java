@@ -1,6 +1,6 @@
 package mariot7.xlfoodmod;
 
-import mariot7.xlfoodmod.config.GuiConfigurationxlfoodmod;
+import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.init.BlockListxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import mariot7.xlfoodmod.init.Smeltingxlfoodmod;
@@ -69,14 +69,14 @@ public class Main {
 		this.proxy.preInit(preEvent);
 		isBiomesoPlentyLoaded = Loader.isModLoaded("biomesoplenty");
 		config = new Configuration(preEvent.getSuggestedConfigurationFile());
-		if(!GuiConfigurationxlfoodmod.WorldGen.RockGen) {
-		GameRegistry.registerWorldGenerator(new WorldGeneratorRockSaltxlfoodmod(), 0);
+		if(Configurationxlfoodmod.rocksaltgeneration.rockgen) {
+			GameRegistry.registerWorldGenerator(new WorldGeneratorRockSaltxlfoodmod(), 0);
 		}
-		if(!GuiConfigurationxlfoodmod.WorldGen.GrassGen) {
-		GameRegistry.registerWorldGenerator(new WorldGeneratorGrassxlfoodmod(), 2);
+		if(Configurationxlfoodmod.grassgeneration.grassgen) {
+			GameRegistry.registerWorldGenerator(new WorldGeneratorGrassxlfoodmod(), 2);
 		}
-		if(!GuiConfigurationxlfoodmod.WorldGen.FlowerGen) {
-		GameRegistry.registerWorldGenerator(new WorldGeneratorVanillaFlowerxlfoodmod(), 1);
+		if(Configurationxlfoodmod.vanillaflowergeneration.flowergen) {
+			GameRegistry.registerWorldGenerator(new WorldGeneratorVanillaFlowerxlfoodmod(), 1);
 		}
 	}
     

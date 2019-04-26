@@ -18,6 +18,7 @@ public class Cappuccino extends ItemFood {
 	
 	public Cappuccino(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
+		this.setAlwaysEdible();
 		this.setMaxStackSize(1);
 		this.setCreativeTab(XLFoodModTab.tabXLFoodMod);
 		this.name = name;
@@ -39,7 +40,7 @@ public class Cappuccino extends ItemFood {
 	
 	@Override
 	public EnumAction getItemUseAction(ItemStack stack) {
-	return EnumAction.DRINK;
+		return EnumAction.DRINK;
 	}
 	
 
