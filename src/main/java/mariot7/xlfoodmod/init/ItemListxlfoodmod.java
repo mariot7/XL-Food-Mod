@@ -1,29 +1,19 @@
 package mariot7.xlfoodmod.init;
 
-import mariot7.xlfoodmod.Main;
-import mariot7.xlfoodmod.Reference;
 import mariot7.xlfoodmod.items.Beer;
 import mariot7.xlfoodmod.items.BucketOfFriedChicken;
 import mariot7.xlfoodmod.items.Cappuccino;
 import mariot7.xlfoodmod.items.Coffee;
 import mariot7.xlfoodmod.items.DeadlyEnergyDrink;
 import mariot7.xlfoodmod.items.HealthyEnergyDrink;
-import mariot7.xlfoodmod.items.Onion;
 import mariot7.xlfoodmod.items.SauceBottle;
 import mariot7.xlfoodmod.items.Bowl;
 import mariot7.xlfoodmod.items.SpeedyEnergyDrink;
 import mariot7.xlfoodmod.items.StealthyEnergyDrink;
 import mariot7.xlfoodmod.items.StrongEnergyDrink;
 import mariot7.xlfoodmod.items.SuperEnergyDrink;
-import net.minecraft.client.Minecraft;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemFood;
-import net.minecraft.item.ItemSeeds;
-import net.minecraft.potion.Potion;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -43,7 +33,7 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod cucumber = new ItemFoodxlfoodmod("cucumber", 1, 0.6F, false);
 	public static ItemSeedsxlfoodmod lettuce_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.lettuce_plant, Blocks.FARMLAND, "lettuce_seeds");
 	public static ItemFoodxlfoodmod lettuce = new ItemFoodxlfoodmod("lettuce", 1, 0.6F, false);
-	public static Onion onion = new Onion(1, 0.6F, BlockListxlfoodmod.onion_plant, Blocks.FARMLAND);
+	public static ItemSeedFoodxlfoodmod onion = new ItemSeedFoodxlfoodmod(BlockListxlfoodmod.onion_plant, Blocks.FARMLAND, "onion", 1, 0.6F);
 	public static ItemSeedsxlfoodmod tomato_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.tomato_plant, Blocks.FARMLAND, "tomato_seeds");
 	public static ItemFoodxlfoodmod tomato = new ItemFoodxlfoodmod("tomato", 1, 0.6F, false);
 	public static ItemSeedsxlfoodmod strawberry_seeds = new ItemSeedsxlfoodmod(BlockListxlfoodmod.strawberry_plant, Blocks.FARMLAND, "strawberry_seeds");
@@ -93,7 +83,7 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod cheeseburger = new ItemFoodxlfoodmod("cheeseburger", 10, 0.6F, false);
 	public static ItemFoodxlfoodmod hot_dog = new ItemFoodxlfoodmod("hot_dog", 8, 0.6F, false);
 	public static ItemFoodxlfoodmod sausage_roll = new ItemFoodxlfoodmod("sausage_roll", 7, 0.6F, false);
-	public static ItemFoodxlfoodmod slice_of_pizza = new ItemFoodxlfoodmod("slice_of_pizza", 7, 0.6F, false);
+	public static ItemFoodxlfoodmod slice_of_pizza = new ItemFoodxlfoodmod("slice_of_pizza", 9, 0.2F, false);
 	public static ItemFoodxlfoodmod tortilla = new ItemFoodxlfoodmod("tortilla", 4, 0.6F, false);
 	public static ItemFoodxlfoodmod taco = new ItemFoodxlfoodmod("taco", 7, 0.6F, false);
 	public static ItemFoodxlfoodmod burrito = new ItemFoodxlfoodmod("burrito", 7, 0.6F, false);
@@ -147,14 +137,14 @@ public class ItemListxlfoodmod {
 	public static ItemFoodxlfoodmod strawberry_cupcake = new ItemFoodxlfoodmod("strawberry_cupcake", 3, 0.6F, false);
     //pies
 	public static Itemxlfoodmod pie_shell = new Itemxlfoodmod("pie_shell");
-	public static ItemFoodxlfoodmod apple_pie = new ItemFoodxlfoodmod("apple_pie", 8, 0.6F, false);
-	public static ItemFoodxlfoodmod golden_apple_pie = new ItemFoodxlfoodmod("golden_apple_pie", 8, 0.6F, false);
-	public static ItemFoodxlfoodmod cheese_pie = new ItemFoodxlfoodmod("cheese_pie", 8, 0.6F, false);
-	public static ItemFoodxlfoodmod chicken_pot_pie = new ItemFoodxlfoodmod("chicken_pot_pie", 8, 0.6F, false);
-	public static ItemFoodxlfoodmod chocolate_pie = new ItemFoodxlfoodmod("chocolate_pie", 8, 0.6F, false);
-	public static ItemFoodxlfoodmod bacon_pie = new ItemFoodxlfoodmod("bacon_pie", 8, 0.6F, false);
-	public static ItemFoodxlfoodmod fish_pie = new ItemFoodxlfoodmod("fish_pie", 8, 0.6F, false);
-	public static ItemFoodxlfoodmod strawberry_pie = new ItemFoodxlfoodmod("strawberry_pie", 8, 0.6F, false);
+	public static ItemFoodxlfoodmod apple_pie = new ItemFoodxlfoodmod("apple_pie", 5, 0.6F, false);
+	public static ItemFoodxlfoodmod golden_apple_pie = new ItemFoodxlfoodmod("golden_apple_pie", 5, 0.6F, false);
+	public static ItemFoodxlfoodmod cheese_pie = new ItemFoodxlfoodmod("cheese_pie", 2, 0.6F, false);
+	public static ItemFoodxlfoodmod chicken_pot_pie = new ItemFoodxlfoodmod("chicken_pot_pie", 7, 0.6F, false);
+	public static ItemFoodxlfoodmod chocolate_pie = new ItemFoodxlfoodmod("chocolate_pie", 2, 0.6F, false);
+	public static ItemFoodxlfoodmod bacon_pie = new ItemFoodxlfoodmod("bacon_pie", 4, 0.6F, false);
+	public static ItemFoodxlfoodmod fish_pie = new ItemFoodxlfoodmod("fish_pie", 6, 0.6F, false);
+	public static ItemFoodxlfoodmod strawberry_pie = new ItemFoodxlfoodmod("strawberry_pie", 2, 0.6F, false);
     //syrup, cream etc.
 	public static SauceBottle tomato_sauce = new SauceBottle("tomato_sauce");
 	public static SauceBottle hot_sauce = new SauceBottle("hot_sauce");

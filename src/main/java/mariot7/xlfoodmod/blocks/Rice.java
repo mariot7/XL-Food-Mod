@@ -1,6 +1,5 @@
 package mariot7.xlfoodmod.blocks;
 
-import biomesoplenty.api.block.BOPBlocks;
 import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
@@ -46,45 +45,15 @@ public class Rice extends BlockCrops {
 	@Override
 	protected boolean canSustainBush(IBlockState state)
     {
-		if (Main.isBiomesoPlentyLoaded) {
-			return state.getBlock() == Blocks.FARMLAND || state.getBlock() == BOPBlocks.farmland_0 || state.getBlock() == BOPBlocks.farmland_1;
-		}
-		else {
-			return state.getBlock() == Blocks.FARMLAND;
-		}
+        return state.getBlock() == Blocks.FARMLAND;
     }
 	
 	@Override
 	public boolean canBlockStay(World worldIn, BlockPos pos, IBlockState state)
     {
-		IBlockState soil = worldIn.getBlockState(pos.down());
-		if (Main.isBiomesoPlentyLoaded) {
-			return (worldIn.getLight(pos) >= 8 || worldIn.canSeeSky(pos)) && soil.getBlock() == Blocks.FARMLAND || soil.getBlock() == BOPBlocks.farmland_0 || soil.getBlock() == BOPBlocks.farmland_1;
-		}
-		else {
-			return (worldIn.getLight(pos) >= 8 || worldIn.canSeeSky(pos)) && soil.getBlock() == Blocks.FARMLAND;
-		}
+        IBlockState soil = worldIn.getBlockState(pos.down());
+        return (worldIn.getLight(pos) >= 8 || worldIn.canSeeSky(pos)) && soil.getBlock().canSustainPlant(soil, worldIn, pos.down(), EnumFacing.UP, this);
     }
-	
-	@Override
-	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing heldItem, float side, float hitX, float hitY)
-	{
-		if(Configurationxlfoodmod.rightclickharvesting.rightclickharvest)
-		{
-			if(!worldIn.isRemote)
-			{
-				if(this.isMaxAge(state))
-				{
-					worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemListxlfoodmod.rice, 1)));
-					worldIn.setBlockState(pos, this.withAge(0));
-					return true;
-				}
-			}
-		}
-		
-		return false;
-		
-	}
 	
 	
 }

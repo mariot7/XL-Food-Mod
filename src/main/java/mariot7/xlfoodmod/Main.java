@@ -1,6 +1,7 @@
 package mariot7.xlfoodmod;
 
 import mariot7.xlfoodmod.config.Configurationxlfoodmod;
+import mariot7.xlfoodmod.config.RightClickHarvesting;
 import mariot7.xlfoodmod.init.BlockListxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import mariot7.xlfoodmod.init.Smeltingxlfoodmod;
@@ -30,8 +31,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, updateJSON = Reference.updateJSON)
 public class Main {
-	
-	public static boolean isBiomesoPlentyLoaded;
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
@@ -67,7 +66,6 @@ public class Main {
     public void preInit(FMLPreInitializationEvent preEvent)
     {
 		this.proxy.preInit(preEvent);
-		isBiomesoPlentyLoaded = Loader.isModLoaded("biomesoplenty");
 		config = new Configuration(preEvent.getSuggestedConfigurationFile());
 		if(Configurationxlfoodmod.rocksaltgeneration.rockgen) {
 			GameRegistry.registerWorldGenerator(new WorldGeneratorRockSaltxlfoodmod(), 0);
@@ -85,6 +83,7 @@ public class Main {
     {
 		this.proxy.init(event);
 		FMLCommonHandler.instance().bus().register(instance);
+		RightClickHarvesting.instance.register();
     }
     
 	@EventHandler
