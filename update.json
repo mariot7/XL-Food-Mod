@@ -11,8 +11,8 @@
     "1.11.2-recommended": "1.11.2-1.2.0",
     "1.12-latest": "1.2.0",
     "1.12-recommended": "1.12-1.2.0",
-    "1.12.2-latest": "1.9.0",
-    "1.12.2-recommended": "1.12.2-1.9.0"
+    "1.12.2-latest": "1.9.1",
+    "1.12.2-recommended": "1.12.2-1.9.1"
   },
     "1.8.9": {
     "0.7.1": "Added Salty Chips, texture changes and more.",
@@ -35,8 +35,8 @@
     "1.12-1.2.0": "Added Onion Salad, Onion Rings and Pumpkin Stew."
   },
     "1.12.2": {
-    "1.9.0": "Added Rice Bread and Ham, reworked config file, texture changes and more! NOTE: this version changes the config file completly, please delete the old one before updating to this version!",
-    "1.12.2-1.9.0": "Added Rice Bread and Ham, reworked config file, texture changes and more! NOTE: this version changes the config file completly, please delete the old one before updating to this version!"
+    "1.9.1": "Crops can now be planted on any farmland, right click harvesting now works with vanilla crops and nether wart, changed food values for pies!",
+    "1.12.2-1.9.1": "Crops can now be planted on any farmland, right click harvesting now works with vanilla crops and nether wart, changed food values for pies!"
   }
 
 }
