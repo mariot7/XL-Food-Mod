@@ -4,6 +4,7 @@ import mariot7.xlfoodmod.Main;
 import mariot7.xlfoodmod.config.Configurationxlfoodmod;
 import mariot7.xlfoodmod.init.ItemListxlfoodmod;
 import net.minecraft.block.BlockCrops;
+import net.minecraft.block.BlockFarmland;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
@@ -45,7 +46,7 @@ public class Onion extends BlockCrops {
 	@Override
 	protected boolean canSustainBush(IBlockState state)
     {
-        return state.getBlock() == Blocks.FARMLAND;
+        return state.getBlock() instanceof BlockFarmland;
     }
 	
 	@Override

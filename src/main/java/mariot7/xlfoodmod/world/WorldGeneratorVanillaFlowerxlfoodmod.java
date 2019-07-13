@@ -50,7 +50,7 @@ public class WorldGeneratorVanillaFlowerxlfoodmod implements IWorldGenerator {
 			Block blockAt = world.getBlockState(new BlockPos(x,y,z)).getBlock();
 			foundGround = blockAt == Blocks.DIRT || blockAt == Blocks.GRASS;
 		}
-
+		
 		return y;
 	}
 	
