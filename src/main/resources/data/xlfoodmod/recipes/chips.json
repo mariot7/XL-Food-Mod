@@ -1,0 +1,15 @@
+{  
+   "type":"crafting_shapeless",
+   "ingredients":[  
+      {  
+         "item":"xlfoodmod:cooked_dough"
+      },
+      {  
+         "item":"xlfoodmod:salt"
+      }
+   ],
+   "result":{  
+      "item":"xlfoodmod:chips",
+      "count":8
+   }
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "xlfoodmod:cheese"
+    },
+    "result": "xlfoodmod:cheese_puff",
+    "experience": 0.35,
+    "cookingTime": 200
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "xlfoodmod:dough"
+    },
+    "result": "xlfoodmod:cooked_dough",
+    "experience": 0.35,
+    "cookingTime": 200
+}

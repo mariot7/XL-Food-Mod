@@ -1,0 +1,11 @@
+{  
+   "type":"crafting_shapeless",
+   "ingredients":[  
+      {  
+         "item":"xlfoodmod:raw_corn"
+      }
+   ],
+   "result":{  
+      "item":"xlfoodmod:corn_seeds"
+   }
+}

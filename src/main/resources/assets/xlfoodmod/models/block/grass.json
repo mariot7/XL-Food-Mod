@@ -1,6 +1,7 @@
 {
-     "parent": "block/cross",
-     "textures": {
-         "cross": "xlfoodmod:blocks/grass"
-     }
+	"parent": "block/cross",
+	"textures":
+	{
+		"cross": "xlfoodmod:block/grass"
+	}
 }

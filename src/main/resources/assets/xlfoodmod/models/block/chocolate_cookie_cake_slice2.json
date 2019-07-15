@@ -1,0 +1,22 @@
+{
+    "textures": {
+        "particle": "xlfoodmod:block/chocolate_cookie_cake_side",
+        "bottom": "xlfoodmod:block/chocolate_cookie_cake_bottom",
+        "top": "xlfoodmod:block/chocolate_cookie_cake_top",
+        "side": "xlfoodmod:block/chocolate_cookie_cake_side",
+        "inside": "xlfoodmod:block/chocolate_cookie_cake_inner"
+    },
+    "elements": [
+        {   "from": [ 5, 0, 1 ],
+            "to": [ 15, 8, 15 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#inside" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:rotten_flesh"
+    },
+    "result": "xlfoodmod:flesh",
+    "experience": 0.35,
+    "cookingTime": 200
+}

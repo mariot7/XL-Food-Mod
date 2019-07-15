@@ -1,0 +1,17 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      "GG ",
+      "GGG",
+      "GG "
+   ],
+   "key":{
+      "G":{
+         "item":"minecraft:glass"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:glass_mug",
+      "count":2
+   }
+}

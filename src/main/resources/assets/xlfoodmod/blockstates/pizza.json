@@ -1,12 +1,12 @@
 {
-    "variants":
-    {
-        "bites=0": {"model": "xlfoodmod:pizza_uneaten"},
-        "bites=1": {"model": "xlfoodmod:pizza_slice1"},
-        "bites=2": {"model": "xlfoodmod:pizza_slice2"},
-        "bites=3": {"model": "xlfoodmod:pizza_slice3"},
-        "bites=4": {"model": "xlfoodmod:pizza_slice4"},
-        "bites=5": {"model": "xlfoodmod:pizza_slice5"},
-        "bites=6": {"model": "xlfoodmod:pizza_slice6"}
-    }
+	"variants":
+	{
+		"bites=0": {"model": "xlfoodmod:block/pizza"},
+        "bites=1": {"model": "xlfoodmod:block/pizza_slice1"},
+        "bites=2": {"model": "xlfoodmod:block/pizza_slice2"},
+        "bites=3": {"model": "xlfoodmod:block/pizza_slice3"},
+        "bites=4": {"model": "xlfoodmod:block/pizza_slice4"},
+        "bites=5": {"model": "xlfoodmod:block/pizza_slice5"},
+        "bites=6": {"model": "xlfoodmod:block/pizza_slice6"}
+	}
 }

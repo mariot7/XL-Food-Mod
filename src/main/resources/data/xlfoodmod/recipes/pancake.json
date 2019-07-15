@@ -1,0 +1,14 @@
+{  
+   "type":"crafting_shaped",
+   "pattern":[  
+      "DDD"
+   ],
+   "key":{  
+      "D":{  
+         "item":"xlfoodmod:cooked_dough"
+      }
+   },
+   "result":{  
+      "item":"xlfoodmod:pancake"
+   }
+}

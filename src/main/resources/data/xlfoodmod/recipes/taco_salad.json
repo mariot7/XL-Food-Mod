@@ -1,0 +1,28 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      " L ",
+      "HTO",
+      " B "
+   ],
+   "key":{
+      "L":{
+         "item":"xlfoodmod:lettuce"
+      },
+      "H":{
+         "item":"xlfoodmod:cheese"
+      },
+      "T":{
+         "item":"xlfoodmod:tortilla"
+      },
+      "O":{
+         "item":"xlfoodmod:tomato"
+      },
+      "B":{
+         "item":"xlfoodmod:bowl"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:taco_salad"
+   }
+}

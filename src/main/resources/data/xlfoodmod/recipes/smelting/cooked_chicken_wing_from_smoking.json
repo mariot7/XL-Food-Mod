@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "xlfoodmod:raw_chicken_wing"
+    },
+    "result": "xlfoodmod:cooked_chicken_wing",
+    "experience": 0.35,
+    "cookingTime": 100
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:campfire_cooking",
+    "ingredient": {
+        "item": "xlfoodmod:raw_corn"
+    },
+    "result": "xlfoodmod:corn",
+    "experience": 0.35,
+    "cookingTime": 600
+}

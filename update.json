@@ -1,0 +1,11 @@
+{  
+   "homepage":"http://minecraft.curseforge.com/projects/xl-food-mod/files",
+   "promos":{  
+      "1.14.3-latest":"2.0.0",
+      "1.14.3-recommended":"1.14.3-2.0.0"
+   },
+   "1.14.3":{  
+      "2.0.0":"Added Oshizushi, texture changes and more.",
+      "1.14.3-2.0.0":"Added Oshizushi, texture changes and more."
+   }
+}

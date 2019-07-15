@@ -1,12 +1,12 @@
 {
-    "variants":
-    {
-        "bites=0": {"model": "xlfoodmod:nether_cake_uneaten"},
-        "bites=1": {"model": "xlfoodmod:nether_cake_slice1"},
-        "bites=2": {"model": "xlfoodmod:nether_cake_slice2"},
-        "bites=3": {"model": "xlfoodmod:nether_cake_slice3"},
-        "bites=4": {"model": "xlfoodmod:nether_cake_slice4"},
-        "bites=5": {"model": "xlfoodmod:nether_cake_slice5"},
-        "bites=6": {"model": "xlfoodmod:nether_cake_slice6"}
-    }
+	"variants":
+	{
+		"bites=0": {"model": "xlfoodmod:block/nether_cake"},
+        "bites=1": {"model": "xlfoodmod:block/nether_cake_slice1"},
+        "bites=2": {"model": "xlfoodmod:block/nether_cake_slice2"},
+        "bites=3": {"model": "xlfoodmod:block/nether_cake_slice3"},
+        "bites=4": {"model": "xlfoodmod:block/nether_cake_slice4"},
+        "bites=5": {"model": "xlfoodmod:block/nether_cake_slice5"},
+        "bites=6": {"model": "xlfoodmod:block/nether_cake_slice6"}
+	}
 }

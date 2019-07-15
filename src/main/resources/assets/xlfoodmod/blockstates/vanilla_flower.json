@@ -1,5 +1,6 @@
 {
-    "variants": {
-        "normal": {"model": "xlfoodmod:vanilla_flower"}
-    }
+	"variants":
+	{
+		"": {"model": "xlfoodmod:block/vanilla_flower"}
+	}
 }

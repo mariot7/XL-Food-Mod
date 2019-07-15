@@ -1,0 +1,19 @@
+{  
+   "type":"crafting_shaped",
+   "pattern":[  
+      "MMM",
+      "MSM"
+   ],
+   "key":{
+	  "M":{  
+         "item":"minecraft:milk_bucket"
+      },  
+      "S":{  
+         "item":"xlfoodmod:salt"
+      }
+   },
+   "result":{  
+      "item":"xlfoodmod:butter",
+      "count":2
+   }
+}

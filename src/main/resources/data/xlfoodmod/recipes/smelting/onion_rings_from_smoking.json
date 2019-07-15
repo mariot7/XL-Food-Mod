@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "xlfoodmod:onion"
+    },
+    "result": "xlfoodmod:onion_rings",
+    "experience": 0.35,
+    "cookingTime": 100
+}

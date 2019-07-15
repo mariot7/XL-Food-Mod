@@ -1,6 +1,7 @@
 {
-     "parent": "block/cube_all",
-     "textures": {
-         "all": "xlfoodmod:blocks/rock_salt"
-     }
+	"parent": "block/cube_all",
+	"textures":
+	{
+		"all": "xlfoodmod:block/rock_salt"
+	}
 }
