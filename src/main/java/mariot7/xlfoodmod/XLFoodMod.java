@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import mariot7.xlfoodmod.world.OreGeneratorXL;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -31,7 +32,7 @@ public class XLFoodMod {
 	private void setup(final FMLCommonSetupEvent event)
     {
 		// some preinit code
-		OreGeneratorXL.setupOregen();
+		DeferredWorkQueue.runLater(OreGeneratorXL::setupOregen);
     }
 	
 	private void enqueueIMC(final InterModEnqueueEvent event)
@@ -47,7 +48,7 @@ public class XLFoodMod {
 	private void doClientStuff(final FMLClientSetupEvent event)
 	{
         // do something that can only be done on the client
-	}	
+	}
 	
 	public static Logger getLogger()
     {
