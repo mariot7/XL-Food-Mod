@@ -37,5 +37,5 @@ When finished, fork this repository, commit new file and create a new pull reque
 * Igrek - artist
 * geogeooo59 - French translation
 * kellixon - Russian translation
-* Focamacho - Portuguese Brazilian translation
+* Focamacho - Brazilian Portuguese translation
 * Pandory - German translation
