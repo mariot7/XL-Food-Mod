@@ -3,7 +3,7 @@ loaderVersion="[26,)"
 issueTrackerURL="https://github.com/mariot7/XL-Food-Mod/issues"
 [[mods]]
 modId="xlfoodmod"
-version="2.0.0"
+version="2.0.1"
 displayName="XL Food Mod"
 logoFile="logo.png"
 updateJSONURL="https://raw.githubusercontent.com/mariot7/XL-Food-Mod/1.14/update.json"

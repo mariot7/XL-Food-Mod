@@ -1,11 +1,11 @@
 {  
-   "homepage":"http://minecraft.curseforge.com/projects/xl-food-mod/files",
+   "homepage":"https://www.curseforge.com/minecraft/mc-mods/xl-food-mod/files/all",
    "promos":{  
-      "1.14.3-latest":"2.0.0",
-      "1.14.3-recommended":"1.14.3-2.0.0"
+      "1.14.3-latest":"2.0.1",
+      "1.14.3-recommended":"2.0.1"
    },
    "1.14.3":{  
-      "2.0.0":"Added Oshizushi, texture changes and more.",
-      "1.14.3-2.0.0":"Added Oshizushi, texture changes and more."
+      "2.0.1":"Fixed Ore Generation not working on a server, added German translation, updated Brazilian Portuguese translation.",
+      "2.0.1":"Fixed Ore Generation not working on a server, added German translation, updated Brazilian Portuguese translation."
    }
 }
