@@ -21,8 +21,8 @@ public class OreGeneratorXL {
 		{
 			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(NATURAL_STONE, BlockListXL.ROCK_SALT.getDefaultState(), 6), COUNT_RANGE, new CountRangeConfig(6, 6, 6, 64)));
 			
-			biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.BUSH, new BushConfig(BlockListXL.GRASS.getDefaultState()), Placement.CHANCE_HEIGHTMAP, new ChanceConfig(5)));
-			biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.BUSH, new BushConfig(BlockListXL.VANILLA_FLOWER.getDefaultState()), Placement.CHANCE_HEIGHTMAP, new ChanceConfig(7)));
+			biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.BUSH, new BushConfig(BlockListXL.GRASS.getDefaultState()), Placement.CHANCE_HEIGHTMAP, new ChanceConfig(4)));
+			biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.BUSH, new BushConfig(BlockListXL.VANILLA_FLOWER.getDefaultState()), Placement.CHANCE_HEIGHTMAP, new ChanceConfig(9)));
 		}
 	}
 
