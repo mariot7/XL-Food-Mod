@@ -28,7 +28,7 @@ Files must be encoded as UTF-8.
 
 The language files are located in `/src/main/resources/assets/xlfoodmod/lang/` and use the [appropriate locale code](https://minecraft.gamepedia.com/Language) as name and `.json` as extension when creating new translation files.
 
-To create a new translation, copy the contents of `en_us.lang`, create a new file with appropriate filename, and translate it to your language.
+To create a new translation, copy the contents of `en_us.json`, create a new file with appropriate filename, and translate it to your language.
 
 When finished, fork this repository, commit new file and create a new pull request and wait for authors response.
 
