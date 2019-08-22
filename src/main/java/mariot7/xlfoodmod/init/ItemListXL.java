@@ -109,6 +109,9 @@ public class ItemListXL {
 	public static Item GRILLED_CHEESE_SANDWICH = new ItemFoodXL("grilled_cheese_sandwich", 11, 0.4F);
 	public static Item ICE_CREAM_SANDWICH = new ItemFoodXL("ice_cream_sandwich", 6, 0.6F);
 	
+	public static Item SEAWEED = new ItemXL("seaweed");
+	public static Item FUTOMAKI = new ItemFoodXL("futomaki", 4, 0.6F);
+	public static Item URAMAKI = new ItemFoodXL("uramaki", 9, 0.4F);
 	public static Item OSHIZUSHI = new ItemFoodXL("oshizushi", 12, 0.2F);
 	
 	public static Item BOWL = new ItemXL("bowl");

@@ -131,6 +131,9 @@ public class ModRegistry {
 		event.getRegistry().register(ItemListXL.GRILLED_CHEESE_SANDWICH);
 		event.getRegistry().register(ItemListXL.ICE_CREAM_SANDWICH);
 		
+		event.getRegistry().register(ItemListXL.SEAWEED);
+		event.getRegistry().register(ItemListXL.FUTOMAKI);
+		event.getRegistry().register(ItemListXL.URAMAKI);
 		event.getRegistry().register(ItemListXL.OSHIZUSHI);
 		
 		event.getRegistry().register(ItemListXL.BOWL);
