@@ -1,4 +1,4 @@
-{
+﻿{
     "itemGroup.xlfoodmod": "XL Food Mod",
     "block.xlfoodmod.rock_salt": "Rock Salt",
     "block.xlfoodmod.grass": "Grass",
@@ -86,6 +86,9 @@
     "item.xlfoodmod.breakfast_sandwich": "Breakfast Sandwich",
     "item.xlfoodmod.grilled_cheese_sandwich": "Grilled Cheese Sandwich",
     "item.xlfoodmod.ice_cream_sandwich": "Ice Cream Sandwich",
+    "item.xlfoodmod.seaweed": "Seaweed",
+    "item.xlfoodmod.futomaki": "Futomaki",
+    "item.xlfoodmod.uramaki": "Uramaki",
     "item.xlfoodmod.oshizushi": "Oshizushi",
     "item.xlfoodmod.bowl": "Bowl",
     "item.xlfoodmod.garden_salad": "Garden Salad",

@@ -1,0 +1,22 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      "SSS",
+      "RCR",
+      "SSS"
+   ],
+   "key":{
+      "S":{
+         "item":"xlfoodmod:seaweed"
+      },
+      "R":{
+         "item":"xlfoodmod:rice"
+      },
+      "C":{
+         "item":"xlfoodmod:cucumber"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:futomaki"
+   }
+}
