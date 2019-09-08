@@ -3,6 +3,7 @@ package mariot7.xlfoodmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import mariot7.xlfoodmod.init.ComposterItemsXL;
 import mariot7.xlfoodmod.world.OreGeneratorXL;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.DeferredWorkQueue;
@@ -33,6 +34,7 @@ public class XLFoodMod {
     {
 		// some preinit code
 		DeferredWorkQueue.runLater(OreGeneratorXL::setupOregen);
+		ComposterItemsXL.register();
     }
 	
 	private void enqueueIMC(final InterModEnqueueEvent event)
