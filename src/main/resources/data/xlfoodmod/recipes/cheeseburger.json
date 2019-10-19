@@ -10,7 +10,7 @@
          "item":"xlfoodmod:top_bun"
       },
       "P":{
-         "item":"xlfoodmod:cucumber"
+         "tag":"forge:vegetables/cucumber"
       },
       "G":{
          "item":"xlfoodmod:ground_beef"

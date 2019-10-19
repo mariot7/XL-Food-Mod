@@ -7,13 +7,13 @@
    ],
    "key":{
       "O":{
-         "item":"xlfoodmod:onion"
+         "tag":"forge:vegetables/onion"
       },
       "U":{
-         "item":"xlfoodmod:cucumber"
+         "tag":"forge:vegetables/cucumber"
       },
       "P":{
-         "item":"xlfoodmod:pepper"
+         "tag":"forge:vegetables/pepper"
       },
       "C":{
          "item":"minecraft:cooked_chicken"

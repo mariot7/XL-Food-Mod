@@ -16,7 +16,7 @@
          "item":"xlfoodmod:seaweed"
       },
       "C":{
-         "item":"xlfoodmod:cucumber"
+         "tag":"forge:vegetables/cucumber"
       }
    },
    "result":{

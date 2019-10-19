@@ -13,10 +13,10 @@
          "item":"xlfoodmod:bacon"
       },
       "L":{
-         "item":"xlfoodmod:lettuce"
+         "tag":"forge:vegetables/lettuce"
       },
       "T":{
-         "item":"xlfoodmod:tomato"
+         "tag":"forge:fruits/tomato"
       }
    },
    "result":{

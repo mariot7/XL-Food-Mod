@@ -7,7 +7,7 @@
    ],
    "key":{
       "S":{
-         "item":"xlfoodmod:strawberry"
+         "tag":"forge:fruits/strawberry"
       },
       "D":{
          "item":"xlfoodmod:cooked_dough"

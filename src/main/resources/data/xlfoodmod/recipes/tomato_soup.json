@@ -6,7 +6,7 @@
    ],
    "key":{
       "T":{
-         "item":"xlfoodmod:tomato"
+         "tag":"forge:fruits/tomato"
       },
       "B":{
          "item":"xlfoodmod:bowl"

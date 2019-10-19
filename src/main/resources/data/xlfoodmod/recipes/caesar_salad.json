@@ -7,7 +7,7 @@
    ],
    "key":{
       "L":{
-         "item":"xlfoodmod:lettuce"
+         "tag":"forge:vegetables/lettuce"
       },
       "P":{
          "item":"xlfoodmod:pepper_seeds"

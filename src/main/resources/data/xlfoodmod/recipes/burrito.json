@@ -10,7 +10,7 @@
          "item":"xlfoodmod:cheese"
       },
       "T":{
-         "item":"xlfoodmod:tomato"
+         "tag":"forge:fruits/tomato"
       },
       "G":{
          "item":"xlfoodmod:ground_beef"

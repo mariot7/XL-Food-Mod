@@ -7,16 +7,16 @@
    ],
    "key":{
       "T":{
-         "item":"xlfoodmod:tomato"
+         "tag":"forge:fruits/tomato"
       },
       "L":{
-         "item":"xlfoodmod:lettuce"
+         "tag":"forge:vegetables/lettuce"
       },
       "G":{
          "item":"xlfoodmod:ground_beef"
       },
       "N":{
-         "item":"xlfoodmod:onion"
+         "tag":"forge:vegetables/onion"
       },
       "O":{
          "item":"xlfoodmod:tortilla"

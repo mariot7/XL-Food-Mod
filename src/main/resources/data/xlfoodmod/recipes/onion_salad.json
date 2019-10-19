@@ -6,13 +6,13 @@
    ],
    "key":{
       "L":{
-         "item":"xlfoodmod:lettuce"
+         "tag":"forge:vegetables/lettuce"
       },
       "O":{
-         "item":"xlfoodmod:onion"
+         "tag":"forge:vegetables/onion"
       },
       "T":{
-         "item":"xlfoodmod:tomato"
+         "tag":"forge:fruits/tomato"
       },
       "B":{
          "item":"xlfoodmod:bowl"

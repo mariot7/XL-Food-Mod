@@ -10,7 +10,7 @@
          "item":"minecraft:baked_potato"
       },
       "C":{
-         "item":"xlfoodmod:cucumber"
+         "tag":"forge:vegetables/cucumber"
       },
       "B":{
          "item":"xlfoodmod:bowl"

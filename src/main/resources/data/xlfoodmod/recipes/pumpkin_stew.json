@@ -7,7 +7,7 @@
    ],
    "key":{
       "E":{
-         "item":"xlfoodmod:pepper"
+         "tag":"forge:vegetables/pepper"
       },
       "O":{
          "item":"minecraft:potato"

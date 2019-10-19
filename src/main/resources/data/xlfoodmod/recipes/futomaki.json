@@ -13,7 +13,7 @@
          "item":"xlfoodmod:rice"
       },
       "C":{
-         "item":"xlfoodmod:cucumber"
+         "tag":"forge:vegetables/cucumber"
       }
    },
    "result":{

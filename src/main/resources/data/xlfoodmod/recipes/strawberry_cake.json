@@ -13,7 +13,7 @@
          "item":"minecraft:sugar"
       },
       "T":{  
-         "item":"xlfoodmod:strawberry"
+         "tag":"forge:fruits/strawberry"
       },
       "W":{  
          "item":"minecraft:wheat"

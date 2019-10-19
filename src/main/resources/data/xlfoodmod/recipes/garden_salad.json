@@ -7,16 +7,16 @@
    ],
    "key":{
       "L":{
-         "item":"xlfoodmod:lettuce"
+         "tag":"forge:vegetables/lettuce"
       },
       "H":{
          "item":"xlfoodmod:cheese"
       },
       "T":{
-         "item":"xlfoodmod:tomato"
+         "tag":"forge:fruits/tomato"
       },
       "C":{
-         "item":"xlfoodmod:cucumber"
+         "tag":"forge:vegetables/cucumber"
       },
       "B":{
          "item":"xlfoodmod:bowl"

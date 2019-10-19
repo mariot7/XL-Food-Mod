@@ -10,7 +10,7 @@
          "item":"xlfoodmod:cooked_dough"
       },
       "L":{
-         "item":"xlfoodmod:lettuce"
+         "tag":"forge:vegetables/lettuce"
       },
       "C":{
          "item":"minecraft:cooked_chicken"

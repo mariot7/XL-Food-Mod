@@ -16,7 +16,7 @@
          "item":"minecraft:cooked_chicken"
       },
       "L":{
-         "item":"xlfoodmod:lettuce"
+         "tag":"forge:vegetables/lettuce"
       },
       "B":{
          "item":"xlfoodmod:bottom_bun"

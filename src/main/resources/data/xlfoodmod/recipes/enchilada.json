@@ -19,7 +19,7 @@
          "item":"xlfoodmod:ground_beef"
       },
       "O":{
-         "item":"xlfoodmod:onion"
+         "tag":"forge:vegetables/onion"
       },
       "T":{
          "item":"xlfoodmod:tortilla"

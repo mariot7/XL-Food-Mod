@@ -2,7 +2,7 @@
    "type":"minecraft:crafting_shapeless",
    "ingredients":[
       {
-         "item":"xlfoodmod:strawberry"
+         "tag":"forge:fruits/strawberry"
       },
       {
          "item":"minecraft:snowball"

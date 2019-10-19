@@ -12,7 +12,7 @@
          "item":"minecraft:cooked_beef"
       },
       "O":{
-         "item":"xlfoodmod:onion"
+         "tag":"forge:vegetables/onion"
       },
       "B":{
          "item":"xlfoodmod:bowl"
