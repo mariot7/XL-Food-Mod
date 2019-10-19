@@ -152,5 +152,24 @@
     "item.xlfoodmod.beer": "Cerveja",
     "item.xlfoodmod.coffee_cup": "Xícara de Café",
     "item.xlfoodmod.coffee": "Café",
-    "item.xlfoodmod.cappuccino": "Capuccino"
+    "item.xlfoodmod.cappuccino": "Capuccino",
+
+    "item.xlfoodmod.beer.tooltip": "Náusea II (0:05)",
+    "item.xlfoodmod.speedy_energy_drink.tooltip": "Velocidade",
+    "item.xlfoodmod.speedy_energy_drink.tooltip2": "Pressa III (0:25)",
+    "item.xlfoodmod.healthy_energy_drink.tooltip": "Regeneração (0:30)",
+    "item.xlfoodmod.stealthy_energy_drink.tooltip": "Visão Noturna",
+    "item.xlfoodmod.stealthy_energy_drink.tooltip2": "Velocidade",
+    "item.xlfoodmod.stealthy_energy_drink.tooltip3": "Invisibilidade (2:00)",
+    "item.xlfoodmod.strong_energy_drink.tooltip": "Força II",
+    "item.xlfoodmod.strong_energy_drink.tooltip2": "Resist. ao Fogo II (2:00)",
+    "item.xlfoodmod.deadly_energy_drink.tooltip": "Veneno (1:00)",
+    "item.xlfoodmod.super_energy_drink.tooltip": "Supersalto",
+    "item.xlfoodmod.super_energy_drink.tooltip2": "Velocidade",
+    "item.xlfoodmod.super_energy_drink.tooltip3": "Pressa",
+    "item.xlfoodmod.super_energy_drink.tooltip4": "Respir. aquática II",
+    "item.xlfoodmod.super_energy_drink.tooltip5": "Regeneração II",
+    "item.xlfoodmod.super_energy_drink.tooltip6": "Visão Noturna III",
+    "item.xlfoodmod.super_energy_drink.tooltip7": "Invisibilidade III",
+    "item.xlfoodmod.super_energy_drink.tooltip8": "Força III (3:00)"
 }
