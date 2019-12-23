@@ -3,10 +3,12 @@ package mariot7.xlfoodmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import mariot7.xlfoodmod.init.BlockListXL;
 import mariot7.xlfoodmod.init.ComposterItemsXL;
 import mariot7.xlfoodmod.world.OreGeneratorXL;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -33,7 +35,7 @@ public class XLFoodMod {
 	private void setup(final FMLCommonSetupEvent event)
     {
 		// some preinit code
-		DeferredWorkQueue.runLater(OreGeneratorXL::setupOregen);
+		OreGeneratorXL.setupOregen();
 		ComposterItemsXL.register();
     }
 	
@@ -50,6 +52,16 @@ public class XLFoodMod {
 	private void doClientStuff(final FMLClientSetupEvent event)
 	{
         // do something that can only be done on the client
+		RenderTypeLookup.setRenderLayer(BlockListXL.GRASS, RenderType.func_228643_e_());
+		RenderTypeLookup.setRenderLayer(BlockListXL.VANILLA_FLOWER, RenderType.func_228643_e_());
+		RenderTypeLookup.setRenderLayer(BlockListXL.RICE_PLANT, RenderType.func_228643_e_());
+		RenderTypeLookup.setRenderLayer(BlockListXL.PEPPER_PLANT, RenderType.func_228643_e_());
+		RenderTypeLookup.setRenderLayer(BlockListXL.CORN_PLANT, RenderType.func_228643_e_());
+		RenderTypeLookup.setRenderLayer(BlockListXL.CUCUMBER_PLANT, RenderType.func_228643_e_());
+		RenderTypeLookup.setRenderLayer(BlockListXL.LETTUCE_PLANT, RenderType.func_228643_e_());
+		RenderTypeLookup.setRenderLayer(BlockListXL.ONION_PLANT, RenderType.func_228643_e_());
+		RenderTypeLookup.setRenderLayer(BlockListXL.TOMATO_PLANT, RenderType.func_228643_e_());
+		RenderTypeLookup.setRenderLayer(BlockListXL.STRAWBERRY_PLANT, RenderType.func_228643_e_());
 	}
 	
 	public static Logger getLogger()

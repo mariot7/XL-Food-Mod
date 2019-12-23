@@ -45,7 +45,6 @@ public class RicePlant extends CropsBlock {
   		return new ItemStack(this.getSeedsItem());
   	}
   	
-  	@Override
     public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult hit)
     {
     	if(!world.isRemote)

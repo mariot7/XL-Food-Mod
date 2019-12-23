@@ -1,11 +1,11 @@
 modLoader="javafml"
-loaderVersion="[28,)"
+loaderVersion="[30,)"
 issueTrackerURL="https://github.com/mariot7/XL-Food-Mod/issues"
 [[mods]]
 modId="xlfoodmod"
 version="2.1.1"
 displayName="XL Food Mod"
-updateJSONURL="https://raw.githubusercontent.com/mariot7/XL-Food-Mod/1.14/update.json"
+updateJSONURL="https://raw.githubusercontent.com/mariot7/XL-Food-Mod/1.15/update.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/xl-food-mod"
 logoFile="logo.png"
 credits="SoBiohazardous, Igrek, geogeooo59"
@@ -17,6 +17,6 @@ A mod that adds more foods and crops to the game.
 [[dependencies.xlfoodmod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.14.4]"
+    versionRange="[1.15.1]"
     ordering="NONE"
     side="BOTH"
