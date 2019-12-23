@@ -6,6 +6,15 @@
          "entries":[
             {
                "type":"minecraft:item",
+               "name":"xlfoodmod:onion"
+            }
+         ]
+      },
+      {
+         "rolls":1.0,
+         "entries":[
+            {
+               "type":"minecraft:item",
                "functions":[
                   {
                      "function":"minecraft:apply_bonus",
