@@ -1,10 +1,10 @@
 {
    "homepage":"https://www.curseforge.com/minecraft/mc-mods/xl-food-mod/files/all",
    "promos":{
-      "1.15.1-latest":"2.2.0",
-      "1.15.1-recommended":"2.2.0"
+      "1.15.1-latest":"2.2.1",
+      "1.15.1-recommended":"2.2.1"
    },
    "1.15.1":{
-      "2.2.0":"Updated Pie, Coffee, and Strawberry Ice Cream textures, recipe changes and bug fixes."
+      "2.2.1":"Added Smoker recipe for Salt, added Dutch translation, bug fixes."
    }
 }
