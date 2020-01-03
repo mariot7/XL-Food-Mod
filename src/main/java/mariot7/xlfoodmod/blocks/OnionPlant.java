@@ -51,7 +51,7 @@ public class OnionPlant extends CropsBlock {
 		{
 			if(this.isMaxAge(state))
 			{
-				world.addEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemListXL.ONION, 1)));
+				world.addEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemListXL.ONION, 2)));
 				world.setBlockState(pos, this.withAge(0));
 				return true;
 			}
