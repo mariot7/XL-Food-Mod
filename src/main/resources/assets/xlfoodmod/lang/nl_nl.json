@@ -11,6 +11,7 @@
     "block.xlfoodmod.pumpkin_cake": "Pompoencake",
     "block.xlfoodmod.pizza": "Pizza",
     "block.xlfoodmod.rice_plant": "Rijst plant",
+    "item.xlfoodmod.rice": "Rijst",
     "item.xlfoodmod.butter_rice": "Boter rijst",
     "item.xlfoodmod.fried_rice": "Gebakken rijst",
     "block.xlfoodmod.pepper_plant": "Peperplant",
@@ -152,6 +153,7 @@
     "item.xlfoodmod.coffee_cup": "Koffiekop",
     "item.xlfoodmod.coffee": "Koffie",
     "item.xlfoodmod.cappuccino": "Cappuccino",
+
     "item.xlfoodmod.beer.tooltip": "Misselijkheid II (0:05)",
     "item.xlfoodmod.speedy_energy_drink.tooltip": "Snelheid",
     "item.xlfoodmod.speedy_energy_drink.tooltip2": "Haast III (0:25)",
