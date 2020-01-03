@@ -3,13 +3,13 @@
    "promos":{
       "1.14.3-latest":"2.0.1",
       "1.14.3-recommended":"2.0.1",
-      "1.14.4-latest":"2.1.1",
-      "1.14.4-recommended":"2.1.1"
+      "1.14.4-latest":"2.2.1",
+      "1.14.4-recommended":"2.2.1"
    },
    "1.14.3":{
       "2.0.1":"Fixed Ore Generation not working on a server, added German translation, updated Brazilian Portuguese translation."
    },
    "1.14.4":{
-      "2.1.1":"Added tooltips for drinks, added fruits and vegetables to the tag system, some items can now be used in a composter and more."
+      "2.2.1":"Updated Pie, Coffee, and Strawberry Ice Cream textures, recipe changes, added Smoker recipe for Salt, added Dutch translation, bug fixes."
    }
 }

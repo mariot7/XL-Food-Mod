@@ -35,7 +35,9 @@ When finished, fork this repository, commit new file and create a new pull reque
 ## Credits
 * SoBiohazardous - former author
 * Igrek - artist
+* HeresHavi - Dutch translation
 * geogeooo59 - French translation
+* Pandory - German translation
 * kellixon - Russian translation
 * Focamacho - Brazilian Portuguese translation
-* Pandory - German translation
+* Aemande123 - Simplified Chinese translation

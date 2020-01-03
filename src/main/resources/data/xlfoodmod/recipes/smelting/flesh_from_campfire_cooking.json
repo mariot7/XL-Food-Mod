@@ -1,9 +1,9 @@
 {
     "type": "minecraft:campfire_cooking",
     "ingredient": {
-        "item": "xlfoodmod:raw_corn"
+        "item": "minecraft:rotten_flesh"
     },
-    "result": "xlfoodmod:corn",
+    "result": "xlfoodmod:flesh",
     "experience": 0.35,
     "cookingTime": 600
 }

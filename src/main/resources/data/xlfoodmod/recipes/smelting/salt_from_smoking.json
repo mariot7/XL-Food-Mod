@@ -1,9 +1,9 @@
 {
     "type": "minecraft:smoking",
     "ingredient": {
-        "item": "minecraft:rotten_flesh"
+        "item": "minecraft:water_bucket"
     },
-    "result": "xlfoodmod:flesh",
+    "result": "xlfoodmod:salt",
     "experience": 0.35,
     "cookingTime": 100
 }

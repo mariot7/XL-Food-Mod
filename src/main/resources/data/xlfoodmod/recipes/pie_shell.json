@@ -2,11 +2,11 @@
    "type":"minecraft:crafting_shaped",
    "pattern":[  
       "C C",
-      "CCC"
+      " C "
    ],
    "key":{  
       "C":{  
-         "item":"xlfoodmod:cooked_dough"
+         "item":"xlfoodmod:dough"
       }
    },
    "result":{  
