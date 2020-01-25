@@ -31,7 +31,7 @@ public class BeerItem extends ItemFoodXL {
         if(entityLiving instanceof PlayerEntity)
         {
         	PlayerEntity player = (PlayerEntity) entityLiving;
-        	entityLiving.addPotionEffect(new EffectInstance(Effects.NAUSEA, 100, 1, false, false));
+        	entityLiving.addPotionEffect(new EffectInstance(Effects.NAUSEA, 100, 1, false, true));
             ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(ItemListXL.GLASS_MUG));
         }
         return super.onItemUseFinish(stack, worldIn, entityLiving);

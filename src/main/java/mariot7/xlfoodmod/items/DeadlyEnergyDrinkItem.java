@@ -31,7 +31,7 @@ public class DeadlyEnergyDrinkItem extends ItemFoodXL {
         if(entityLiving instanceof PlayerEntity)
         {
         	PlayerEntity player = (PlayerEntity) entityLiving;
-        	entityLiving.addPotionEffect(new EffectInstance(Effects.POISON, 1200, 0, false, false));
+        	entityLiving.addPotionEffect(new EffectInstance(Effects.POISON, 1200, 0, false, true));
             ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(ItemListXL.EMPTY_CAN));
         }
         return super.onItemUseFinish(stack, worldIn, entityLiving);
