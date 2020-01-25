@@ -33,11 +33,15 @@ To create a new translation, copy the contents of `en_us.json`, create a new fil
 When finished, fork this repository, commit new file and create a new pull request and wait for authors response.
 
 ## Credits
-* SoBiohazardous - former author
-* Igrek - artist
-* HeresHavi - Dutch translation
-* geogeooo59 - French translation
-* Pandory - German translation
-* kellixon - Russian translation
-* Focamacho - Brazilian Portuguese translation
-* Aemande123 - Simplified Chinese translation
+
+### Developers
+* SoBiohazardous - Former Author
+* Igrek - Artist
+
+### Translators
+* Focamacho - Brazilian Portuguese Localization
+* HeresHavi - Dutch Localization
+* geogeooo59 - French Localization
+* Pandory - German Localization
+* kellixon - Russian Localization
+* Aemande123 - Simplified Chinese Localization

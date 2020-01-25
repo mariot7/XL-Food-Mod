@@ -3,13 +3,13 @@
    "promos":{
       "1.14.3-latest":"2.0.1",
       "1.14.3-recommended":"2.0.1",
-      "1.14.4-latest":"2.2.1",
-      "1.14.4-recommended":"2.2.1"
+      "1.14.4-latest":"2.2.2",
+      "1.14.4-recommended":"2.2.2"
    },
    "1.14.3":{
       "2.0.1":"Fixed Ore Generation not working on a server, added German translation, updated Brazilian Portuguese translation."
    },
    "1.14.4":{
-      "2.2.1":"Updated Pie, Coffee, and Strawberry Ice Cream textures, recipe changes, added Smoker recipe for Salt, added Dutch translation, bug fixes."
+      "2.2.2":"Energy Drinks now display effects properly, added Turkish translation, updated Dutch translation."
    }
 }
