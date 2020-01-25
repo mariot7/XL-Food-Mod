@@ -2,9 +2,14 @@
    "homepage":"https://www.curseforge.com/minecraft/mc-mods/xl-food-mod/files/all",
    "promos":{
       "1.15.1-latest":"2.2.1",
-      "1.15.1-recommended":"2.2.1"
+      "1.15.1-recommended":"2.2.1",
+      "1.15.2-latest":"2.2.2",
+      "1.15.2-recommended":"2.2.2"
    },
    "1.15.1":{
       "2.2.1":"Added Smoker recipe for Salt, added Dutch translation, bug fixes."
+   },
+   "1.15.2":{
+      "2.2.2":"Energy Drinks now display effects properly, added Turkish translation, updated Dutch translation."
    }
 }
