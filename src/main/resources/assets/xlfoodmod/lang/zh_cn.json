@@ -1,10 +1,10 @@
 {
     "itemGroup.xlfoodmod": "XL Food Mod",
-    "block.xlfoodmod.rock_salt": "岩盐",
+    "block.xlfoodmod.rock_salt": "矿盐",
     "block.xlfoodmod.grass": "草",
-    "block.xlfoodmod.vanilla_flower": "香草",
+    "block.xlfoodmod.vanilla_flower": "香草花",
     "block.xlfoodmod.chocolate_cake": "巧克力蛋糕",
-    "block.xlfoodmod.chocolate_cookie_cake": "巧克力饼干蛋糕",
+    "block.xlfoodmod.chocolate_cookie_cake": "巧克力曲奇蛋糕",
     "block.xlfoodmod.cheese_cake": "奶酪蛋糕",
     "block.xlfoodmod.nether_cake": "下界蛋糕",
     "block.xlfoodmod.strawberry_cake": "草莓蛋糕",
@@ -171,5 +171,5 @@
     "item.xlfoodmod.super_energy_drink.tooltip5": "生命恢复 II",
     "item.xlfoodmod.super_energy_drink.tooltip6": "夜视 III",
     "item.xlfoodmod.super_energy_drink.tooltip7": "隐身 III",
-    "item.xlfoodmod.super_energy_drink.tooltip8": "力量 III (3:00)\""
+    "item.xlfoodmod.super_energy_drink.tooltip8": "力量 III (3:00)"
 }
