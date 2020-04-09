@@ -52,16 +52,16 @@ public class XLFoodMod {
 	private void doClientStuff(final FMLClientSetupEvent event)
 	{
         // do something that can only be done on the client
-		RenderTypeLookup.setRenderLayer(BlockListXL.GRASS, RenderType.func_228643_e_());
-		RenderTypeLookup.setRenderLayer(BlockListXL.VANILLA_FLOWER, RenderType.func_228643_e_());
-		RenderTypeLookup.setRenderLayer(BlockListXL.RICE_PLANT, RenderType.func_228643_e_());
-		RenderTypeLookup.setRenderLayer(BlockListXL.PEPPER_PLANT, RenderType.func_228643_e_());
-		RenderTypeLookup.setRenderLayer(BlockListXL.CORN_PLANT, RenderType.func_228643_e_());
-		RenderTypeLookup.setRenderLayer(BlockListXL.CUCUMBER_PLANT, RenderType.func_228643_e_());
-		RenderTypeLookup.setRenderLayer(BlockListXL.LETTUCE_PLANT, RenderType.func_228643_e_());
-		RenderTypeLookup.setRenderLayer(BlockListXL.ONION_PLANT, RenderType.func_228643_e_());
-		RenderTypeLookup.setRenderLayer(BlockListXL.TOMATO_PLANT, RenderType.func_228643_e_());
-		RenderTypeLookup.setRenderLayer(BlockListXL.STRAWBERRY_PLANT, RenderType.func_228643_e_());
+		RenderTypeLookup.setRenderLayer(BlockListXL.GRASS, RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockListXL.VANILLA_FLOWER, RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockListXL.RICE_PLANT, RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockListXL.PEPPER_PLANT, RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockListXL.CORN_PLANT, RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockListXL.CUCUMBER_PLANT, RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockListXL.LETTUCE_PLANT, RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockListXL.ONION_PLANT, RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockListXL.TOMATO_PLANT, RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockListXL.STRAWBERRY_PLANT, RenderType.getCutout());
 	}
 	
 	public static Logger getLogger()
