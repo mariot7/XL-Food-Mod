@@ -1,0 +1,14 @@
+{  
+   "type":"minecraft:crafting_shapeless",
+   "ingredients":[  
+      {  
+         "item":"xlfoodmod:pie_shell"
+      },
+      {  
+         "tag":"forge:fruits/strawberry"
+      }
+   ],
+   "result":{  
+      "item":"xlfoodmod:strawberry_pie"
+   }
+}

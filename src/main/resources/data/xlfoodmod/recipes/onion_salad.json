@@ -1,0 +1,24 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      "LOT",
+      " B "
+   ],
+   "key":{
+      "L":{
+         "tag":"forge:vegetables/lettuce"
+      },
+      "O":{
+         "tag":"forge:vegetables/onion"
+      },
+      "T":{
+         "tag":"forge:fruits/tomato"
+      },
+      "B":{
+         "item":"xlfoodmod:bowl"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:onion_salad"
+   }
+}

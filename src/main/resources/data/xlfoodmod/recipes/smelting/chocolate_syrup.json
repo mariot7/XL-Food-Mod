@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:cocoa_beans"
+    },
+    "result": "xlfoodmod:chocolate_syrup",
+    "experience": 0.35,
+    "cookingTime": 200
+}

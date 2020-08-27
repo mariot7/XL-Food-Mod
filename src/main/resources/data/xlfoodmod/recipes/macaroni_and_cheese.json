@@ -1,0 +1,22 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      " C ",
+      "DDD",
+      " B "
+   ],
+   "key":{
+      "C":{
+         "item":"xlfoodmod:cheese"
+      },
+      "D":{
+         "item":"xlfoodmod:cooked_dough"
+      },
+      "B":{
+         "item":"xlfoodmod:bowl"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:macaroni_and_cheese"
+   }
+}

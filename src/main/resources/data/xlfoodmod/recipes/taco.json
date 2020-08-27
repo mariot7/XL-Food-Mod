@@ -1,0 +1,31 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      "N L",
+      "TGH",
+      " O "
+   ],
+   "key":{
+      "N":{
+         "tag":"forge:vegetables/onion"
+      },
+      "L":{
+         "tag":"forge:vegetables/lettuce"
+      },
+      "H":{
+         "item":"xlfoodmod:cheese"
+      },
+      "T":{
+         "tag":"forge:fruits/tomato"
+      },
+      "G":{
+         "item":"xlfoodmod:ground_beef"
+      },
+      "O":{
+         "item":"xlfoodmod:tortilla"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:taco"
+   }
+}

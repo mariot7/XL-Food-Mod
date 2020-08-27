@@ -1,0 +1,14 @@
+{  
+   "type":"crafting_shapeless",
+   "ingredients":[  
+      {  
+         "item":"minecraft:bread"
+      },
+      {  
+         "item":"xlfoodmod:cheese"
+      }
+   ],
+   "result":{  
+      "item":"xlfoodmod:cheesy_bread"
+   }
+}

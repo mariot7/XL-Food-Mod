@@ -1,0 +1,17 @@
+{
+   "type":"crafting_shapeless",
+   "ingredients":[
+      {
+         "item":"minecraft:porkchop"
+      },
+      {
+         "item":"xlfoodmod:salt"
+      },
+      {
+         "item":"xlfoodmod:salt"
+      }
+   ],
+   "result":{
+      "item":"xlfoodmod:ham"
+   }
+}

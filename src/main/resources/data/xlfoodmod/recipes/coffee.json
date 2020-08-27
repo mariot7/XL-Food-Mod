@@ -1,0 +1,14 @@
+{
+   "type":"minecraft:crafting_shapeless",
+   "ingredients":[
+      {
+         "item":"xlfoodmod:coffee_cup"
+      },
+      {
+         "item":"minecraft:cocoa_beans"
+      }
+   ],
+   "result":{
+      "item":"xlfoodmod:coffee"
+   }
+}

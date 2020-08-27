@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "xlfoodmod:pepper"
+    },
+    "result": "xlfoodmod:hot_sauce",
+    "experience": 0.35,
+    "cookingTime": 200
+}

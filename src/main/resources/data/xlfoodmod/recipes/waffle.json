@@ -1,0 +1,15 @@
+{  
+   "type":"crafting_shaped",
+   "pattern":[  
+      "DD",
+      "DD"
+   ],
+   "key":{  
+      "D":{  
+         "item":"xlfoodmod:cooked_dough"
+      }
+   },
+   "result":{  
+      "item":"xlfoodmod:waffle"
+   }
+}

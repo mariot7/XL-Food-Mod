@@ -1,0 +1,25 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      "RRR",
+      "ASC",
+      "RRR"
+   ],
+   "key":{
+      "R":{
+         "item":"xlfoodmod:rice"
+      },
+      "A":{
+         "item":"minecraft:carrot"
+      },
+      "S":{
+         "item":"xlfoodmod:seaweed"
+      },
+      "C":{
+         "tag":"forge:vegetables/cucumber"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:uramaki"
+   }
+}

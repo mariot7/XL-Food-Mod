@@ -1,0 +1,14 @@
+{
+   "type":"minecraft:crafting_shapeless",
+   "ingredients":[
+      {
+         "item":"xlfoodmod:strawberry_ice_cream_ball"
+      },
+      {
+         "item":"xlfoodmod:ice_cream_cone"
+      }
+   ],
+   "result":{
+      "item":"xlfoodmod:strawberry_ice_cream"
+   }
+}

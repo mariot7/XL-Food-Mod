@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "xlfoodmod:onion"
+    },
+    "result": "xlfoodmod:onion_rings",
+    "experience": 0.35,
+    "cookingTime": 200
+}

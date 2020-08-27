@@ -1,0 +1,18 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      "W W",
+      " D "
+   ],
+   "key":{
+      "W":{
+         "item":"minecraft:wheat"
+      },
+      "D":{
+         "item":"xlfoodmod:cooked_dough"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:bottom_bun"
+   }
+}

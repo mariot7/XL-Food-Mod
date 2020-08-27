@@ -1,0 +1,20 @@
+{  
+   "type":"crafting_shaped",
+   "pattern":[  
+      "  W",
+      " D ",
+      "W  "
+   ],
+   "key":{
+	  "W":{  
+         "item":"minecraft:wheat"
+      },  
+      "D":{  
+         "item":"xlfoodmod:cooked_dough"
+      }
+   },
+   "result":{  
+      "item":"xlfoodmod:baguette",
+      "count":1
+   }
+}

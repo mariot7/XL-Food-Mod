@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "xlfoodmod:block/cucumber_plant_stage4"
+    }
+}

@@ -1,0 +1,19 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      "CCC",
+      "CDC",
+      "CCC"
+   ],
+   "key":{
+      "C":{
+         "item":"xlfoodmod:chocolate_syrup"
+      },
+      "D":{
+         "item":"minecraft:cocoa_beans"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:chocolate"
+   }
+}

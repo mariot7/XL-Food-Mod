@@ -1,0 +1,14 @@
+{  
+   "type":"crafting_shapeless",
+   "ingredients":[  
+      {  
+         "item":"minecraft:bread"
+      },
+      {  
+         "item":"xlfoodmod:corn"
+      }
+   ],
+   "result":{  
+      "item":"xlfoodmod:corn_bread"
+   }
+}

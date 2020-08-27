@@ -1,0 +1,18 @@
+{
+   "type":"minecraft:crafting_shapeless",
+   "ingredients":[
+      {
+         "item":"xlfoodmod:salt"
+      },
+      {
+         "item":"minecraft:cooked_beef"
+      },
+      {
+         "item":"xlfoodmod:salt"
+      }
+   ],
+   "result":{
+      "item":"xlfoodmod:beef_jerky",
+      "count":4
+   }
+}

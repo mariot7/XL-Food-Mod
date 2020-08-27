@@ -1,0 +1,14 @@
+{  
+   "type":"crafting_shapeless",
+   "ingredients":[  
+      {  
+         "item":"xlfoodmod:chips"
+      },
+      {  
+         "item":"xlfoodmod:salt"
+      }
+   ],
+   "result":{  
+      "item":"xlfoodmod:salty_chips"
+   }
+}

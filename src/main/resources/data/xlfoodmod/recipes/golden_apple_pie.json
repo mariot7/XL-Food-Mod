@@ -1,0 +1,14 @@
+{  
+   "type":"minecraft:crafting_shapeless",
+   "ingredients":[  
+      {  
+         "item":"xlfoodmod:pie_shell"
+      },
+      {  
+         "item":"minecraft:golden_apple"
+      }
+   ],
+   "result":{  
+      "item":"xlfoodmod:golden_apple_pie"
+   }
+}

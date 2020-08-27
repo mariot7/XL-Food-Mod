@@ -1,0 +1,28 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      " E ",
+      "OGC",
+      " P "
+   ],
+   "key":{
+      "E":{
+         "tag":"forge:vegetables/pepper"
+      },
+      "O":{
+         "item":"minecraft:potato"
+      },
+      "G":{
+         "item":"xlfoodmod:ground_beef"
+      },
+      "C":{
+         "item":"minecraft:carrot"
+      },
+      "P":{
+         "item":"minecraft:pumpkin"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:pumpkin_stew"
+   }
+}

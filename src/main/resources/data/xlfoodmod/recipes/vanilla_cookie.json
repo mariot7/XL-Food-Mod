@@ -1,0 +1,18 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      "CVC",
+      " C "
+   ],
+   "key":{
+      "C":{
+         "item":"xlfoodmod:cooked_dough"
+      },
+      "V":{
+         "item":"xlfoodmod:vanilla_cream"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:vanilla_cookie"
+   }
+}

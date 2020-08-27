@@ -1,0 +1,17 @@
+{  
+   "type":"crafting_shaped",
+   "pattern":[  
+      "WRW"
+   ],
+   "key":{
+	  "W":{  
+         "item":"minecraft:wheat"
+      },  
+      "R":{  
+         "item":"xlfoodmod:rice"
+      }
+   },
+   "result":{  
+      "item":"xlfoodmod:rice_bread"
+   }
+}

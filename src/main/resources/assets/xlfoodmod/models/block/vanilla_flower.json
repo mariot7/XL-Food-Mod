@@ -1,6 +1,7 @@
 {
-     "parent": "block/cross",
-     "textures": {
-         "cross": "xlfoodmod:blocks/vanilla_flower"
-     }
+	"parent": "block/cross",
+	"textures":
+	{
+		"cross": "xlfoodmod:block/vanilla_flower"
+	}
 }

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:sugar"
+    },
+    "result": "xlfoodmod:marshmallow",
+    "experience": 0.35,
+    "cookingTime": 200
+}

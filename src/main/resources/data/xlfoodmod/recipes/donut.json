@@ -1,0 +1,17 @@
+{  
+   "type":"crafting_shaped",
+   "pattern":[  
+      "DDD",
+      "D D",
+      "DDD"
+   ],
+   "key":{  
+      "D":{  
+         "item":"xlfoodmod:cooked_dough"
+      }
+   },
+   "result":{  
+      "item":"xlfoodmod:donut",
+      "count":4
+   }
+}

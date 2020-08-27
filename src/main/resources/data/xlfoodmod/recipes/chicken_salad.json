@@ -1,0 +1,31 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "pattern":[
+      "OU ",
+      "PCE",
+      " B "
+   ],
+   "key":{
+      "O":{
+         "tag":"forge:vegetables/onion"
+      },
+      "U":{
+         "tag":"forge:vegetables/cucumber"
+      },
+      "P":{
+         "tag":"forge:vegetables/pepper"
+      },
+      "C":{
+         "item":"minecraft:cooked_chicken"
+      },
+      "E":{
+         "item":"minecraft:egg"
+      },
+      "B":{
+         "item":"xlfoodmod:bowl"
+      }
+   },
+   "result":{
+      "item":"xlfoodmod:chicken_salad"
+   }
+}

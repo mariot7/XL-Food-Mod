@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "xlfoodmod:rice"
+    },
+    "result": "xlfoodmod:fried_rice",
+    "experience": 0.35,
+    "cookingTime": 200
+}

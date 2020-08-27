@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "minecraft:water_bucket"
+    },
+    "result": "xlfoodmod:salt",
+    "experience": 0.35,
+    "cookingTime": 100
+}

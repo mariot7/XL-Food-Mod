@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "xlfoodmod:marshmallow"
+    },
+    "result": "xlfoodmod:roasted_marshmallow",
+    "experience": 0.35,
+    "cookingTime": 100
+}

@@ -1,5 +1,6 @@
 {
-    "variants": {
-        "normal": {"model": "xlfoodmod:rock_salt"}
-    }
+	"variants":
+	{
+		"": {"model": "xlfoodmod:block/rock_salt"}
+	}
 }

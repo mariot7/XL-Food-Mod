@@ -1,0 +1,10 @@
+{
+    "replace":false,
+    "values":[
+        "#forge:vegetables/pepper",
+        "#forge:vegetables/corn",
+        "#forge:vegetables/cucumber",
+        "#forge:vegetables/lettuce",
+        "#forge:vegetables/onion"
+    ]
+}
